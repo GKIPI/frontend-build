@@ -1,10 +1,10 @@
 (() => {
 var exports = {};
-exports.id = 262;
-exports.ids = [262];
+exports.id = 7262;
+exports.ids = [7262];
 exports.modules = {
 
-/***/ 8038:
+/***/ 18038:
 /***/ ((module) => {
 
 "use strict";
@@ -12,7 +12,7 @@ module.exports = require("next/dist/compiled/react");
 
 /***/ }),
 
-/***/ 8704:
+/***/ 98704:
 /***/ ((module) => {
 
 "use strict";
@@ -20,7 +20,7 @@ module.exports = require("next/dist/compiled/react-dom/server-rendering-stub");
 
 /***/ }),
 
-/***/ 7897:
+/***/ 97897:
 /***/ ((module) => {
 
 "use strict";
@@ -28,7 +28,7 @@ module.exports = require("next/dist/compiled/react-server-dom-webpack/client");
 
 /***/ }),
 
-/***/ 6786:
+/***/ 56786:
 /***/ ((module) => {
 
 "use strict";
@@ -44,7 +44,7 @@ module.exports = require("next/dist/server/app-render/app-render");
 
 /***/ }),
 
-/***/ 1844:
+/***/ 41844:
 /***/ ((module) => {
 
 "use strict";
@@ -52,7 +52,7 @@ module.exports = require("next/dist/server/app-render/get-segment-param");
 
 /***/ }),
 
-/***/ 6624:
+/***/ 96624:
 /***/ ((module) => {
 
 "use strict";
@@ -60,7 +60,7 @@ module.exports = require("next/dist/server/future/helpers/interception-routes");
 
 /***/ }),
 
-/***/ 5281:
+/***/ 75281:
 /***/ ((module) => {
 
 "use strict";
@@ -68,7 +68,7 @@ module.exports = require("next/dist/server/future/route-modules/route-module");
 
 /***/ }),
 
-/***/ 7085:
+/***/ 57085:
 /***/ ((module) => {
 
 "use strict";
@@ -84,7 +84,7 @@ module.exports = require("next/dist/shared/lib/get-img-props");
 
 /***/ }),
 
-/***/ 199:
+/***/ 20199:
 /***/ ((module) => {
 
 "use strict";
@@ -92,7 +92,7 @@ module.exports = require("next/dist/shared/lib/hash");
 
 /***/ }),
 
-/***/ 6864:
+/***/ 66864:
 /***/ ((module) => {
 
 "use strict";
@@ -100,7 +100,7 @@ module.exports = require("next/dist/shared/lib/head");
 
 /***/ }),
 
-/***/ 9569:
+/***/ 39569:
 /***/ ((module) => {
 
 "use strict";
@@ -108,7 +108,7 @@ module.exports = require("next/dist/shared/lib/hooks-client-context");
 
 /***/ }),
 
-/***/ 2210:
+/***/ 52210:
 /***/ ((module) => {
 
 "use strict";
@@ -116,7 +116,7 @@ module.exports = require("next/dist/shared/lib/image-config");
 
 /***/ }),
 
-/***/ 5359:
+/***/ 35359:
 /***/ ((module) => {
 
 "use strict";
@@ -124,7 +124,7 @@ module.exports = require("next/dist/shared/lib/image-config-context");
 
 /***/ }),
 
-/***/ 7160:
+/***/ 17160:
 /***/ ((module) => {
 
 "use strict";
@@ -132,7 +132,7 @@ module.exports = require("next/dist/shared/lib/router-context");
 
 /***/ }),
 
-/***/ 893:
+/***/ 30893:
 /***/ ((module) => {
 
 "use strict";
@@ -140,7 +140,7 @@ module.exports = require("next/dist/shared/lib/router/utils/add-path-prefix");
 
 /***/ }),
 
-/***/ 2336:
+/***/ 12336:
 /***/ ((module) => {
 
 "use strict";
@@ -148,7 +148,7 @@ module.exports = require("next/dist/shared/lib/router/utils/format-url");
 
 /***/ }),
 
-/***/ 7887:
+/***/ 17887:
 /***/ ((module) => {
 
 "use strict";
@@ -156,7 +156,7 @@ module.exports = require("next/dist/shared/lib/router/utils/handle-smooth-scroll
 
 /***/ }),
 
-/***/ 8735:
+/***/ 98735:
 /***/ ((module) => {
 
 "use strict";
@@ -164,7 +164,7 @@ module.exports = require("next/dist/shared/lib/router/utils/is-bot");
 
 /***/ }),
 
-/***/ 120:
+/***/ 60120:
 /***/ ((module) => {
 
 "use strict";
@@ -172,7 +172,7 @@ module.exports = require("next/dist/shared/lib/router/utils/is-local-url");
 
 /***/ }),
 
-/***/ 8231:
+/***/ 68231:
 /***/ ((module) => {
 
 "use strict";
@@ -180,7 +180,7 @@ module.exports = require("next/dist/shared/lib/router/utils/parse-path");
 
 /***/ }),
 
-/***/ 3750:
+/***/ 53750:
 /***/ ((module) => {
 
 "use strict";
@@ -188,7 +188,7 @@ module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slas
 
 /***/ }),
 
-/***/ 982:
+/***/ 70982:
 /***/ ((module) => {
 
 "use strict";
@@ -196,7 +196,7 @@ module.exports = require("next/dist/shared/lib/router/utils/resolve-href");
 
 /***/ }),
 
-/***/ 9618:
+/***/ 79618:
 /***/ ((module) => {
 
 "use strict";
@@ -204,7 +204,7 @@ module.exports = require("next/dist/shared/lib/server-inserted-html");
 
 /***/ }),
 
-/***/ 8423:
+/***/ 78423:
 /***/ ((module) => {
 
 "use strict";
@@ -212,7 +212,7 @@ module.exports = require("next/dist/shared/lib/utils");
 
 /***/ }),
 
-/***/ 8658:
+/***/ 98658:
 /***/ ((module) => {
 
 "use strict";
@@ -220,7 +220,7 @@ module.exports = require("next/dist/shared/lib/utils/warn-once");
 
 /***/ }),
 
-/***/ 1017:
+/***/ 71017:
 /***/ ((module) => {
 
 "use strict";
@@ -228,7 +228,7 @@ module.exports = require("path");
 
 /***/ }),
 
-/***/ 7310:
+/***/ 57310:
 /***/ ((module) => {
 
 "use strict";
@@ -236,7 +236,7 @@ module.exports = require("url");
 
 /***/ }),
 
-/***/ 4705:
+/***/ 34705:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -251,9 +251,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7262);
 /* harmony import */ var next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1823);
+/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(31823);
 /* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2502);
+/* harmony import */ var next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12502);
 /* harmony import */ var next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony reexport (unknown) */ var __WEBPACK_REEXPORT_OBJECT__ = {};
 /* harmony reexport (unknown) */ for(const __WEBPACK_IMPORT_KEY__ in next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__) if(["default","tree","pages","GlobalError","originalPathname","__next_app__","routeModule"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = () => next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__[__WEBPACK_IMPORT_KEY__]
@@ -269,14 +269,14 @@ __webpack_require__.r(__webpack_exports__);
         'lowongan',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6254)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/lowongan/page.js"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 36254)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/lowongan/page.js"],
           
         }]
       },
         {
           
           metadata: {
-    icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3881))).default(props))],
+    icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
     openGraph: [],
     twitter: [],
@@ -286,9 +286,9 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1981)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 16505)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/layout.js"],
           metadata: {
-    icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3881))).default(props))],
+    icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
     openGraph: [],
     twitter: [],
@@ -322,14 +322,14 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 9136:
+/***/ 99136:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8830))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 45876))
 
 /***/ }),
 
-/***/ 8830:
+/***/ 45876:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -342,11 +342,11 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 // EXTERNAL MODULE: external "next/dist/compiled/react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(6786);
+var jsx_runtime_ = __webpack_require__(56786);
 // EXTERNAL MODULE: ./src/app/components/navbar.js
-var navbar = __webpack_require__(1832);
+var navbar = __webpack_require__(11832);
 // EXTERNAL MODULE: external "next/dist/compiled/react"
-var react_ = __webpack_require__(8038);
+var react_ = __webpack_require__(18038);
 ;// CONCATENATED MODULE: ./src/app/components/sidebar.js
 /* __next_internal_client_entry_do_not_use__ default auto */ 
 
@@ -580,10 +580,8 @@ function Sidebar() {
     });
 }
 
-;// CONCATENATED MODULE: ./public/dummy/gkpi1.jpeg
-/* harmony default export */ const gkpi1 = ({"src":"/_next/static/media/gkpi1.c761445b.jpeg","height":1024,"width":770,"blurDataURL":"data:image/jpeg;base64,/9j/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAAIAAYDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAfEAAABQQDAAAAAAAAAAAAAAAAAQIDEgQFERMhIoH/xAAVAQEBAAAAAAAAAAAAAAAAAAAEBv/EABgRAAIDAAAAAAAAAAAAAAAAAAABAgMR/9oADAMBAAIRAxEAPwCDU01nXamik4y5s6m3ha4xwZK95IAADKeFSw//2Q==","blurWidth":6,"blurHeight":8});
 // EXTERNAL MODULE: ./node_modules/next/image.js
-var next_image = __webpack_require__(2451);
+var next_image = __webpack_require__(52451);
 var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
 ;// CONCATENATED MODULE: ./public/buildings.png
 /* harmony default export */ const buildings = ({"src":"/_next/static/media/buildings.897f95a8.png","height":20,"width":20,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAMFBMVEVMaXEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACbsZG/AAAAEHRSTlMAnYOL3tm37wx7WsQXz2lCa9kmBQAAAAlwSFlzAAALEwAACxMBAJqcGAAAADtJREFUeJwdiMcRwDAMw0jJai7x/ttGCT7AAUDOJ9Fkcawvtsqw9p2if0hJnw2oCi1Y4ImwUIev43TyBSipASyaKG96AAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":8});
@@ -592,13 +590,13 @@ var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
 // EXTERNAL MODULE: ./node_modules/swiper/swiper-react.mjs + 3 modules
 var swiper_react = __webpack_require__(2797);
 // EXTERNAL MODULE: ./node_modules/swiper/swiper.css
-var swiper = __webpack_require__(3754);
+var swiper = __webpack_require__(63754);
 // EXTERNAL MODULE: ./node_modules/swiper/modules/navigation.css
-var navigation = __webpack_require__(2119);
+var navigation = __webpack_require__(12119);
 // EXTERNAL MODULE: ./node_modules/swiper/modules/pagination.css
-var pagination = __webpack_require__(3141);
+var pagination = __webpack_require__(23141);
 // EXTERNAL MODULE: ./node_modules/swiper/modules/index.mjs + 26 modules
-var modules = __webpack_require__(1987);
+var modules = __webpack_require__(11987);
 ;// CONCATENATED MODULE: ./src/app/lowongan/page.js
 /* __next_internal_client_entry_do_not_use__ default auto */ 
 
@@ -612,25 +610,42 @@ var modules = __webpack_require__(1987);
 
 
 
-
 function Lowongan() {
     const [activePage, setActivePage] = (0,react_.useState)(true);
-    const onSelect = (value)=>{
-        setActivePage(!activePage);
-    };
-    const generateCardData = ()=>{
-        const cardData = [];
-        for(let i = 1; i <= 24; i++){
-            cardData.push({
-                title: `Card ${i}`,
-                content: `This is the content of Card ${i}.`,
-                company: `Company ${i}`,
-                location: `Location ${i}`
+    (0,react_.useEffect)(()=>{
+        if (activePage) {
+            fetch(`/api/seeker`).then((response)=>{
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return response.json();
+            }).then((data)=>{
+                console.log(data.seekers);
+                setCards(data.seekers);
+            }).catch((error)=>{
+                console.error("Error fetching data:", error);
+            });
+        } else {
+            fetch(`/api/vacancy`).then((response)=>{
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return response.json();
+            }).then((data)=>{
+                console.log(data);
+                setCards(data.vacancies);
+            }).catch((error)=>{
+                console.error("Error fetching data:", error);
             });
         }
-        return cardData;
+    }, [
+        activePage
+    ]);
+    const onSelect = ()=>{
+        setActivePage(!activePage);
+        setCards([]);
     };
-    const cards = generateCardData();
+    const [cards, setCards] = (0,react_.useState)([]);
     const chunkArray = (arr, size)=>{
         const chunkedArray = [];
         for(let i = 0; i < arr.length; i += size){
@@ -659,7 +674,7 @@ function Lowongan() {
                 ]
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: "h-full flex",
+                className: "min-h-[80vh] flex",
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx(Sidebar, {}),
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -678,7 +693,8 @@ function Lowongan() {
                                 },
                                 children: chunkedCards.map((card, index)=>/*#__PURE__*/ jsx_runtime_.jsx(swiper_react/* SwiperSlide */.o5, {
                                         children: /*#__PURE__*/ jsx_runtime_.jsx(Card, {
-                                            array: card
+                                            array: card,
+                                            type: activePage
                                         })
                                     }, index))
                             }),
@@ -692,17 +708,21 @@ function Lowongan() {
         ]
     });
 }
-const Card = ({ array })=>{
-    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
+const Card = ({ array, type })=>{
+    if (type === false) return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: "grid gap-2 sm:gap-5 grid-cols-2 lg:grid-cols-3 mx-0 p-[5%] xs:p-5 sm:p-8 md:p-12 w-full overflow-x-hidden overflow-y-hidden",
         children: array.map((card, i)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 className: "max-h-[370px] w-full shadow-md p-4",
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "bg-slate-300 animate-pulse  h-[250px] w-full overflow-y-hidden"
+                        className: "bg-slate-300 h-[250px] w-full overflow-y-hidden",
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                            src: card.image,
+                            alt: "CV Preview"
+                        })
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                        className: "text-xl font-bold mb-2",
+                        className: "text-xl font-bold mb-2 line-clamp-1 ",
                         children: card.title
                     }),
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -718,7 +738,7 @@ const Card = ({ array })=>{
                                         })
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "text-sm mx-2",
+                                        className: "text-sm mx-2 line-clamp-1 ",
                                         children: card.company
                                     })
                                 ]
@@ -733,7 +753,7 @@ const Card = ({ array })=>{
                                         })
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "text-sm mx-2",
+                                        className: "text-sm mx-2 line-clamp-1 ",
                                         children: card.location
                                     })
                                 ]
@@ -743,12 +763,47 @@ const Card = ({ array })=>{
                 ]
             }, i))
     });
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
+        className: "grid gap-2 sm:gap-5 grid-cols-2 lg:grid-cols-3 mx-0 p-[5%] xs:p-5 sm:p-8 md:p-12 w-full overflow-x-hidden overflow-y-hidden",
+        children: array.map((card, i)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: "max-h-[370px] w-full shadow-md p-4",
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: "bg-slate-300 h-[250px] w-full overflow-y-hidden",
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                            src: card.image,
+                            alt: "CV Preview"
+                        })
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                        className: "text-xl font-bold mb-2",
+                        children: card.title
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: "flex flex-row justify-between mx-3",
+                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            className: "flex flex-col",
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                                    className: "text-xs p-0 m-0 line-clamp-1 ",
+                                    children: card.name
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("h1", {
+                                    className: "font-bold p-0 m-0 line-clamp-1 ",
+                                    children: card.jobTitle
+                                })
+                            ]
+                        })
+                    })
+                ]
+            }, i))
+    });
 };
 
 
 /***/ }),
 
-/***/ 6254:
+/***/ 36254:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -758,7 +813,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   __esModule: () => (/* binding */ __esModule),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1363);
+/* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(61363);
 
 const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/lowongan/page.js`)
 
@@ -781,7 +836,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [697,776,775,869,565,832], () => (__webpack_exec__(4705)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,5137,8132,2451,6196,3155,4785,566], () => (__webpack_exec__(34705)));
 module.exports = __webpack_exports__;
 
 })();
