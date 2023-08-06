@@ -12,9 +12,9 @@
   "/api/katalog/route": "/api/katalog",
   "/api/seeker/route": "/api/seeker",
   "/api/vacancy/route": "/api/vacancy",
+  "/(guest_route)/signup/page": "/signup",
   "/(guest_route)/login/page": "/login",
   "/(private_route)/user/page": "/user",
-  "/(guest_route)/signup/page": "/signup",
   "/api/admin/katalog/route": "/api/admin/katalog",
   "/api/admin/seeker/route": "/api/admin/seeker",
   "/api/admin/vacancy/route": "/api/admin/vacancy",
@@ -23,10 +23,10 @@
   "/api/vacancy/[id]/route": "/api/vacancy/[id]",
   "/api/auth/users/route": "/api/auth/users",
   "/api/auth/[...nextauth]/route": "/api/auth/[...nextauth]",
-  "/(private_route)/user/katalog/page": "/user/katalog",
   "/(private_route)/user/jobSeeker/page": "/user/jobSeeker",
+  "/(private_route)/user/katalog/page": "/user/katalog",
   "/(private_route)/user/jobVacancies/page": "/user/jobVacancies",
-  "/api/user/katalog/[email]/route": "/api/user/katalog/[email]",
   "/api/user/seeker/[email]/route": "/api/user/seeker/[email]",
-  "/api/user/vacancy/[email]/route": "/api/user/vacancy/[email]"
+  "/api/user/vacancy/[email]/route": "/api/user/vacancy/[email]",
+  "/api/user/katalog/[email]/route": "/api/user/katalog/[email]"
 }
