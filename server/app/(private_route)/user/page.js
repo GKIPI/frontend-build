@@ -76,14 +76,6 @@ module.exports = require("next/dist/shared/lib/app-router-context");
 
 /***/ }),
 
-/***/ 1830:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/get-img-props");
-
-/***/ }),
-
 /***/ 20199:
 /***/ ((module) => {
 
@@ -92,35 +84,11 @@ module.exports = require("next/dist/shared/lib/hash");
 
 /***/ }),
 
-/***/ 66864:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/head");
-
-/***/ }),
-
 /***/ 39569:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/hooks-client-context");
-
-/***/ }),
-
-/***/ 52210:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/image-config");
-
-/***/ }),
-
-/***/ 35359:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/image-config-context");
 
 /***/ }),
 
@@ -212,14 +180,6 @@ module.exports = require("next/dist/shared/lib/utils");
 
 /***/ }),
 
-/***/ 98658:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/utils/warn-once");
-
-/***/ }),
-
 /***/ 71017:
 /***/ ((module) => {
 
@@ -295,7 +255,8 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 16505)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/layout.js"],
+'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/loading.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -328,6 +289,17 @@ __webpack_require__.r(__webpack_exports__);
       },
     })
   
+
+/***/ }),
+
+/***/ 38349:
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 31232, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 52987, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 50831, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 56926, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 44282, 23))
 
 /***/ }),
 
@@ -421,7 +393,7 @@ function Login() {
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,5137,5401,9739,9163], () => (__webpack_exec__(11571)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,7582,954,6482,2317,3462,9163], () => (__webpack_exec__(11571)));
 module.exports = __webpack_exports__;
 
 })();

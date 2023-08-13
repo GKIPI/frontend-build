@@ -5,6 +5,13 @@ exports.id = 4807;
 exports.ids = [4807];
 exports.modules = {
 
+/***/ 67096:
+/***/ ((module) => {
+
+module.exports = require("bcrypt");
+
+/***/ }),
+
 /***/ 11185:
 /***/ ((module) => {
 
@@ -12,10 +19,80 @@ module.exports = require("mongoose");
 
 /***/ }),
 
+/***/ 39491:
+/***/ ((module) => {
+
+module.exports = require("assert");
+
+/***/ }),
+
+/***/ 14300:
+/***/ ((module) => {
+
+module.exports = require("buffer");
+
+/***/ }),
+
+/***/ 6113:
+/***/ ((module) => {
+
+module.exports = require("crypto");
+
+/***/ }),
+
+/***/ 82361:
+/***/ ((module) => {
+
+module.exports = require("events");
+
+/***/ }),
+
+/***/ 13685:
+/***/ ((module) => {
+
+module.exports = require("http");
+
+/***/ }),
+
+/***/ 95687:
+/***/ ((module) => {
+
+module.exports = require("https");
+
+/***/ }),
+
 /***/ 22037:
 /***/ ((module) => {
 
 module.exports = require("os");
+
+/***/ }),
+
+/***/ 63477:
+/***/ ((module) => {
+
+module.exports = require("querystring");
+
+/***/ }),
+
+/***/ 57310:
+/***/ ((module) => {
+
+module.exports = require("url");
+
+/***/ }),
+
+/***/ 73837:
+/***/ ((module) => {
+
+module.exports = require("util");
+
+/***/ }),
+
+/***/ 59796:
+/***/ ((module) => {
+
+module.exports = require("zlib");
 
 /***/ }),
 
@@ -54,13 +131,35 @@ var db = __webpack_require__(53461);
 var seekerModels = __webpack_require__(27326);
 // EXTERNAL MODULE: ./node_modules/next/dist/server/web/exports/next-response.js
 var next_response = __webpack_require__(89335);
+// EXTERNAL MODULE: ./node_modules/next-auth/index.js
+var next_auth = __webpack_require__(49861);
+// EXTERNAL MODULE: ./src/app/api/auth/[...nextauth]/route.js
+var route = __webpack_require__(23394);
 ;// CONCATENATED MODULE: ./src/app/api/admin/seeker/route.js
 // Import the necessary dependencies and the SeekerModel
 
 
 
+
+
 // Handler for the GET request
 async function GET(req) {
+    const session = await (0,next_auth.getServerSession)(route.authOptions);
+    if (!session) {
+        return next_response/* default */.Z.json({
+            error: "not authorized"
+        }, {
+            status: 401
+        });
+    }
+    const { role } = session.user;
+    if (role !== "admin") {
+        return next_response/* default */.Z.json({
+            error: "not authorized"
+        }, {
+            status: 401
+        });
+    }
     try {
         // Connect to the database
         await (0,db/* default */.Z)();
@@ -121,7 +220,7 @@ async function GET(req) {
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,5501,9335,1996], () => (__webpack_exec__(30208)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,5501,9335,6810,2561,3394,7326], () => (__webpack_exec__(30208)));
 module.exports = __webpack_exports__;
 
 })();

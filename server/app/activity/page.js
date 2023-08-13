@@ -286,7 +286,8 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 16505)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/layout.js"],
+'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/loading.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -328,6 +329,28 @@ __webpack_require__.r(__webpack_exports__);
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 50954, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 73380, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 49974))
+
+/***/ }),
+
+/***/ 3097:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+/* __next_internal_client_entry_do_not_use__  cjs */ 
+const { createProxy } = __webpack_require__(61363);
+module.exports = createProxy("/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/node_modules/next/dist/client/link.js");
+ //# sourceMappingURL=link.js.map
+
+
+/***/ }),
+
+/***/ 25124:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+module.exports = __webpack_require__(3097);
+
 
 /***/ }),
 
@@ -474,7 +497,7 @@ __webpack_require__.r(__webpack_exports__);
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,5137,9739], () => (__webpack_exec__(36359)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,7582,954,3380,4178,3462,5032], () => (__webpack_exec__(36359)));
 module.exports = __webpack_exports__;
 
 })();

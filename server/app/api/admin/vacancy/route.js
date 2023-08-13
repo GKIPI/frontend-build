@@ -5,6 +5,13 @@ exports.id = 5801;
 exports.ids = [5801];
 exports.modules = {
 
+/***/ 67096:
+/***/ ((module) => {
+
+module.exports = require("bcrypt");
+
+/***/ }),
+
 /***/ 11185:
 /***/ ((module) => {
 
@@ -12,10 +19,80 @@ module.exports = require("mongoose");
 
 /***/ }),
 
+/***/ 39491:
+/***/ ((module) => {
+
+module.exports = require("assert");
+
+/***/ }),
+
+/***/ 14300:
+/***/ ((module) => {
+
+module.exports = require("buffer");
+
+/***/ }),
+
+/***/ 6113:
+/***/ ((module) => {
+
+module.exports = require("crypto");
+
+/***/ }),
+
+/***/ 82361:
+/***/ ((module) => {
+
+module.exports = require("events");
+
+/***/ }),
+
+/***/ 13685:
+/***/ ((module) => {
+
+module.exports = require("http");
+
+/***/ }),
+
+/***/ 95687:
+/***/ ((module) => {
+
+module.exports = require("https");
+
+/***/ }),
+
 /***/ 22037:
 /***/ ((module) => {
 
 module.exports = require("os");
+
+/***/ }),
+
+/***/ 63477:
+/***/ ((module) => {
+
+module.exports = require("querystring");
+
+/***/ }),
+
+/***/ 57310:
+/***/ ((module) => {
+
+module.exports = require("url");
+
+/***/ }),
+
+/***/ 73837:
+/***/ ((module) => {
+
+module.exports = require("util");
+
+/***/ }),
+
+/***/ 59796:
+/***/ ((module) => {
+
+module.exports = require("zlib");
 
 /***/ }),
 
@@ -54,13 +131,35 @@ var db = __webpack_require__(53461);
 var vacancyModels = __webpack_require__(30955);
 // EXTERNAL MODULE: ./node_modules/next/dist/server/web/exports/next-response.js
 var next_response = __webpack_require__(89335);
+// EXTERNAL MODULE: ./node_modules/next-auth/index.js
+var next_auth = __webpack_require__(49861);
+// EXTERNAL MODULE: ./src/app/api/auth/[...nextauth]/route.js
+var route = __webpack_require__(23394);
 ;// CONCATENATED MODULE: ./src/app/api/admin/vacancy/route.js
 // Import the necessary dependencies and the VacanciesModel
 
 
 
+
+
 // Handler for the GET request
 async function GET(req) {
+    const session = await (0,next_auth.getServerSession)(route.authOptions);
+    if (!session) {
+        return next_response/* default */.Z.json({
+            error: "not authorized"
+        }, {
+            status: 401
+        });
+    }
+    const { role } = session.user;
+    if (role !== "admin") {
+        return next_response/* default */.Z.json({
+            error: "not authorized"
+        }, {
+            status: 401
+        });
+    }
     try {
         // Connect to the database
         await (0,db/* default */.Z)();
@@ -112,6 +211,65 @@ async function GET(req) {
 
     
 
+/***/ }),
+
+/***/ 30955:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var mongoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11185);
+/* harmony import */ var mongoose__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mongoose__WEBPACK_IMPORTED_MODULE_0__);
+// Import the Mongoose model and schema
+
+
+const vacancySchema = new mongoose__WEBPACK_IMPORTED_MODULE_0__.Schema({
+    user: {
+        type: String,
+        required: true
+    },
+    image: {
+        type: String,
+        required: true
+    },
+    jobTitle: {
+        type: String,
+        required: true
+    },
+    company: {
+        type: String,
+        required: true
+    },
+    location: {
+        type: String,
+        required: true
+    },
+    notes: {
+        type: String,
+        required: false
+    },
+    tag: [
+        {
+            type: String,
+            required: false
+        }
+    ],
+    approval: {
+        type: Boolean,
+        required: true,
+        default: false
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now,
+        required: true
+    }
+});
+const VacancyModel = mongoose__WEBPACK_IMPORTED_MODULE_0__.models.Vacancy || (0,mongoose__WEBPACK_IMPORTED_MODULE_0__.model)("Vacancy", vacancySchema);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (VacancyModel);
+
+
 /***/ })
 
 };
@@ -121,7 +279,7 @@ async function GET(req) {
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,5501,9335,6114], () => (__webpack_exec__(13352)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,5501,9335,6810,2561,3394], () => (__webpack_exec__(13352)));
 module.exports = __webpack_exports__;
 
 })();

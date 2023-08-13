@@ -133,14 +133,25 @@ var userModels = __webpack_require__(28197);
 var next_response = __webpack_require__(89335);
 // EXTERNAL MODULE: ./node_modules/next-auth/index.js
 var next_auth = __webpack_require__(49861);
+// EXTERNAL MODULE: ./src/app/api/auth/[...nextauth]/route.js
+var route = __webpack_require__(23394);
 ;// CONCATENATED MODULE: ./src/app/api/admin/route.js
 
 
 
 
+
 async function GET(req) {
-    const serverSession = await (0,next_auth.getServerSession)();
-    if (!serverSession) {
+    const session = await (0,next_auth.getServerSession)(route.authOptions);
+    if (!session) {
+        return next_response/* default */.Z.json({
+            error: "not authorized"
+        }, {
+            status: 401
+        });
+    }
+    const { role } = session.user;
+    if (role !== "admin") {
         return next_response/* default */.Z.json({
             error: "not authorized"
         }, {
@@ -207,7 +218,7 @@ async function GET(req) {
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,5501,9335,9861,2561], () => (__webpack_exec__(46753)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,5501,9335,6810,2561,3394], () => (__webpack_exec__(46753)));
 module.exports = __webpack_exports__;
 
 })();

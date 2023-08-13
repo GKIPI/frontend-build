@@ -71,7 +71,6 @@ var external_bcrypt_default = /*#__PURE__*/__webpack_require__.n(external_bcrypt
 
 const POST = async (req)=>{
     const body = await req.json();
-    console.log(body);
     try {
         await (0,db/* default */.Z)();
     } catch (error) {

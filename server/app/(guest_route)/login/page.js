@@ -295,7 +295,8 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 16505)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/layout.js"],
+'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/loading.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -352,7 +353,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(18038);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_icons_fi__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(95105);
+/* harmony import */ var react_icons_fi__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(95105);
 /* harmony import */ var next_auth_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(74284);
 /* harmony import */ var next_auth_react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_auth_react__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var next_navigation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(57114);
@@ -360,7 +361,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(52451);
 /* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _public_assets_404_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(62948);
+/* harmony import */ var react_toastify__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(34751);
 /* __next_internal_client_entry_do_not_use__ default auto */ 
+
+
 
 
 
@@ -415,10 +419,27 @@ const LoginAvailable = ()=>{
             email,
             password,
             redirect: false
-        });
-        console.log(res);
-        if (res.error) return Error("error");
-        router.push("/user");
+        }).then((0,react_toastify__WEBPACK_IMPORTED_MODULE_7__.toast)("Loged In", {
+            hideProgressBar: true,
+            autoClose: 2000,
+            type: "success"
+        }));
+        if (res.error) {
+            (0,react_toastify__WEBPACK_IMPORTED_MODULE_7__.toast)(`${res.error}`, {
+                hideProgressBar: true,
+                autoClose: 2000,
+                type: "error"
+            });
+            return Error("error");
+        }
+        const session = await (0,next_auth_react__WEBPACK_IMPORTED_MODULE_3__.getSession)();
+        const { role } = session.user;
+        if (role === "user") {
+            router.push("/user");
+        }
+        if (role === "admin") {
+            router.push("/admin/dashboard");
+        }
     };
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         children: [
@@ -426,7 +447,7 @@ const LoginAvailable = ()=>{
                 className: "pt-8 md:pt-10 lg:pt-4 pl-2 md:pl-6 lg:pl-12",
                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
                     href: "/",
-                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fi__WEBPACK_IMPORTED_MODULE_7__.FiArrowLeft, {
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fi__WEBPACK_IMPORTED_MODULE_8__.FiArrowLeft, {
                         className: "h-8 md:h-10 w-max"
                     })
                 })
@@ -495,10 +516,10 @@ const LoginAvailable = ()=>{
                                                     }),
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                         className: "inset-y-0 pr-5 absolute right-0 flex items-center",
-                                                        children: isPasswordHidden ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fi__WEBPACK_IMPORTED_MODULE_7__.FiEyeOff, {
+                                                        children: isPasswordHidden ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fi__WEBPACK_IMPORTED_MODULE_8__.FiEyeOff, {
                                                             size: 20,
                                                             onClick: ()=>setIsPasswordHidden(!isPasswordHidden)
-                                                        }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fi__WEBPACK_IMPORTED_MODULE_7__.FiEye, {
+                                                        }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fi__WEBPACK_IMPORTED_MODULE_8__.FiEye, {
                                                             size: 20,
                                                             onClick: ()=>setIsPasswordHidden(!isPasswordHidden)
                                                         })
@@ -605,7 +626,7 @@ __webpack_require__.r(__webpack_exports__);
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,5137,8132,5105,2451,9739,9688], () => (__webpack_exec__(32200)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,7582,954,5556,3380,5105,2451,3462,3706], () => (__webpack_exec__(32200)));
 module.exports = __webpack_exports__;
 
 })();

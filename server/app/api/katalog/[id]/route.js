@@ -98,8 +98,8 @@ async function PUT(request, params) {
         if (updatedData.title) {
             katalogToUpdate.title = updatedData.title;
         }
-        if (updatedData.prize) {
-            katalogToUpdate.prize = updatedData.prize;
+        if (updatedData.price) {
+            katalogToUpdate.price = updatedData.price;
         }
         if (updatedData.tag) {
             katalogToUpdate.tag = updatedData.tag;
@@ -183,6 +183,92 @@ async function DELETE(request, params) {
 
     
 
+/***/ }),
+
+/***/ 53461:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var mongoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11185);
+/* harmony import */ var mongoose__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mongoose__WEBPACK_IMPORTED_MODULE_0__);
+
+const url = process.env.DATABASE_URL;
+let connection;
+const startDb = async ()=>{
+    try {
+        if (!connection) {
+            connection = await mongoose__WEBPACK_IMPORTED_MODULE_0___default().connect(url);
+        }
+        return connection;
+    } catch (error) {
+        console.error("Error connecting to the database:", error);
+        throw error;
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (startDb);
+
+
+/***/ }),
+
+/***/ 62034:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var mongoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11185);
+/* harmony import */ var mongoose__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mongoose__WEBPACK_IMPORTED_MODULE_0__);
+// Import the Mongoose model and schema
+
+
+const katalogSchema = new mongoose__WEBPACK_IMPORTED_MODULE_0__.Schema({
+    user: {
+        type: String,
+        required: true
+    },
+    image: {
+        type: String,
+        required: true
+    },
+    title: {
+        type: String,
+        required: true
+    },
+    price: {
+        type: Number,
+        required: true
+    },
+    tag: [
+        {
+            type: String,
+            required: false
+        }
+    ],
+    contact: {
+        type: String,
+        required: true
+    },
+    details: {
+        type: String,
+        required: false
+    },
+    approval: {
+        type: Boolean,
+        required: true,
+        default: false
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now,
+        required: true
+    }
+});
+const KatalogModel = mongoose__WEBPACK_IMPORTED_MODULE_0__.models.Katalog || (0,mongoose__WEBPACK_IMPORTED_MODULE_0__.model)("Katalog", katalogSchema);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (KatalogModel);
+
+
 /***/ })
 
 };
@@ -192,7 +278,7 @@ async function DELETE(request, params) {
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,5501,9335,153], () => (__webpack_exec__(68828)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,5501,9335], () => (__webpack_exec__(68828)));
 module.exports = __webpack_exports__;
 
 })();

@@ -61,7 +61,6 @@ var next_response = __webpack_require__(89335);
 
 
 // Handler for the PUT request
-// Handler for the PUT request
 async function PUT(request, params) {
     try {
         // Connect to the database
@@ -95,6 +94,15 @@ async function PUT(request, params) {
         if (updatedData.image) {
             seekerToUpdate.image = updatedData.image;
         }
+        if (updatedData.name) {
+            seekerToUpdate.name = updatedData.name;
+        }
+        if (updatedData.age) {
+            seekerToUpdate.age = updatedData.age;
+        }
+        if (updatedData.sex) {
+            seekerToUpdate.sex = updatedData.sex;
+        }
         if (updatedData.jobTitle) {
             seekerToUpdate.jobTitle = updatedData.jobTitle;
         }
@@ -105,6 +113,9 @@ async function PUT(request, params) {
             seekerToUpdate.tag = updatedData.tag;
         }
         if (updatedData.approval) {
+            seekerToUpdate.approval = updatedData.approval;
+        }
+        if (updatedData.approval === false) {
             seekerToUpdate.approval = updatedData.approval;
         }
         // Save the updated document in the Mongoose model and send the response
@@ -183,6 +194,33 @@ async function DELETE(request, params) {
 
     
 
+/***/ }),
+
+/***/ 53461:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var mongoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11185);
+/* harmony import */ var mongoose__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mongoose__WEBPACK_IMPORTED_MODULE_0__);
+
+const url = process.env.DATABASE_URL;
+let connection;
+const startDb = async ()=>{
+    try {
+        if (!connection) {
+            connection = await mongoose__WEBPACK_IMPORTED_MODULE_0___default().connect(url);
+        }
+        return connection;
+    } catch (error) {
+        console.error("Error connecting to the database:", error);
+        throw error;
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (startDb);
+
+
 /***/ })
 
 };
@@ -192,7 +230,7 @@ async function DELETE(request, params) {
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,5501,9335,1996], () => (__webpack_exec__(78688)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,5501,9335,7326], () => (__webpack_exec__(78688)));
 module.exports = __webpack_exports__;
 
 })();

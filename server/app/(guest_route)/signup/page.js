@@ -76,14 +76,6 @@ module.exports = require("next/dist/shared/lib/app-router-context");
 
 /***/ }),
 
-/***/ 1830:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/get-img-props");
-
-/***/ }),
-
 /***/ 20199:
 /***/ ((module) => {
 
@@ -92,35 +84,11 @@ module.exports = require("next/dist/shared/lib/hash");
 
 /***/ }),
 
-/***/ 66864:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/head");
-
-/***/ }),
-
 /***/ 39569:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("next/dist/shared/lib/hooks-client-context");
-
-/***/ }),
-
-/***/ 52210:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/image-config");
-
-/***/ }),
-
-/***/ 35359:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/image-config-context");
 
 /***/ }),
 
@@ -212,14 +180,6 @@ module.exports = require("next/dist/shared/lib/utils");
 
 /***/ }),
 
-/***/ 98658:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/utils/warn-once");
-
-/***/ }),
-
 /***/ 71017:
 /***/ ((module) => {
 
@@ -295,7 +255,8 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 16505)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/layout.js"],
+'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/loading.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -630,7 +591,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,5137,8132,5105,9739,9688], () => (__webpack_exec__(61443)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,7582,954,5556,5105,3462,3706], () => (__webpack_exec__(61443)));
 module.exports = __webpack_exports__;
 
 })();
