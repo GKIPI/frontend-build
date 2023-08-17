@@ -236,7 +236,7 @@ module.exports = require("url");
 
 /***/ }),
 
-/***/ 76290:
+/***/ 16742:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -272,7 +272,7 @@ __webpack_require__.r(__webpack_exports__);
         'lowongan',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 79709)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(public_route)/lowongan/page.js"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 79709)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(public_route)\\lowongan\\page.js"],
           
         }]
       },
@@ -283,7 +283,7 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 64371)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(public_route)/layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 64371)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(public_route)\\layout.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -295,8 +295,8 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/layout.js"],
-'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/loading.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\layout.js"],
+'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\loading.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -307,7 +307,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       ]
       }.children;
-    const pages = ["/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(public_route)/lowongan/page.js"];
+    const pages = ["D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(public_route)\\lowongan\\page.js"];
 
     
 
@@ -332,14 +332,14 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 47098:
+/***/ 47827:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 79000))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 39206))
 
 /***/ }),
 
-/***/ 79000:
+/***/ 39206:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -358,10 +358,14 @@ var react_ = __webpack_require__(18038);
 ;// CONCATENATED MODULE: ./src/app/(public_route)/lowongan/sidebar.js
 /* __next_internal_client_entry_do_not_use__ default auto */ 
 
-function Sidebar() {
-    const [isLogin, setIsLogin] = useState(false);
-    const [selectedIndustries, setSelectedIndustries] = useState([]);
-    const [selectedTitles, setSelectedTitles] = useState([]);
+function Sidebar({ handleSearch }) {
+    const [isLogin, setIsLogin] = (0,react_.useState)(false);
+    const [selectedIndustries, setSelectedIndustries] = (0,react_.useState)([]);
+    const [selectedTitles, setSelectedTitles] = (0,react_.useState)([]);
+    let passarg = [];
+    const handleClick = ()=>{
+        handleSearch(selectedIndustries, selectedTitles);
+    };
     const handleIndustryChange = (event)=>{
         const industry = event.target.value;
         const isChecked = event.target.checked;
@@ -374,7 +378,6 @@ function Sidebar() {
         } else if (!isChecked && isIndustrySelected) {
             setSelectedIndustries(selectedIndustries.filter((item)=>item !== industry));
         }
-        console.log("Selected Industries:", selectedIndustries);
     };
     const handleTitleChange = (event)=>{
         const title = event.target.value;
@@ -388,195 +391,199 @@ function Sidebar() {
         } else if (!isChecked && isTitleSelected) {
             setSelectedTitles(selectedTitles.filter((item)=>item !== title));
         }
-        console.log("Selected Titles:", selectedTitles);
     };
-    return /*#__PURE__*/ _jsx("div", {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: "lg:min-w-[25%] ",
-        children: isLogin ? /*#__PURE__*/ _jsx("div", {
+        children: isLogin ? /*#__PURE__*/ jsx_runtime_.jsx("div", {
             className: "logined h-full bg-tertiary",
             children: "sidebar not logged in yet"
-        }) : /*#__PURE__*/ _jsx("div", {
+        }) : /*#__PURE__*/ jsx_runtime_.jsx("div", {
             className: "hidden lg:flex not-logined h-full justify-center items-center",
-            children: /*#__PURE__*/ _jsxs("div", {
+            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 className: "border-2 border-primary w-full m-2 p-2 h-min",
                 children: [
-                    /*#__PURE__*/ _jsx("div", {
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: "text-[24px]",
                         children: "Search by:"
                     }),
-                    /*#__PURE__*/ _jsx("div", {
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: "text-[20px] m-2",
                         children: "Industry"
                     }),
-                    /*#__PURE__*/ _jsxs("div", {
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         className: "mx-3",
                         children: [
-                            /*#__PURE__*/ _jsxs("label", {
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("label", {
                                 className: "w-max",
                                 children: [
-                                    /*#__PURE__*/ _jsx("input", {
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
                                         type: "checkbox",
-                                        value: "industrial",
-                                        checked: selectedIndustries.includes("industrial"),
+                                        value: "Industrial / Manufacturing",
+                                        checked: selectedIndustries.includes("Industrial / Manufacturing"),
                                         onChange: handleIndustryChange
                                     }),
                                     "Industrial / Manufacturing"
                                 ]
                             }),
-                            /*#__PURE__*/ _jsx("br", {}),
-                            /*#__PURE__*/ _jsxs("label", {
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("label", {
                                 className: "w-max",
                                 children: [
-                                    /*#__PURE__*/ _jsx("input", {
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
                                         type: "checkbox",
-                                        value: "insurance",
-                                        checked: selectedIndustries.includes("insurance"),
+                                        value: "Insurance",
+                                        checked: selectedIndustries.includes("Insurance"),
                                         onChange: handleIndustryChange
                                     }),
                                     "Insurance"
                                 ]
                             }),
-                            /*#__PURE__*/ _jsx("br", {}),
-                            /*#__PURE__*/ _jsxs("label", {
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("label", {
                                 className: "w-max",
                                 children: [
-                                    /*#__PURE__*/ _jsx("input", {
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
                                         type: "checkbox",
-                                        value: "fmcg",
-                                        checked: selectedIndustries.includes("fmcg"),
+                                        value: "FMCG",
+                                        checked: selectedIndustries.includes("FMCG"),
                                         onChange: handleIndustryChange
                                     }),
                                     "FMCG"
                                 ]
                             }),
-                            /*#__PURE__*/ _jsx("br", {}),
-                            /*#__PURE__*/ _jsxs("label", {
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("label", {
                                 className: "w-max",
                                 children: [
-                                    /*#__PURE__*/ _jsx("input", {
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
                                         type: "checkbox",
-                                        value: "media",
-                                        checked: selectedIndustries.includes("media"),
+                                        value: "Media & Agency",
+                                        checked: selectedIndustries.includes("Media & Agency"),
                                         onChange: handleIndustryChange
                                     }),
                                     "Media & Agency"
                                 ]
                             }),
-                            /*#__PURE__*/ _jsx("br", {}),
-                            /*#__PURE__*/ _jsxs("label", {
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("label", {
                                 className: "w-max",
                                 children: [
-                                    /*#__PURE__*/ _jsx("input", {
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
                                         type: "checkbox",
-                                        value: "financial",
-                                        checked: selectedIndustries.includes("financial"),
+                                        value: "Financial Service",
+                                        checked: selectedIndustries.includes("Financial Service"),
                                         onChange: handleIndustryChange
                                     }),
                                     "Financial Service"
                                 ]
                             }),
-                            /*#__PURE__*/ _jsx("br", {}),
-                            /*#__PURE__*/ _jsxs("label", {
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("label", {
                                 className: "w-max",
                                 children: [
-                                    /*#__PURE__*/ _jsx("input", {
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
                                         type: "checkbox",
-                                        value: "property",
-                                        checked: selectedIndustries.includes("property"),
+                                        value: "Property",
+                                        checked: selectedIndustries.includes("Property"),
                                         onChange: handleIndustryChange
                                     }),
                                     "Property"
                                 ]
                             }),
-                            /*#__PURE__*/ _jsx("br", {}),
-                            /*#__PURE__*/ _jsxs("label", {
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("label", {
                                 className: "w-max",
                                 children: [
-                                    /*#__PURE__*/ _jsx("input", {
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
                                         type: "checkbox",
-                                        value: "retail",
-                                        checked: selectedIndustries.includes("retail"),
+                                        value: "Retail",
+                                        checked: selectedIndustries.includes("Retail"),
                                         onChange: handleIndustryChange
                                     }),
                                     "Retail"
                                 ]
                             }),
-                            /*#__PURE__*/ _jsx("br", {})
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {})
                         ]
                     }),
-                    /*#__PURE__*/ _jsx("div", {
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: "text-[20px] m-2",
                         children: "Title"
                     }),
-                    /*#__PURE__*/ _jsxs("div", {
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         className: "mx-3",
                         children: [
-                            /*#__PURE__*/ _jsxs("label", {
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("label", {
                                 className: "w-max",
                                 children: [
-                                    /*#__PURE__*/ _jsx("input", {
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
                                         type: "checkbox",
-                                        value: "staff",
-                                        checked: selectedTitles.includes("staff"),
+                                        value: "Staff",
+                                        checked: selectedTitles.includes("Staff"),
                                         onChange: handleTitleChange
                                     }),
                                     "Staff"
                                 ]
                             }),
-                            /*#__PURE__*/ _jsx("br", {}),
-                            /*#__PURE__*/ _jsxs("label", {
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("label", {
                                 className: "w-max",
                                 children: [
-                                    /*#__PURE__*/ _jsx("input", {
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
                                         type: "checkbox",
-                                        value: "supervisor",
-                                        checked: selectedTitles.includes("supervisor"),
+                                        value: "Supervisor",
+                                        checked: selectedTitles.includes("Supervisor"),
                                         onChange: handleTitleChange
                                     }),
                                     "Supervisor"
                                 ]
                             }),
-                            /*#__PURE__*/ _jsx("br", {}),
-                            /*#__PURE__*/ _jsxs("label", {
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("label", {
                                 className: "w-max",
                                 children: [
-                                    /*#__PURE__*/ _jsx("input", {
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
                                         type: "checkbox",
-                                        value: "manager",
-                                        checked: selectedTitles.includes("manager"),
+                                        value: "Manager",
+                                        checked: selectedTitles.includes("Manager"),
                                         onChange: handleTitleChange
                                     }),
                                     "Manager"
                                 ]
                             }),
-                            /*#__PURE__*/ _jsx("br", {}),
-                            /*#__PURE__*/ _jsxs("label", {
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("label", {
                                 className: "w-max",
                                 children: [
-                                    /*#__PURE__*/ _jsx("input", {
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
                                         type: "checkbox",
-                                        value: "generalManager",
-                                        checked: selectedTitles.includes("generalManager"),
+                                        value: "General Manager",
+                                        checked: selectedTitles.includes("General Manager"),
                                         onChange: handleTitleChange
                                     }),
                                     "General Manager"
                                 ]
                             }),
-                            /*#__PURE__*/ _jsx("br", {}),
-                            /*#__PURE__*/ _jsxs("label", {
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("label", {
                                 className: "w-max",
                                 children: [
-                                    /*#__PURE__*/ _jsx("input", {
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
                                         type: "checkbox",
-                                        value: "dicrector",
-                                        checked: selectedTitles.includes("dicrector"),
+                                        value: "Director",
+                                        checked: selectedTitles.includes("Director"),
                                         onChange: handleTitleChange
                                     }),
                                     "Director"
                                 ]
                             }),
-                            /*#__PURE__*/ _jsx("br", {})
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {})
                         ]
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                        onClick: handleClick,
+                        className: " px-4 py-1 bg-zinc-800 text-slate-200 font-montserrat text-xl hover:outline hover:outline-2 hover:bg-transparent hover:outline-zinc-800 hover:text-zinc-800 transition-colors",
+                        children: "Filter"
                     })
                 ]
             })
@@ -584,13 +591,6 @@ function Sidebar() {
     });
 }
 
-// EXTERNAL MODULE: ./node_modules/next/image.js
-var next_image = __webpack_require__(52451);
-var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
-;// CONCATENATED MODULE: ./public/buildings.png
-/* harmony default export */ const buildings = ({"src":"/_next/static/media/buildings.897f95a8.png","height":20,"width":20,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAMFBMVEVMaXEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACbsZG/AAAAEHRSTlMAnYOL3tm37wx7WsQXz2lCa9kmBQAAAAlwSFlzAAALEwAACxMBAJqcGAAAADtJREFUeJwdiMcRwDAMw0jJai7x/ttGCT7AAUDOJ9Fkcawvtsqw9p2if0hJnw2oCi1Y4ImwUIev43TyBSipASyaKG96AAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":8});
-;// CONCATENATED MODULE: ./public/map.png
-/* harmony default export */ const map = ({"src":"/_next/static/media/map.8647dd3f.png","height":20,"width":20,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAJFBMVEVMaXEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB/eFplAAAAC3RSTlMAtUgCWSLxp27lFhL9RDoAAAAJcEhZcwAACxMAAAsTAQCanBgAAAA0SURBVHicHYoHDgAwCALRDgf//2+phADJAcDNHJKzin8Zu2kawUzGIGlOwSEL596jkvdWPCb0AQs7dnjwAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":8});
 // EXTERNAL MODULE: ./src/app/loading.js
 var loading = __webpack_require__(45586);
 // EXTERNAL MODULE: ./src/app/components/modal.js
@@ -600,303 +600,19 @@ var next_link = __webpack_require__(11440);
 var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 // EXTERNAL MODULE: ./helper/imageDownloader.js
 var imageDownloader = __webpack_require__(65634);
-// EXTERNAL MODULE: ./node_modules/swiper/swiper-react.mjs + 3 modules
-var swiper_react = __webpack_require__(2797);
-// EXTERNAL MODULE: ./node_modules/swiper/swiper.css
-var swiper = __webpack_require__(63754);
-// EXTERNAL MODULE: ./node_modules/swiper/modules/navigation.css
-var navigation = __webpack_require__(12119);
-// EXTERNAL MODULE: ./node_modules/swiper/modules/pagination.css
-var pagination = __webpack_require__(23141);
-// EXTERNAL MODULE: ./node_modules/swiper/modules/index.mjs + 26 modules
-var modules = __webpack_require__(11987);
-;// CONCATENATED MODULE: ./src/app/(public_route)/lowongan/page.js
-/* __next_internal_client_entry_do_not_use__ default auto */ 
+// EXTERNAL MODULE: ./node_modules/next/image.js
+var next_image = __webpack_require__(52451);
+var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
+;// CONCATENATED MODULE: ./public/buildings.png
+/* harmony default export */ const buildings = ({"src":"/_next/static/media/buildings.897f95a8.png","height":20,"width":20,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAMFBMVEVMaXEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACbsZG/AAAAEHRSTlMAnYOL3tm37wx7WsQXz2lCa9kmBQAAAAlwSFlzAAALEwAACxMBAJqcGAAAADpJREFUeJwdxkkSwDAIBLEeMOA1/v9vU4lOAvp8OkAfauvLdmsB3Gn+x4ZZiw3upigNdKqiPMl1Uim9KKkBLFwmtI8AAAAASUVORK5CYII=","blurWidth":8,"blurHeight":8});
+;// CONCATENATED MODULE: ./public/map.png
+/* harmony default export */ const map = ({"src":"/_next/static/media/map.8647dd3f.png","height":20,"width":20,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAJFBMVEVMaXEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB/eFplAAAAC3RSTlMAtUgCWSLxp24W5QnYVeIAAAAJcEhZcwAACxMAAAsTAQCanBgAAAA0SURBVHicHcnJDQAgDASxyQGBbP/9IvKzZMDNHMDVrS/TvTKgdI5qSpqiNBOsvRfxlUnwACcGAQuTHnfsAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":8});
+;// CONCATENATED MODULE: ./src/app/(public_route)/lowongan/card.js
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-function Lowongan() {
-    const [isLoading, setIsLoading] = (0,react_.useState)(true);
-    const [activePage, setActivePage] = (0,react_.useState)(true);
-    const [isModalOpen, setIsModalOpen] = (0,react_.useState)(false);
-    const [selectedModalContent, setSelectedModalContent] = (0,react_.useState)(null);
-    const [selectedIndustries, setSelectedIndustries] = (0,react_.useState)([]);
-    const [selectedTitles, setSelectedTitles] = (0,react_.useState)([]);
-    (0,react_.useEffect)(()=>{
-        if (activePage) {
-            fetch(`/api/seeker`).then((response)=>{
-                if (!response.ok) {
-                    throw new Error("Network response was not ok");
-                }
-                return response.json();
-            }).then((data)=>{
-                setCards(data.seekers);
-                setIsLoading(false);
-            }).catch((error)=>{
-                console.error("Error fetching data:", error);
-            });
-        } else {
-            fetch(`/api/vacancy`).then((response)=>{
-                if (!response.ok) {
-                    throw new Error("Network response was not ok");
-                }
-                return response.json();
-            }).then((data)=>{
-                setCards(data.vacancies);
-                setIsLoading(false);
-            }).catch((error)=>{
-                console.error("Error fetching data:", error);
-            });
-        }
-    }, [
-        activePage
-    ]);
-    const onSelect = ()=>{
-        setIsLoading(true);
-        setActivePage(!activePage);
-        setCards([]);
-    };
-    const handleSearch = ()=>{
-        console.log("selected ind:", selectedIndustries);
-        console.log("selected tit:", selectedTitles);
-    };
-    const [cards, setCards] = (0,react_.useState)([]);
-    const chunkArray = (arr, size)=>{
-        const chunkedArray = [];
-        for(let i = 0; i < arr.length; i += size){
-            chunkedArray.push(arr.slice(i, i + size));
-        }
-        return chunkedArray;
-    };
-    const chunkedCards = chunkArray(cards, 6);
-    return /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
-        children: isLoading ? /*#__PURE__*/ jsx_runtime_.jsx(loading/* default */.Z, {}) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
-            className: "mim-h-screen w-screen overflow-x-hidden overflow-y-hidden text-[24px]",
-            children: [
-                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: "w-full flex justify-center items-center",
-                    children: [
-                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            onClick: onSelect,
-                            className: "font-montserrat font-[900] m-7 cursor-pointer hover:bg-primary hover:text-white p-2 " + (activePage ? "text-black" : "text-black/25"),
-                            children: "Job Seeker"
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            onClick: onSelect,
-                            className: "font-montserrat font-[900] m-7 cursor-pointer hover:bg-primary hover:text-white p-2 " + (activePage ? "text-black/25" : "text-black"),
-                            children: "Job Vacancies"
-                        })
-                    ]
-                }),
-                /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                    className: "min-h-[80vh] flex",
-                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: "container mx-auto px-4 sm:px-8 flex-grow w-[75%]",
-                        children: [
-                            chunkedCards.length === 0 ? /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: "text-center mt-8",
-                                children: /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                                    className: "text-2xl font-bold mb-4",
-                                    children: "There is no data uploaded yet."
-                                })
-                            }) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
-                                children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx(swiper_react/* Swiper */.tq, {
-                                        modules: [
-                                            modules/* Navigation */.W_,
-                                            modules/* Pagination */.tl,
-                                            modules/* Scrollbar */.LW,
-                                            modules/* A11y */.s5
-                                        ],
-                                        slidesPerView: 1,
-                                        pagination: {
-                                            clickable: true
-                                        },
-                                        navigation: true,
-                                        children: chunkedCards.map((card, index)=>/*#__PURE__*/ jsx_runtime_.jsx(swiper_react/* SwiperSlide */.o5, {
-                                                children: /*#__PURE__*/ jsx_runtime_.jsx(Card, {
-                                                    array: card,
-                                                    type: activePage,
-                                                    selected: selectedModalContent,
-                                                    onClicked: (card)=>{
-                                                        setIsModalOpen(true);
-                                                        setSelectedModalContent(card);
-                                                    }
-                                                })
-                                            }, index))
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "swiper-pagination"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: "swiper-pagination"
-                            })
-                        ]
-                    })
-                }),
-                /*#__PURE__*/ jsx_runtime_.jsx(modal/* default */.Z, {
-                    isOpen: isModalOpen,
-                    onClose: ()=>setIsModalOpen(false),
-                    title: selectedModalContent?.jobTitle,
-                    content: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
-                        children: [
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: "w-full flex gap-6",
-                                children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "w-3/5",
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                            href: (0,imageDownloader.parseBlobToURL)(selectedModalContent?.image),
-                                            target: "_blank",
-                                            children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                                src: selectedModalContent?.image
-                                            })
-                                        })
-                                    }),
-                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: "flex flex-col gap-4 w-full",
-                                        children: [
-                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                className: "flex items-center",
-                                                children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                    className: "w-full font-poppins text-4xl font-semibold",
-                                                    children: selectedModalContent?.jobTitle
-                                                })
-                                            }),
-                                            activePage ? /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                                className: "border-2 p-2 rounded-md ",
-                                                children: [
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                        className: "flex items-center",
-                                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                                                            className: "w-full font-montserrat font-semibold",
-                                                            children: [
-                                                                "name: ",
-                                                                selectedModalContent?.name
-                                                            ]
-                                                        })
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                        className: "flex items-center",
-                                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                                                            className: "w-full font-montserrat font-medium",
-                                                            children: [
-                                                                "education: ",
-                                                                selectedModalContent?.education
-                                                            ]
-                                                        })
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                        className: "flex items-center",
-                                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                                                            className: "w-full font-montserrat font-medium",
-                                                            children: [
-                                                                "sex: ",
-                                                                selectedModalContent?.sex
-                                                            ]
-                                                        })
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                        className: "flex items-center",
-                                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                                                            className: "w-full font-montserrat font-medium",
-                                                            children: [
-                                                                "tag: ",
-                                                                selectedModalContent?.tag[0]
-                                                            ]
-                                                        })
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                        className: "flex items-center",
-                                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                                                            className: "w-full font-montserrat font-medium",
-                                                            children: [
-                                                                "title job: ",
-                                                                selectedModalContent?.tag[1]
-                                                            ]
-                                                        })
-                                                    })
-                                                ]
-                                            }) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                                className: "border-2 p-2 rounded-md ",
-                                                children: [
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                        className: "flex items-center",
-                                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                                                            className: "w-full font-montserrat font-semibold",
-                                                            children: [
-                                                                "location: ",
-                                                                selectedModalContent?.location
-                                                            ]
-                                                        })
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                        className: "flex items-center",
-                                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                                                            className: "w-full font-montserrat font-medium",
-                                                            children: [
-                                                                "notes: ",
-                                                                selectedModalContent?.notes
-                                                            ]
-                                                        })
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                        className: "flex items-center",
-                                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                                                            className: "w-full font-montserrat font-medium",
-                                                            children: [
-                                                                "tag: ",
-                                                                selectedModalContent?.tag[0]
-                                                            ]
-                                                        })
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                        className: "flex items-center",
-                                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                                                            className: "w-full font-montserrat font-medium",
-                                                            children: [
-                                                                "title job: ",
-                                                                selectedModalContent?.tag[1]
-                                                            ]
-                                                        })
-                                                    })
-                                                ]
-                                            })
-                                        ]
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: "flex justify-end gap-4",
-                                children: /*#__PURE__*/ jsx_runtime_.jsx("button", {
-                                    onClick: ()=>{
-                                        setIsModalOpen(false);
-                                    },
-                                    className: " px-5 py-1 text-lg text-zinc-800 hover:bg-slate-200 transition-colors",
-                                    children: "Tutup"
-                                })
-                            })
-                        ]
-                    })
-                })
-            ]
-        })
-    });
-}
-const Card = ({ array, type, onClicked })=>{
+function Card({ array, type, onClicked }) {
     if (type === false) return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: "grid gap-2 sm:gap-5 grid-cols-2 lg:grid-cols-3 mx-0 p-[5%] xs:p-5 sm:p-8 md:p-12 w-full overflow-x-hidden overflow-y-hidden",
         children: array.map((card, i)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -904,7 +620,7 @@ const Card = ({ array, type, onClicked })=>{
                 className: "max-h-[370px] w-full shadow-md p-4",
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "bg-slate-300 h-[250px] w-full overflow-y-hidden",
+                        className: "bg-slate-300 max-h-[250px] w-full overflow-y-hidden",
                         children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                             src: card.image,
                             alt: "Preview"
@@ -959,7 +675,7 @@ const Card = ({ array, type, onClicked })=>{
                 className: "max-h-[370px] w-full shadow-md p-4",
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "bg-slate-300 h-[250px] w-full overflow-y-hidden",
+                        className: "bg-slate-300 max-h-[250px] w-full overflow-y-hidden",
                         children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                             src: card.image,
                             alt: "Preview"
@@ -988,7 +704,479 @@ const Card = ({ array, type, onClicked })=>{
                 ]
             }, i))
     });
-};
+}
+
+// EXTERNAL MODULE: ./node_modules/react-icons/io/index.esm.js
+var index_esm = __webpack_require__(12772);
+// EXTERNAL MODULE: ./node_modules/react-icons/bs/index.esm.js
+var bs_index_esm = __webpack_require__(60930);
+// EXTERNAL MODULE: ./node_modules/swiper/swiper-react.mjs + 3 modules
+var swiper_react = __webpack_require__(2797);
+// EXTERNAL MODULE: ./node_modules/swiper/swiper.css
+var swiper = __webpack_require__(63754);
+// EXTERNAL MODULE: ./node_modules/swiper/modules/navigation.css
+var navigation = __webpack_require__(12119);
+// EXTERNAL MODULE: ./node_modules/swiper/modules/pagination.css
+var pagination = __webpack_require__(23141);
+// EXTERNAL MODULE: ./node_modules/swiper/modules/index.mjs + 26 modules
+var modules = __webpack_require__(11987);
+;// CONCATENATED MODULE: ./src/app/(public_route)/lowongan/page.js
+/* __next_internal_client_entry_do_not_use__ default auto */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function Lowongan() {
+    const [isLoading, setIsLoading] = (0,react_.useState)(true);
+    const [isLoadingData, setIsLoadingData] = (0,react_.useState)(false);
+    const [activePage, setActivePage] = (0,react_.useState)(true);
+    const [page, setPage] = (0,react_.useState)(1);
+    const [filteredCards, setFilteredCards] = (0,react_.useState)([]);
+    const [swiper, setSwiper] = (0,react_.useState)(null);
+    const [lastPageReached, setLastPageReached] = (0,react_.useState)(false);
+    const [isModalOpen, setIsModalOpen] = (0,react_.useState)(false);
+    const [selectedModalContent, setSelectedModalContent] = (0,react_.useState)(null);
+    const [selectedIndustries, setSelectedIndustries] = (0,react_.useState)([]);
+    const [cards, setCards] = (0,react_.useState)([]);
+    const [selectedTitles, setSelectedTitles] = (0,react_.useState)([]);
+    (0,react_.useEffect)(()=>{
+        setFilteredCards(filterCards(selectedIndustries, selectedTitles));
+    }, [
+        cards
+    ]);
+    (0,react_.useEffect)(()=>{
+        setLastPageReached(false);
+        if (activePage) {
+            fetch(`/api/seeker?page=1`).then((response)=>{
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return response.json();
+            }).then((data)=>{
+                setCards(data.seekers);
+                setFilteredCards(data.seekers);
+                setIsLoading(false);
+                setPage(1);
+            }).catch((error)=>{
+                console.error("Error fetching data:", error);
+            });
+        } else {
+            fetch(`/api/vacancy?page=1`).then((response)=>{
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return response.json();
+            }).then((data)=>{
+                setCards(data.vacancies);
+                setFilteredCards(data.vacancies);
+                setIsLoading(false);
+                setPage(1);
+            }).catch((error)=>{
+                console.error("Error fetching data:", error);
+            });
+        }
+    }, [
+        activePage
+    ]);
+    const onSelect = ()=>{
+        setIsLoading(true);
+        setActivePage(!activePage);
+        setCards([]);
+        setFilteredCards([]);
+    };
+    const filterCards = (selectedIndustries, selectedTitles)=>{
+        if (selectedIndustries.length == 0 && selectedTitles == 0) {
+            return cards;
+        }
+        const filteredCards = cards.filter((card)=>{
+            const cardTags = card.tag || [];
+            const industryMatch = selectedIndustries.some((industry)=>cardTags.includes(industry));
+            const titleMatch = selectedTitles.some((title)=>cardTags.includes(title));
+            return industryMatch || titleMatch;
+        });
+        return filteredCards;
+    };
+    const handleSearch = (selectedIndustries, selectedTitles)=>{
+        setFilteredCards(filterCards(selectedIndustries, selectedTitles));
+    };
+    const handleSlideChange = ()=>{
+        if (swiper) {
+            const { activeIndex } = swiper;
+            if (activeIndex === chunkedCards.length - 1 && !lastPageReached) {
+                fetchMoreData();
+            }
+        }
+    };
+    const fetchMoreData = ()=>{
+        const nextPage = page + 1;
+        const apiUrl = activePage ? `/api/seeker?page=${nextPage}` : `/api/vacancy?page=${nextPage}`;
+        fetch(apiUrl).then((response)=>{
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+            return response.json();
+        }).then((data)=>{
+            if (activePage == false) {
+                if (data.vacancies && data.vacancies.length === 0) {
+                    setLastPageReached(true);
+                    setIsLoadingData(false);
+                } else {
+                    setCards([
+                        ...cards,
+                        ...data.vacancies
+                    ]);
+                    setPage(nextPage);
+                    setIsLoadingData(false);
+                    swiper.slideNext();
+                }
+            } else {
+                if (data.seekers && data.seekers.length === 0) {
+                    setLastPageReached(true);
+                    setIsLoadingData(false);
+                } else {
+                    setCards([
+                        ...cards,
+                        ...data.seekers
+                    ]);
+                    setPage(nextPage);
+                    setIsLoadingData(false);
+                    swiper.slideNext();
+                }
+            }
+        }).catch((error)=>{
+            console.error("Error fetching data:", error);
+        });
+    };
+    const chunkArray = (arr, size)=>{
+        const chunkedArray = [];
+        for(let i = 0; i < arr.length; i += size){
+            chunkedArray.push(arr.slice(i, i + size));
+        }
+        return chunkedArray;
+    };
+    const chunkedCards = chunkArray(filteredCards, 6);
+    return /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+        children: isLoading ? /*#__PURE__*/ jsx_runtime_.jsx(loading/* default */.Z, {}) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
+            className: "mim-h-screen w-screen overflow-x-hidden overflow-y-hidden text-[24px]",
+            children: [
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                    className: "w-full flex justify-center items-center",
+                    children: [
+                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            onClick: onSelect,
+                            className: "font-montserrat font-[900] m-7 cursor-pointer hover:bg-primary hover:text-white p-2 " + (activePage ? "text-black" : "text-black/25"),
+                            children: "Job Seeker"
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            onClick: onSelect,
+                            className: "font-montserrat font-[900] m-7 cursor-pointer hover:bg-primary hover:text-white p-2 " + (activePage ? "text-black/25" : "text-black"),
+                            children: "Job Vacancies"
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                    className: "min-h-[80vh] flex",
+                    children: [
+                        /*#__PURE__*/ jsx_runtime_.jsx(Sidebar, {
+                            handleSearch: handleSearch,
+                            selectedIndustries: selectedIndustries,
+                            setSelectedIndustries: setSelectedIndustries,
+                            selectedTitles: selectedTitles,
+                            setSelectedTitles: setSelectedTitles
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            className: "container mx-auto px-4 sm:px-8 flex-grow w-[75%]",
+                            children: [
+                                chunkedCards.length === 0 ? /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    className: "text-center mt-8",
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                        className: "text-2xl font-bold mb-4",
+                                        children: "There is no data uploaded yet."
+                                    })
+                                }) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+                                    children: [
+                                        isLoadingData ? /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                            className: "absolute top-0 left-0 right-0 bottom-0 z-[900] flex justify-center items-center",
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: "spinner"
+                                            })
+                                        }) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)(swiper_react/* Swiper */.tq, {
+                                            modules: [
+                                                modules/* Navigation */.W_,
+                                                modules/* Pagination */.tl,
+                                                modules/* Scrollbar */.LW,
+                                                modules/* A11y */.s5
+                                            ],
+                                            slidesPerView: 1,
+                                            pagination: {
+                                                clickable: true
+                                            },
+                                            onSwiper: setSwiper,
+                                            onSlideChange: handleSlideChange,
+                                            children: [
+                                                chunkedCards.map((card, index)=>/*#__PURE__*/ jsx_runtime_.jsx(swiper_react/* SwiperSlide */.o5, {
+                                                        children: /*#__PURE__*/ jsx_runtime_.jsx(Card, {
+                                                            array: card,
+                                                            type: activePage,
+                                                            selected: selectedModalContent,
+                                                            onClicked: (card)=>{
+                                                                setIsModalOpen(true);
+                                                                setSelectedModalContent(card);
+                                                            }
+                                                        })
+                                                    }, index)),
+                                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                    className: "z-[1] hidden cursor-pointer unselectable lg:block absolute left-[-20px] text-[80px] top-[50%] translate-y-[-50%] ",
+                                                    onClick: ()=>{
+                                                        if (swiper.activeIndex === 0) return;
+                                                        swiper.slidePrev();
+                                                    },
+                                                    children: /*#__PURE__*/ jsx_runtime_.jsx(index_esm/* IoIosArrowBack */.u1R, {})
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                    className: "z-[1] hidden cursor-pointer unselectable lg:block absolute right-[-20px] text-[80px] top-[50%] translate-y-[-50%]",
+                                                    onClick: ()=>{
+                                                        if (swiper.activeIndex + 1 === page) {
+                                                            if (lastPageReached) return;
+                                                            setIsLoadingData(true);
+                                                            fetchMoreData();
+                                                        }
+                                                        swiper.slideNext();
+                                                    },
+                                                    children: /*#__PURE__*/ jsx_runtime_.jsx(index_esm/* IoIosArrowForward */.hjJ, {})
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                            className: "swiper-pagination"
+                                        }),
+                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                            className: "flex lg:hidden gap-8 text-[35px] sm:text-[40px] z-[100] justify-center",
+                                            children: [
+                                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                    onClick: ()=>{
+                                                        if (swiper.activeIndex == 0) return;
+                                                        swiper.slidePrev();
+                                                    },
+                                                    children: /*#__PURE__*/ jsx_runtime_.jsx(index_esm/* IoIosArrowBack */.u1R, {})
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                    onClick: ()=>{
+                                                        if (swiper.activeIndex + 1 === page) {
+                                                            if (lastPageReached) return;
+                                                            setIsLoadingData(true);
+                                                            fetchMoreData();
+                                                        }
+                                                        swiper.slideNext();
+                                                    },
+                                                    children: /*#__PURE__*/ jsx_runtime_.jsx(index_esm/* IoIosArrowForward */.hjJ, {})
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    className: "swiper-pagination"
+                                })
+                            ]
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(modal/* default */.Z, {
+                    isOpen: isModalOpen,
+                    onClose: ()=>setIsModalOpen(false),
+                    title: selectedModalContent?.jobTitle,
+                    content: /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            className: "w-full lg:flex gap-6",
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    className: "w-3/5",
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                        href: (0,imageDownloader.parseBlobToURL)(selectedModalContent?.image),
+                                        target: "_blank",
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                            src: selectedModalContent?.image
+                                        })
+                                    })
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                    className: "flex flex-col gap-4 w-full",
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                            className: "flex items-center",
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                className: "w-full font-poppins text-4xl font-semibold",
+                                                children: selectedModalContent?.jobTitle
+                                            })
+                                        }),
+                                        activePage ? /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                            className: "border-2 p-2 rounded-md bg-tertiary",
+                                            children: [
+                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                    className: "flex items-center",
+                                                    children: [
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                            className: "font-montserrat font-semibold",
+                                                            children: selectedModalContent?.name
+                                                        }),
+                                                        " ",
+                                                        selectedModalContent?.sex === "Male" ? /*#__PURE__*/ jsx_runtime_.jsx(bs_index_esm/* BsGenderMale */.SxU, {}) : /*#__PURE__*/ jsx_runtime_.jsx(bs_index_esm/* BsGenderFemale */.c1L, {}),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                            className: "font-montserrat text-xs",
+                                                            children: selectedModalContent?.sex
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                    className: "flex items-center",
+                                                    children: [
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                            className: "text-lg w-full font-montserrat font-medium",
+                                                            children: "Education: "
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                            className: "text-lg bg-white px-2 my-1",
+                                                            children: selectedModalContent?.education
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                    className: "flex items-center",
+                                                    children: [
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                            className: "text-lg w-full font-montserrat font-medium",
+                                                            children: "Skills: "
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                            className: "text-lg  bg-white px-2 my-1",
+                                                            children: selectedModalContent?.skills
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                    className: "flex items-center",
+                                                    children: [
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                            className: "text-lg w-full font-montserrat font-medium",
+                                                            children: "Age: "
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                            className: "text-lg  bg-white px-2 my-1",
+                                                            children: selectedModalContent?.age
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                    className: "flex flex-row justify-between",
+                                                    children: [
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                            className: "flex items-center",
+                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                                className: "w-full font-montserrat text-sm",
+                                                                children: selectedModalContent?.tag[0]
+                                                            })
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                            className: "flex items-center",
+                                                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                                                className: "w-full font-montserrat text-sm",
+                                                                children: [
+                                                                    " ",
+                                                                    selectedModalContent?.tag[1]
+                                                                ]
+                                                            })
+                                                        })
+                                                    ]
+                                                })
+                                            ]
+                                        }) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                            className: "border-2 p-2 rounded-md bg-tertiary",
+                                            children: [
+                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                    className: "flex items-center",
+                                                    children: [
+                                                        /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                                            src: map
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                            className: "mx-1 w-full font-montserrat text-lg",
+                                                            children: selectedModalContent?.location
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                    className: "flex flex-col",
+                                                    children: [
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                            className: "font-montserrat font-medium",
+                                                            children: "notes: "
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                            className: "whitespace-pre-wrap text-lg bg-white px-2",
+                                                            children: selectedModalContent?.notes
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                    className: "flex items-center justify-between",
+                                                    children: [
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                            className: " font-montserrat font-medium",
+                                                            children: "company: "
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                            className: "text-lg  bg-white px-2",
+                                                            children: selectedModalContent?.company
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                    className: "flex flex-row justify-between",
+                                                    children: [
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                            className: "flex items-center",
+                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                                className: "w-full font-montserrat text-sm",
+                                                                children: selectedModalContent?.tag[0]
+                                                            })
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                            className: "flex items-center",
+                                                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                                                className: "w-full font-montserrat text-sm",
+                                                                children: [
+                                                                    " ",
+                                                                    selectedModalContent?.tag[1]
+                                                                ]
+                                                            })
+                                                        })
+                                                    ]
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                })
+                            ]
+                        })
+                    })
+                })
+            ]
+        })
+    });
+}
 
 
 /***/ }),
@@ -1005,7 +1193,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(61363);
 
-const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(public_route)/lowongan/page.js`)
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\kuliah\cuan\frontend-gkpi\src\app\(public_route)\lowongan\page.js`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -1026,7 +1214,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,7582,954,5556,3380,2451,3500,4178,1255,6482,2215,3155,3462,9229,5589,1736], () => (__webpack_exec__(76290)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,7582,954,5556,3380,2451,6482,930,3500,4178,1255,2215,1792,7706,5634,7469,2062], () => (__webpack_exec__(16742)));
 module.exports = __webpack_exports__;
 
 })();

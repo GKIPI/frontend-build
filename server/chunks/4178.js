@@ -8,7 +8,7 @@ exports.modules = {
 
 /* __next_internal_client_entry_do_not_use__  cjs */ 
 const { createProxy } = __webpack_require__(61363);
-module.exports = createProxy("/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/node_modules/next/dist/client/image-component.js");
+module.exports = createProxy("D:\\kuliah\\cuan\\frontend-gkpi\\node_modules\\next\\dist\\client\\image-component.js");
  //# sourceMappingURL=image-component.js.map
 
 

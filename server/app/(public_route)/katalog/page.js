@@ -236,7 +236,7 @@ module.exports = require("url");
 
 /***/ }),
 
-/***/ 64679:
+/***/ 85917:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -272,7 +272,7 @@ __webpack_require__.r(__webpack_exports__);
         'katalog',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 15014)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(public_route)/katalog/page.js"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 15014)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(public_route)\\katalog\\page.js"],
           
         }]
       },
@@ -283,7 +283,7 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 64371)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(public_route)/layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 64371)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(public_route)\\layout.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -295,8 +295,8 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/layout.js"],
-'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/loading.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\layout.js"],
+'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\loading.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -307,7 +307,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       ]
       }.children;
-    const pages = ["/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(public_route)/katalog/page.js"];
+    const pages = ["D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(public_route)\\katalog\\page.js"];
 
     
 
@@ -332,10 +332,28 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 65476:
+/***/ 52707:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4384))
+
+/***/ }),
+
+/***/ 99089:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   toRupiah: () => (/* binding */ toRupiah)
+/* harmony export */ });
+const toRupiah = (number)=>{
+    return new Intl.NumberFormat("id-ID", {
+        style: "currency",
+        currency: "IDR"
+    }).format(number);
+};
+
 
 /***/ }),
 
@@ -349,38 +367,21 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 const _interop_require_default = __webpack_require__(82147);
 const _jsxruntime = __webpack_require__(56786);
-const _react = __webpack_require__(18038);
 const _priceFormatter = __webpack_require__(99089);
 const _link = /*#__PURE__*/ _interop_require_default._(__webpack_require__(11440));
 const _imageDownloader = __webpack_require__(65634);
 const KatalogDetailsModal = ({ isOpen, onClose, catalog })=>{
-    // const [currKatalog, setCurrKatalog] = useState({
-    //     _id: "",
-    //     title: "Loading...",
-    //     image: ["Loading..."],
-    //     price: "Loading...",
-    //     details: "Loading...",
-    //     image: "",
-    //     location: "Loading...",
-    //     notes: "Loading...",
-    //     tag: ["Loading...", "Loading..."],
-    //     approval: true,
-    // });
-    // useEffect(() => {
-    //     const _data = arr.filter(item => item._id === catalogId)
-    //     setCurrKatalog(_data[0])
-    // }, [isOpen]);
     if (!isOpen) return null;
     return /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
         className: "fixed inset-0 flex items-center justify-center z-50 bg-slate-800/25 backdrop-blur-sm",
         children: /*#__PURE__*/ (0, _jsxruntime.jsxs)("div", {
-            className: "bg-slate-50 w-3/5 min-h-[35rem] max-h-[35rem] overflow-auto shadow-lg space-y-28 rounded-lg px-5 py-16 font-montserrat",
+            className: "bg-slate-50 w-[90%] md:w-3/5 min-h-[35rem] max-h-[35rem] overflow-auto shadow-lg space-y-28 rounded-lg px-5 py-16 font-montserrat",
             children: [
                 /*#__PURE__*/ (0, _jsxruntime.jsxs)("div", {
-                    className: "w-full flex gap-6",
+                    className: "w-full flex flex-col md:flex-row gap-6",
                     children: [
                         /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
-                            className: "w-3/5",
+                            className: "w-4/5 md:w-3/5",
                             children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_link.default, {
                                 href: (0, _imageDownloader.parseBlobToURL)(catalog.image),
                                 target: "_blank",
@@ -395,7 +396,7 @@ const KatalogDetailsModal = ({ isOpen, onClose, catalog })=>{
                                 /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
                                     className: "flex items-center",
                                     children: /*#__PURE__*/ (0, _jsxruntime.jsx)("p", {
-                                        className: "w-full font-poppins text-4xl font-semibold",
+                                        className: "w-full font-poppins text-2xl md:text-4xl font-semibold",
                                         children: catalog.title
                                     })
                                 }),
@@ -422,7 +423,7 @@ const KatalogDetailsModal = ({ isOpen, onClose, catalog })=>{
                                 /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
                                     className: "flex items-center",
                                     children: /*#__PURE__*/ (0, _jsxruntime.jsx)("p", {
-                                        className: "w-full font-montserrat font-medium",
+                                        className: "whitespace-pre-wrap w-full font-montserrat font-medium",
                                         children: catalog.details
                                     })
                                 })
@@ -439,7 +440,7 @@ const KatalogDetailsModal = ({ isOpen, onClose, catalog })=>{
                             children: "Tutup"
                         }),
                         /*#__PURE__*/ (0, _jsxruntime.jsx)(_link.default, {
-                            href: "https://www.instagram.com/komunitas_profesi/",
+                            href: `https://wa.me/62${catalog.contact}`,
                             target: "_blank",
                             children: /*#__PURE__*/ (0, _jsxruntime.jsx)("button", {
                                 className: "bg-zinc-800 px-5 py-1 text-lg text-slate-200 hover:bg-transparent hover:text-zinc-800 hover:outline hover:outline-2 hover:outline-zinc-800 transition-colors",
@@ -607,7 +608,7 @@ function Katalog() {
                         className: "w-full",
                         children: [
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
-                                className: "text-center font-playfairDisplay font-semibold text-2xl italic text-[#B68D40]",
+                                className: "text-center font-playfairDisplay font-semibold text-base md:text-2xl italic text-[#B68D40]",
                                 children: (0,_helper_priceFormatter__WEBPACK_IMPORTED_MODULE_5__.toRupiah)(obj.price)
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
@@ -639,11 +640,6 @@ function Katalog() {
     (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(()=>{
         getCatalogData();
     }, []);
-    (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(()=>{
-        console.log(selectedCatalogs);
-    }, [
-        selectedCatalogs
-    ]);
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
@@ -693,7 +689,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(61363);
 
-const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(public_route)/katalog/page.js`)
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\kuliah\cuan\frontend-gkpi\src\app\(public_route)\katalog\page.js`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -714,7 +710,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,7582,954,5556,3380,2451,930,4178,1255,6482,2215,3462,5589,1736,1705], () => (__webpack_exec__(64679)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,7582,954,5556,3380,2451,6482,930,4178,1255,2215,7706,5634,2062], () => (__webpack_exec__(85917)));
 module.exports = __webpack_exports__;
 
 })();

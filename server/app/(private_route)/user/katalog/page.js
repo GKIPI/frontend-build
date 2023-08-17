@@ -196,7 +196,7 @@ module.exports = require("url");
 
 /***/ }),
 
-/***/ 16827:
+/***/ 72993:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -235,7 +235,7 @@ __webpack_require__.r(__webpack_exports__);
         'katalog',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 14046)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(private_route)/user/katalog/page.js"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 14046)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(private_route)\\user\\katalog\\page.js"],
           
         }]
       },
@@ -252,7 +252,7 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 40181)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(private_route)/layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 40181)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(private_route)\\layout.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -264,8 +264,8 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/layout.js"],
-'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/loading.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\layout.js"],
+'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\loading.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -276,7 +276,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       ]
       }.children;
-    const pages = ["/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(private_route)/user/katalog/page.js"];
+    const pages = ["D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(private_route)\\user\\katalog\\page.js"];
 
     
 
@@ -301,31 +301,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 18233:
+/***/ 88553:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 10284))
-
-/***/ }),
-
-/***/ 20594:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   k: () => (/* binding */ convertImageToBase64)
-/* harmony export */ });
-function convertImageToBase64(fileInput, callback) {
-    if (fileInput.files.length > 0) {
-        const reader = new FileReader();
-        reader.onload = (event)=>{
-            const base64Image = event.target.result;
-            callback(base64Image);
-        };
-        reader.readAsDataURL(fileInput.files[0]);
-    }
-}
-
 
 /***/ }),
 
@@ -341,7 +320,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11440);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_icons_fi__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(95105);
+/* harmony import */ var react_icons_fi__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(95105);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(18038);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var next_auth_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(74284);
@@ -349,10 +328,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_components_modal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(86390);
 /* harmony import */ var _app_loading__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(45586);
 /* harmony import */ var react_toastify__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(34751);
-/* harmony import */ var react_icons_bs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(60930);
-/* harmony import */ var react_icons_ai__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(15816);
-/* harmony import */ var _helper_convertImage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(20594);
+/* harmony import */ var react_icons_bs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(60930);
+/* harmony import */ var react_icons_ai__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(15816);
+/* harmony import */ var _helper_convertImage__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(20594);
+/* harmony import */ var _components_DisclaimerModal__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(5284);
+/* harmony import */ var _components_DisclaimerModal__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_DisclaimerModal__WEBPACK_IMPORTED_MODULE_7__);
 /* __next_internal_client_entry_do_not_use__ default auto */ 
+
 
 
 
@@ -366,7 +348,10 @@ __webpack_require__.r(__webpack_exports__);
 function UserDashboard() {
     const [isLoading, setIsLoading] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(true);
     const [dataToFetch, setDataToFetch] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
+    const [disclaimerOpen, setDisclaimerOpen] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);
     const [validation, setValidation] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);
+    const [isModalOpen, setIsModalOpen] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);
+    const [isDisclaimerAgreed, setIsDisclaimerAgreed] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);
     const { data: session, status } = (0,next_auth_react__WEBPACK_IMPORTED_MODULE_3__.useSession)();
     const [data, setData] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)({});
     (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(()=>{
@@ -466,15 +451,15 @@ function UserDashboard() {
         const file = e.target.files[0];
         setImageFile(file);
     };
-    const handleSubmit = (e)=>{
-        e.preventDefault();
+    const handleSubmit = ()=>{
         if (!title || !price || !details || !tag || !contact) {
             setValidation(true);
+            setDisclaimerOpen(false);
             return;
         }
         // Convert the uploaded image to base64
         const fileInput = document.querySelector('input[type="file"]');
-        (0,_helper_convertImage__WEBPACK_IMPORTED_MODULE_7__/* .convertImageToBase64 */ .k)(fileInput, (base64Image)=>{
+        (0,_helper_convertImage__WEBPACK_IMPORTED_MODULE_8__/* .convertImageToBase64 */ .k)(fileInput, (base64Image)=>{
             const formData = {
                 user: session.user.email,
                 title,
@@ -489,7 +474,6 @@ function UserDashboard() {
     };
     const handleDeleteKatalog = (katalog)=>{
         try {
-            console.log(katalog._id);
             fetch(`/api/katalog/${katalog._id}`, {
                 method: "DELETE"
             });
@@ -516,7 +500,7 @@ function UserDashboard() {
                     className: "absolute h-[40px] w-[40px] rounded-full m-3 hover:bg-primary hover:text-white",
                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
                         href: "/user",
-                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fi__WEBPACK_IMPORTED_MODULE_8__.FiArrowLeft, {
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fi__WEBPACK_IMPORTED_MODULE_9__.FiArrowLeft, {
                             className: "h-8 md:h-10 w-max"
                         })
                     })
@@ -527,7 +511,9 @@ function UserDashboard() {
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                             className: "lg:w-[50%] lg:h-screen",
                             children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("form", {
-                                onSubmit: handleSubmit,
+                                onSubmit: ()=>{
+                                    setDisclaimerOpen(true);
+                                },
                                 className: "bg-tertiary lg:w-full h-screen p-5 flex flex-col justify-center",
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
@@ -578,6 +564,7 @@ function UserDashboard() {
                                                 className: "border-2 border-black w-[50%] p-1 rounded-lg",
                                                 type: "text",
                                                 value: contact,
+                                                placeholder: "contoh: 81234698723",
                                                 onChange: (e)=>setContact(e.target.value)
                                             })
                                         ]
@@ -587,6 +574,7 @@ function UserDashboard() {
                                         children: [
                                             "Details:",
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("textarea", {
+                                                wrap: "hard",
                                                 className: "border-2 border-black w-[50%] p-1 rounded-lg",
                                                 value: details,
                                                 onChange: (e)=>setDetails(e.target.value)
@@ -615,9 +603,16 @@ function UserDashboard() {
                                             })
                                         ]
                                     }),
+                                    validation ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        className: "text-red-600 text-xs",
+                                        children: "*Lengkapi data anda!"
+                                    }) : null,
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                        className: "bg-black text-white text-center py-4 rounded-md my-2 self-end w-[25%] hover:text-primary border-2 border-primary hover:bg-white",
-                                        type: "submit",
+                                        className: ` ${validation ? "bg-red-600" : "bg-black border-primary hover:text-primary border-2 hover:bg-white"} bg-black text-white text-center py-4 rounded-md my-2 self-end w-[25%] `,
+                                        type: "button",
+                                        onClick: ()=>{
+                                            setDisclaimerOpen(true);
+                                        },
                                         children: "Submit"
                                     })
                                 ]
@@ -633,7 +628,7 @@ function UserDashboard() {
                                     boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset"
                                 },
                                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: "h-[80vh]",
+                                    className: "h-[80vh]  overflow-auto",
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
                                             className: "font-bold text-[3rem] px-4 self-center",
@@ -668,13 +663,13 @@ function UserDashboard() {
                                                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                                                 className: "flex flex-row",
                                                                 children: [
-                                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_9__/* .BsEye */ .rCC, {
+                                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_10__/* .BsEye */ .rCC, {
                                                                         size: 30,
                                                                         title: "view",
                                                                         className: "mx-1 p-1 bg-primary text-white rounded-md hover:text-primary border-2 border-primary hover:bg-white",
                                                                         onClick: ()=>handleViewKatalog(katalog)
                                                                     }),
-                                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_ai__WEBPACK_IMPORTED_MODULE_10__/* .AiOutlineDelete */ .VPh, {
+                                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_ai__WEBPACK_IMPORTED_MODULE_11__/* .AiOutlineDelete */ .VPh, {
                                                                         size: 30,
                                                                         title: "delete",
                                                                         className: "mx-1 p-1 border-2 border-red-600 text-white bg-red-600 hover:text-red-400 rounded-md hover:bg-white",
@@ -738,6 +733,7 @@ function UserDashboard() {
                                                         children: [
                                                             "Details :",
                                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                className: "whitespace-pre-wrap",
                                                                 children: previewedKatalog.details
                                                             })
                                                         ]
@@ -784,6 +780,11 @@ function UserDashboard() {
                                                     })
                                                 ]
                                             })
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_components_DisclaimerModal__WEBPACK_IMPORTED_MODULE_7___default()), {
+                                            isOpen: disclaimerOpen,
+                                            setIsOpenClose: setDisclaimerOpen,
+                                            handlesubmit: handleSubmit
                                         })
                                     ]
                                 })
@@ -811,7 +812,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(61363);
 
-const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(private_route)/user/katalog/page.js`)
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\kuliah\cuan\frontend-gkpi\src\app\(private_route)\user\katalog\page.js`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -832,7 +833,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,7582,954,5556,5105,930,3500,5816,3462,9229,9163], () => (__webpack_exec__(16827)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,7582,954,5556,5105,5816,930,3500,7706,7469,3687,9940], () => (__webpack_exec__(72993)));
 module.exports = __webpack_exports__;
 
 })();

@@ -196,7 +196,7 @@ module.exports = require("url");
 
 /***/ }),
 
-/***/ 61443:
+/***/ 4743:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -232,7 +232,7 @@ __webpack_require__.r(__webpack_exports__);
         'signup',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 72941)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(guest_route)/signup/page.js"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 72941)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(guest_route)\\signup\\page.js"],
           
         }]
       },
@@ -243,7 +243,7 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6036)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(guest_route)/layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6036)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(guest_route)\\layout.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -255,8 +255,8 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/layout.js"],
-'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/loading.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\layout.js"],
+'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\loading.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -267,7 +267,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       ]
       }.children;
-    const pages = ["/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(guest_route)/signup/page.js"];
+    const pages = ["D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(guest_route)\\signup\\page.js"];
 
     
 
@@ -292,7 +292,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 62733:
+/***/ 91955:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3890))
@@ -344,7 +344,6 @@ function SignUp() {
         ev.preventDefault();
         if (validatePassword()) {
             try {
-                console.log("start fetching");
                 const res = await fetch("/api/auth/users", {
                     method: "POST",
                     body: JSON.stringify(userInfo)
@@ -542,7 +541,11 @@ function SignUp() {
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                             href: "/login",
                                             className: "font-bold",
-                                            children: "Sign in with Google"
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                                className: "text-slate-300 cursor-not-allowed",
+                                                disabled: true,
+                                                children: "Sign in with Google"
+                                            })
                                         })
                                     })
                                 ]
@@ -570,7 +573,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(61363);
 
-const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(guest_route)/signup/page.js`)
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\kuliah\cuan\frontend-gkpi\src\app\(guest_route)\signup\page.js`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -591,7 +594,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,7582,954,5556,5105,3462,3706], () => (__webpack_exec__(61443)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,7582,954,5556,5105,7706,6204], () => (__webpack_exec__(4743)));
 module.exports = __webpack_exports__;
 
 })();

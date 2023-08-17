@@ -1,4 +1,4 @@
-// File: /home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(guest_route)/signup/page.js
+// File: D:\kuliah\cuan\frontend-gkpi\src\app\(guest_route)\signup\page.js
 import * as entry from '../../../../../src/app/(guest_route)/signup/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

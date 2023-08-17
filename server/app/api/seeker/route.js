@@ -19,7 +19,7 @@ module.exports = require("os");
 
 /***/ }),
 
-/***/ 72990:
+/***/ 23866:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -65,12 +65,14 @@ async function GET(req) {
     try {
         // Connect to the database
         await (0,db/* default */.Z)();
-        // Fetch data from the Mongoose model and send the response
+        const url = new URL(req.url, `http://${req.headers.host}`);
+        const page = url.searchParams.get("page") || 1;
+        const perPage = 6;
         const seekers = await seekerModels/* default */.Z.find({
             approval: true
         }).sort({
             createdAt: "desc"
-        });
+        }).skip((page - 1) * perPage).limit(perPage);
         return next_response/* default */.Z.json({
             seekers
         }, {
@@ -131,7 +133,7 @@ async function POST(request) {
     }
 }
 
-;// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?page=%2Fapi%2Fseeker%2Froute&name=app%2Fapi%2Fseeker%2Froute&pagePath=private-next-app-dir%2Fapi%2Fseeker%2Froute.js&appDir=%2Fhome%2Fpetrusariaa%2FGitHub%2FGKIPI-project%2Ffrontend-gkipi%2Fsrc%2Fapp&appPaths=%2Fapi%2Fseeker%2Froute&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!
+;// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?page=%2Fapi%2Fseeker%2Froute&name=app%2Fapi%2Fseeker%2Froute&pagePath=private-next-app-dir%2Fapi%2Fseeker%2Froute.js&appDir=D%3A%5Ckuliah%5Ccuan%5Cfrontend-gkpi%5Csrc%5Capp&appPaths=%2Fapi%2Fseeker%2Froute&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!
 
     
 
@@ -139,7 +141,7 @@ async function POST(request) {
 
     
 
-    const options = {"definition":{"kind":"APP_ROUTE","page":"/api/seeker/route","pathname":"/api/seeker","filename":"route","bundlePath":"app/api/seeker/route"},"resolvedPagePath":"/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/api/seeker/route.js","nextConfigOutput":""}
+    const options = {"definition":{"kind":"APP_ROUTE","page":"/api/seeker/route","pathname":"/api/seeker","filename":"route","bundlePath":"app/api/seeker/route"},"resolvedPagePath":"D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\api\\seeker\\route.js","nextConfigOutput":""}
     const routeModule = new (module_default())({
       ...options,
       userland: route_namespaceObject,
@@ -196,7 +198,7 @@ const startDb = async ()=>{
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,5501,9335,7326], () => (__webpack_exec__(72990)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,5501,9335,7326], () => (__webpack_exec__(23866)));
 module.exports = __webpack_exports__;
 
 })();

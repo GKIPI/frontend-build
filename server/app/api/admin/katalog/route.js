@@ -96,7 +96,7 @@ module.exports = require("zlib");
 
 /***/ }),
 
-/***/ 74476:
+/***/ 51091:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -182,7 +182,7 @@ async function GET(req) {
     }
 }
 
-;// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?page=%2Fapi%2Fadmin%2Fkatalog%2Froute&name=app%2Fapi%2Fadmin%2Fkatalog%2Froute&pagePath=private-next-app-dir%2Fapi%2Fadmin%2Fkatalog%2Froute.js&appDir=%2Fhome%2Fpetrusariaa%2FGitHub%2FGKIPI-project%2Ffrontend-gkipi%2Fsrc%2Fapp&appPaths=%2Fapi%2Fadmin%2Fkatalog%2Froute&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!
+;// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?page=%2Fapi%2Fadmin%2Fkatalog%2Froute&name=app%2Fapi%2Fadmin%2Fkatalog%2Froute&pagePath=private-next-app-dir%2Fapi%2Fadmin%2Fkatalog%2Froute.js&appDir=D%3A%5Ckuliah%5Ccuan%5Cfrontend-gkpi%5Csrc%5Capp&appPaths=%2Fapi%2Fadmin%2Fkatalog%2Froute&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!
 
     
 
@@ -190,7 +190,7 @@ async function GET(req) {
 
     
 
-    const options = {"definition":{"kind":"APP_ROUTE","page":"/api/admin/katalog/route","pathname":"/api/admin/katalog","filename":"route","bundlePath":"app/api/admin/katalog/route"},"resolvedPagePath":"/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/api/admin/katalog/route.js","nextConfigOutput":""}
+    const options = {"definition":{"kind":"APP_ROUTE","page":"/api/admin/katalog/route","pathname":"/api/admin/katalog","filename":"route","bundlePath":"app/api/admin/katalog/route"},"resolvedPagePath":"D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\api\\admin\\katalog\\route.js","nextConfigOutput":""}
     const routeModule = new (module_default())({
       ...options,
       userland: route_namespaceObject,
@@ -279,7 +279,7 @@ const KatalogModel = mongoose__WEBPACK_IMPORTED_MODULE_0__.models.Katalog || (0,
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,5501,9335,6810,2561,3394], () => (__webpack_exec__(74476)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,5501,9335,6810,2561,3394], () => (__webpack_exec__(51091)));
 module.exports = __webpack_exports__;
 
 })();

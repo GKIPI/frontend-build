@@ -236,7 +236,7 @@ module.exports = require("url");
 
 /***/ }),
 
-/***/ 36359:
+/***/ 17016:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -269,7 +269,7 @@ __webpack_require__.r(__webpack_exports__);
         'activity',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 70257)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/activity/page.js"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 70257)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\activity\\page.js"],
           
         }]
       },
@@ -286,8 +286,8 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/layout.js"],
-'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/loading.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\layout.js"],
+'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\loading.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -298,7 +298,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       ]
       }.children;
-    const pages = ["/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/activity/page.js"];
+    const pages = ["D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\activity\\page.js"];
 
     
 
@@ -323,7 +323,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 40330:
+/***/ 23562:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 50954, 23));
@@ -338,7 +338,7 @@ Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_re
 "use strict";
 /* __next_internal_client_entry_do_not_use__  cjs */ 
 const { createProxy } = __webpack_require__(61363);
-module.exports = createProxy("/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/node_modules/next/dist/client/link.js");
+module.exports = createProxy("D:\\kuliah\\cuan\\frontend-gkpi\\node_modules\\next\\dist\\client\\link.js");
  //# sourceMappingURL=link.js.map
 
 
@@ -372,7 +372,7 @@ var jsx_runtime_ = __webpack_require__(56786);
 var next_link = __webpack_require__(25124);
 var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 ;// CONCATENATED MODULE: ./public/Activity.png
-/* harmony default export */ const Activity = ({"src":"/_next/static/media/Activity.36f11568.png","height":4096,"width":2668,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAMAAAAGL8UJAAAAJ1BMVEUGBQIZFA48NjAODQkxJBpXVFIwMDArJyJIOzEnHhZvY1pZRzqajIAi9VpnAAAACXBIWXMAACxLAAAsSwGlPZapAAAALklEQVR4nA3KuQEAMAgDscOGkG//eZNGlbADCH/YOZe5mhnUkZO1B6KrNH5SxwMOMAChiHGCNwAAAABJRU5ErkJggg==","blurWidth":5,"blurHeight":8});
+/* harmony default export */ const Activity = ({"src":"/_next/static/media/Activity.36f11568.png","height":4096,"width":2668,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAMAAAAGL8UJAAAAJ1BMVEUGBQIZFA48NjAODQkxJBpXVFIwMDArJyJIOzEnHhZvY1pZRzqajIAi9VpnAAAACXBIWXMAACxLAAAsSwGlPZapAAAAKklEQVR4nAXBhwEAMAzCMANJ9//3ViIRoACcWjs8rxJ9nWKfgZndHiBPfQ4wAKHNgU5RAAAAAElFTkSuQmCC","blurWidth":5,"blurHeight":8});
 // EXTERNAL MODULE: ./node_modules/next/image.js
 var next_image = __webpack_require__(14178);
 var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
@@ -486,7 +486,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/Activity.36f11568.png","height":4096,"width":2668,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAMAAAAGL8UJAAAAJ1BMVEUGBQIZFA48NjAODQkxJBpXVFIwMDArJyJIOzEnHhZvY1pZRzqajIAi9VpnAAAACXBIWXMAACxLAAAsSwGlPZapAAAALklEQVR4nA3KuQEAMAgDscOGkG//eZNGlbADCH/YOZe5mhnUkZO1B6KrNH5SxwMOMAChiHGCNwAAAABJRU5ErkJggg==","blurWidth":5,"blurHeight":8});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/Activity.36f11568.png","height":4096,"width":2668,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAMAAAAGL8UJAAAAJ1BMVEUGBQIZFA48NjAODQkxJBpXVFIwMDArJyJIOzEnHhZvY1pZRzqajIAi9VpnAAAACXBIWXMAACxLAAAsSwGlPZapAAAAKklEQVR4nAXBhwEAMAzCMANJ9//3ViIRoACcWjs8rxJ9nWKfgZndHiBPfQ4wAKHNgU5RAAAAAElFTkSuQmCC","blurWidth":5,"blurHeight":8});
 
 /***/ })
 
@@ -497,7 +497,7 @@ __webpack_require__.r(__webpack_exports__);
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,7582,954,3380,4178,3462,5032], () => (__webpack_exec__(36359)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,7582,954,3380,4178,7706], () => (__webpack_exec__(17016)));
 module.exports = __webpack_exports__;
 
 })();

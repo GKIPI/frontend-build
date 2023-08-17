@@ -236,7 +236,7 @@ module.exports = require("url");
 
 /***/ }),
 
-/***/ 32200:
+/***/ 25504:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -272,7 +272,7 @@ __webpack_require__.r(__webpack_exports__);
         'login',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 38834)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(guest_route)/login/page.js"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 38834)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(guest_route)\\login\\page.js"],
           
         }]
       },
@@ -283,7 +283,7 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6036)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(guest_route)/layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6036)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(guest_route)\\layout.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -295,8 +295,8 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/layout.js"],
-'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/loading.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\layout.js"],
+'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\loading.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -307,7 +307,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       ]
       }.children;
-    const pages = ["/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(guest_route)/login/page.js"];
+    const pages = ["D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(guest_route)\\login\\page.js"];
 
     
 
@@ -332,7 +332,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 81720:
+/***/ 41375:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 69465))
@@ -415,30 +415,35 @@ const LoginAvailable = ()=>{
     const router = (0,next_navigation__WEBPACK_IMPORTED_MODULE_4__.useRouter)();
     const handleSubmit = async (ev)=>{
         ev.preventDefault();
-        const res = await (0,next_auth_react__WEBPACK_IMPORTED_MODULE_3__.signIn)("credentials", {
-            email,
-            password,
-            redirect: false
-        }).then((0,react_toastify__WEBPACK_IMPORTED_MODULE_7__.toast)("Loged In", {
-            hideProgressBar: true,
-            autoClose: 2000,
-            type: "success"
-        }));
-        if (res.error) {
-            (0,react_toastify__WEBPACK_IMPORTED_MODULE_7__.toast)(`${res.error}`, {
+        try {
+            const res = await (0,next_auth_react__WEBPACK_IMPORTED_MODULE_3__.signIn)("credentials", {
+                email,
+                password,
+                redirect: false
+            });
+            if (res.error) {
+                throw new Error(res.error);
+            }
+            const session = await (0,next_auth_react__WEBPACK_IMPORTED_MODULE_3__.getSession)();
+            const { role } = session.user;
+            if (role === "user") {
+                router.push("/user");
+            } else if (role === "admin") {
+                router.push("/admin/dashboard");
+            }
+            // Display success toast
+            (0,react_toastify__WEBPACK_IMPORTED_MODULE_7__.toast)("Loged In", {
+                hideProgressBar: true,
+                autoClose: 2000,
+                type: "success"
+            });
+        } catch (error) {
+            // Display error toast
+            (0,react_toastify__WEBPACK_IMPORTED_MODULE_7__.toast)(`${error.message}`, {
                 hideProgressBar: true,
                 autoClose: 2000,
                 type: "error"
             });
-            return Error("error");
-        }
-        const session = await (0,next_auth_react__WEBPACK_IMPORTED_MODULE_3__.getSession)();
-        const { role } = session.user;
-        if (role === "user") {
-            router.push("/user");
-        }
-        if (role === "admin") {
-            router.push("/admin/dashboard");
         }
     };
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
@@ -528,9 +533,10 @@ const LoginAvailable = ()=>{
                                             }),
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
                                                 href: "#",
-                                                className: "",
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                    className: " text-right font-semibold text-[1rem]",
+                                                className: "flex justify-end",
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                                    className: "text-right font-semibold text-[1rem] text-slate-300 cursor-not-allowed",
+                                                    disabled: true,
                                                     children: "Forgot password"
                                                 })
                                             })
@@ -565,7 +571,11 @@ const LoginAvailable = ()=>{
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                             href: "/login",
                                             className: "font-bold",
-                                            children: "Sign in with Google"
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                                className: "text-slate-300 cursor-not-allowed",
+                                                disabled: true,
+                                                children: "Sign in with Google"
+                                            })
                                         })
                                     })
                                 ]
@@ -593,7 +603,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(61363);
 
-const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(guest_route)/login/page.js`)
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\kuliah\cuan\frontend-gkpi\src\app\(guest_route)\login\page.js`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -626,7 +636,7 @@ __webpack_require__.r(__webpack_exports__);
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,7582,954,5556,3380,5105,2451,3462,3706], () => (__webpack_exec__(32200)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,7582,954,5556,3380,2451,5105,7706,6204], () => (__webpack_exec__(25504)));
 module.exports = __webpack_exports__;
 
 })();

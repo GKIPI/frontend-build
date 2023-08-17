@@ -236,7 +236,7 @@ module.exports = require("url");
 
 /***/ }),
 
-/***/ 8087:
+/***/ 33743:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -266,7 +266,7 @@ __webpack_require__.r(__webpack_exports__);
         '',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 98358)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/page.js"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 98358)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\page.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -277,8 +277,8 @@ __webpack_require__.r(__webpack_exports__);
         }]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/layout.js"],
-'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/loading.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\layout.js"],
+'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\loading.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -289,7 +289,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       ]
       }.children;
-    const pages = ["/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/page.js"];
+    const pages = ["D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\page.js"];
 
     
 
@@ -314,7 +314,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 58373:
+/***/ 76379:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 50954, 23));
@@ -690,7 +690,7 @@ function Menu() {
 var module_proxy = __webpack_require__(61363);
 ;// CONCATENATED MODULE: ./src/app/components/navbar_hero.js
 
-const proxy = (0,module_proxy.createProxy)(String.raw`/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/components/navbar_hero.js`)
+const proxy = (0,module_proxy.createProxy)(String.raw`D:\kuliah\cuan\frontend-gkpi\src\app\components\navbar_hero.js`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -739,7 +739,7 @@ __webpack_require__.r(__webpack_exports__);
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,7582,954,5556,3380,2451,1255,3462,5032], () => (__webpack_exec__(8087)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,7582,954,5556,3380,2451,1255,7706], () => (__webpack_exec__(33743)));
 module.exports = __webpack_exports__;
 
 })();

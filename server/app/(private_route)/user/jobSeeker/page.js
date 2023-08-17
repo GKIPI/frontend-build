@@ -196,7 +196,7 @@ module.exports = require("url");
 
 /***/ }),
 
-/***/ 79496:
+/***/ 38584:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -235,7 +235,7 @@ __webpack_require__.r(__webpack_exports__);
         'jobSeeker',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 88805)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(private_route)/user/jobSeeker/page.js"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 88805)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(private_route)\\user\\jobSeeker\\page.js"],
           
         }]
       },
@@ -252,7 +252,7 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 40181)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(private_route)/layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 40181)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(private_route)\\layout.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -264,8 +264,8 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/layout.js"],
-'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/loading.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\layout.js"],
+'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\loading.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -276,7 +276,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       ]
       }.children;
-    const pages = ["/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(private_route)/user/jobSeeker/page.js"];
+    const pages = ["D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(private_route)\\user\\jobSeeker\\page.js"];
 
     
 
@@ -301,31 +301,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 73911:
+/***/ 47672:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 27191))
-
-/***/ }),
-
-/***/ 20594:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   k: () => (/* binding */ convertImageToBase64)
-/* harmony export */ });
-function convertImageToBase64(fileInput, callback) {
-    if (fileInput.files.length > 0) {
-        const reader = new FileReader();
-        reader.onload = (event)=>{
-            const base64Image = event.target.result;
-            callback(base64Image);
-        };
-        reader.readAsDataURL(fileInput.files[0]);
-    }
-}
-
 
 /***/ }),
 
@@ -341,17 +320,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11440);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_icons_fi__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(95105);
+/* harmony import */ var react_icons_fi__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(95105);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(18038);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var next_auth_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(74284);
 /* harmony import */ var next_auth_react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_auth_react__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _app_loading__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(45586);
 /* harmony import */ var react_toastify__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(34751);
-/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(43500);
-/* harmony import */ var _helper_convertImage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(20594);
+/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(43500);
+/* harmony import */ var _helper_convertImage__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(20594);
 /* harmony import */ var _app_components_modal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(86390);
+/* harmony import */ var _components_DisclaimerModal__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(5284);
+/* harmony import */ var _components_DisclaimerModal__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_DisclaimerModal__WEBPACK_IMPORTED_MODULE_7__);
 /* __next_internal_client_entry_do_not_use__ default auto */ 
+
 
 
 
@@ -363,6 +345,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function UserDashboard() {
     const [isLoading, setIsLoading] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(true);
+    const [disclaimerOpen, setDisclaimerOpen] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);
     const [dataToFetch, setDataToFetch] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
     const [isDeleteModalOpen, setDeleteModalOpen] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);
     const { data: session, status } = (0,next_auth_react__WEBPACK_IMPORTED_MODULE_3__.useSession)();
@@ -516,15 +499,15 @@ function UserDashboard() {
         });
         window.location.reload();
     };
-    const handleSubmit = (e)=>{
-        e.preventDefault();
+    const handleSubmit = ()=>{
         if (!jobTitle || !name || !sex || !education || !age || !skills || !industrytag || !titletag) {
             setValidation(true);
+            setDisclaimerOpen(false);
             return;
         }
         // Convert the uploaded image to base64
         const fileInput = document.querySelector('input[type="file"]');
-        (0,_helper_convertImage__WEBPACK_IMPORTED_MODULE_7__/* .convertImageToBase64 */ .k)(fileInput, (base64Image)=>{
+        (0,_helper_convertImage__WEBPACK_IMPORTED_MODULE_8__/* .convertImageToBase64 */ .k)(fileInput, (base64Image)=>{
             const formData = {
                 user: session.user.email,
                 jobTitle,
@@ -543,359 +526,371 @@ function UserDashboard() {
             setDataToFetch(formData);
         });
     };
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-        children: isLoading ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_app_loading__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {}) : /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-            className: "min-h-screen min-w-screen",
-            children: [
-                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                    className: "absolute h-[40px] w-[40px] rounded-full m-3 hover:bg-primary hover:text-white",
-                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
-                        href: "/user",
-                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fi__WEBPACK_IMPORTED_MODULE_8__.FiArrowLeft, {
-                            className: "h-8 md:h-10 w-max"
-                        })
-                    })
-                }),
-                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                    className: "lg:flex w-screen min-h-screen",
-                    children: [
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                            className: "lg:w-[50%] ",
-                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("form", {
-                                onSubmit: handleSubmit,
-                                className: "bg-tertiary lg:w-full p-5 flex flex-col justify-center",
-                                children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
-                                        className: "font-bold text-[3rem] px-4 self-center",
-                                        children: "Upload your CV here!"
-                                    }),
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
-                                        className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2 ",
-                                        children: [
-                                            "Job Title:",
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
-                                                className: "border-2 border-black w-[50%] p-1 rounded-lg",
-                                                type: "text",
-                                                value: jobTitle,
-                                                onChange: (e)=>setJobTitle(e.target.value)
-                                            })
-                                        ]
-                                    }),
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
-                                        className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
-                                        children: [
-                                            "Name:",
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
-                                                className: "border-2 border-black w-[50%] p-1 rounded-lg",
-                                                type: "text",
-                                                value: name,
-                                                onChange: (e)=>setName(e.target.value)
-                                            })
-                                        ]
-                                    }),
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
-                                        className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
-                                        children: [
-                                            "Sex:",
-                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("select", {
-                                                className: "border-2 border-black w-[50%] p-1 rounded-lg",
-                                                value: sex,
-                                                onChange: (e)=>{
-                                                    setSex(e.target.value);
-                                                },
-                                                children: [
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("option", {
-                                                        value: "",
-                                                        disabled: true,
-                                                        children: "Select a Tag"
-                                                    }),
-                                                    tagSex.map((tagOption)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("option", {
-                                                            value: tagOption,
-                                                            children: tagOption
-                                                        }, tagOption))
-                                                ]
-                                            }),
-                                            "                        "
-                                        ]
-                                    }),
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
-                                        className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
-                                        children: [
-                                            "Education:",
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
-                                                className: "border-2 border-black w-[50%] p-1 rounded-lg",
-                                                type: "text",
-                                                value: education,
-                                                onChange: (e)=>setEducation(e.target.value)
-                                            })
-                                        ]
-                                    }),
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
-                                        className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
-                                        children: [
-                                            "Age:",
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
-                                                className: "border-2 border-black w-[50%] p-1 rounded-lg",
-                                                type: "number",
-                                                value: age,
-                                                onChange: (e)=>setAge(e.target.value)
-                                            })
-                                        ]
-                                    }),
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
-                                        className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
-                                        children: [
-                                            "Skills (comma-separated):",
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
-                                                className: "border-2 border-black w-[50%] p-1 rounded-lg",
-                                                type: "text",
-                                                value: skills,
-                                                onChange: (e)=>setSkills(e.target.value)
-                                            })
-                                        ]
-                                    }),
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
-                                        className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
-                                        children: [
-                                            "Upload Image:",
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
-                                                className: "w-[50%] p-1",
-                                                type: "file",
-                                                accept: "image/*"
-                                            })
-                                        ]
-                                    }),
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
-                                        className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
-                                        children: [
-                                            "Industry tag:",
-                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("select", {
-                                                className: "border-2 border-black w-[50%] p-1 rounded-lg",
-                                                value: industrytag,
-                                                onChange: (e)=>{
-                                                    setIndustryTag(e.target.value);
-                                                },
-                                                children: [
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("option", {
-                                                        value: "",
-                                                        disabled: true,
-                                                        children: "Select a Tag"
-                                                    }),
-                                                    tagIndustry.map((tagOption)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("option", {
-                                                            value: tagOption,
-                                                            children: tagOption
-                                                        }, tagOption))
-                                                ]
-                                            })
-                                        ]
-                                    }),
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
-                                        className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
-                                        children: [
-                                            "Title tag:",
-                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("select", {
-                                                className: "border-2 border-black w-[50%] p-1 rounded-lg",
-                                                value: titletag,
-                                                onChange: (e)=>setTitleTag(e.target.value),
-                                                children: [
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("option", {
-                                                        value: "",
-                                                        disabled: true,
-                                                        children: "Select a Tag"
-                                                    }),
-                                                    tagTitle.map((tagOption)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("option", {
-                                                            value: tagOption,
-                                                            children: tagOption
-                                                        }, tagOption))
-                                                ]
-                                            })
-                                        ]
-                                    }),
-                                    validation ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: "text-red-600 text-xs",
-                                        children: "*Lengkapi data anda!"
-                                    }) : null,
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                        className: ` ${validation ? "bg-red-600" : "bg-black border-primary hover:text-primary border-2 hover:bg-white"} bg-black text-white text-center py-4 rounded-md my-2 self-end w-[25%] `,
-                                        type: "submit",
-                                        children: "Submit"
-                                    })
-                                ]
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+        children: [
+            isLoading ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_app_loading__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {}) : /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                className: "min-h-screen min-w-screen",
+                children: [
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: "absolute h-[40px] w-[40px] rounded-full m-3 hover:bg-primary hover:text-white",
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                            href: "/user",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fi__WEBPACK_IMPORTED_MODULE_9__.FiArrowLeft, {
+                                className: "h-8 md:h-10 w-max"
                             })
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                            className: "lg:w-[50%] h-max p-5 flex flex-col",
-                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: "max-w-full h-full p-4",
-                                style: {
-                                    borderRadius: "10px",
-                                    background: "#FAFAFA",
-                                    boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset"
-                                },
-                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: "h-full",
+                        })
+                    }),
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                        className: "lg:flex w-screen min-h-screen",
+                        children: [
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: "lg:w-[50%] ",
+                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("form", {
+                                    onSubmit: ()=>{
+                                        setDisclaimerOpen(true);
+                                    },
+                                    className: "bg-tertiary lg:w-full p-5 flex flex-col justify-center",
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
                                             className: "font-bold text-[3rem] px-4 self-center",
-                                            children: "Preview Your CV"
+                                            children: "Upload your CV here!"
                                         }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: `p-4 border ${data?.approval ? "bg-green-200" : "bg-red-200"}`,
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                className: "text-center",
-                                                children: data?.approval ? "This CV is approved!" : "This CV is not yet approved."
-                                            })
-                                        }),
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                            className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
+                                            className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2 ",
                                             children: [
-                                                "Name :",
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                    className: "px-1 bg-white rounded-lg border-2",
-                                                    children: (data?.name) ? data.name : null
+                                                "Job Title:",
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
+                                                    className: "border-2 border-black w-[50%] p-1 rounded-lg",
+                                                    type: "text",
+                                                    value: jobTitle,
+                                                    onChange: (e)=>setJobTitle(e.target.value)
                                                 })
                                             ]
                                         }),
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
                                             className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
                                             children: [
-                                                "Age :",
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                    className: "px-1 bg-white rounded-lg border-2",
-                                                    children: (data?.age) ? data.age : null
+                                                "Name:",
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
+                                                    className: "border-2 border-black w-[50%] p-1 rounded-lg",
+                                                    type: "text",
+                                                    value: name,
+                                                    onChange: (e)=>setName(e.target.value)
                                                 })
                                             ]
                                         }),
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
                                             className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
                                             children: [
-                                                "Job Title :",
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                    className: "px-1 bg-white rounded-lg border-2",
-                                                    children: (data?.jobTitle) ? data.jobTitle : null
+                                                "Sex:",
+                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("select", {
+                                                    className: "border-2 border-black w-[50%] p-1 rounded-lg",
+                                                    value: sex,
+                                                    onChange: (e)=>{
+                                                        setSex(e.target.value);
+                                                    },
+                                                    children: [
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("option", {
+                                                            value: "",
+                                                            disabled: true,
+                                                            children: "Select a Tag"
+                                                        }),
+                                                        tagSex.map((tagOption)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("option", {
+                                                                value: tagOption,
+                                                                children: tagOption
+                                                            }, tagOption))
+                                                    ]
+                                                }),
+                                                "                        "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
+                                            className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
+                                            children: [
+                                                "Education:",
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
+                                                    className: "border-2 border-black w-[50%] p-1 rounded-lg",
+                                                    type: "text",
+                                                    value: education,
+                                                    onChange: (e)=>setEducation(e.target.value)
                                                 })
                                             ]
                                         }),
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
                                             className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
                                             children: [
-                                                "Education :",
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                    className: "px-1 bg-white rounded-lg border-2",
-                                                    children: (data?.education) ? data.education : null
+                                                "Age:",
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
+                                                    className: "border-2 border-black w-[50%] p-1 rounded-lg",
+                                                    type: "number",
+                                                    value: age,
+                                                    onChange: (e)=>setAge(e.target.value)
                                                 })
                                             ]
                                         }),
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
                                             className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
                                             children: [
-                                                "Skills :",
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                    className: "px-1 bg-white rounded-lg border-2",
-                                                    children: (data?.skills) ? data.skills : null
+                                                "Skills (comma-separated):",
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
+                                                    className: "border-2 border-black w-[50%] p-1 rounded-lg",
+                                                    type: "text",
+                                                    value: skills,
+                                                    onChange: (e)=>setSkills(e.target.value)
                                                 })
                                             ]
                                         }),
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
                                             className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
                                             children: [
-                                                "CV :",
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {}),
-                                                (data?.image) ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                                    onClick: ()=>setIsModalOpen(true),
-                                                    className: "bg-primary text-white px-4 py-2 rounded-md hover:text-primary border-2 border-primary sNover:px-1 hover:bg-white",
-                                                    children: "View"
-                                                }) : null
-                                            ]
-                                        }),
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                            className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
-                                            children: [
-                                                "Industrial Tag :",
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                    className: "px-1 bg-white rounded-lg border-2",
-                                                    children: (data?.tag) ? data.tag[0] : null
+                                                "Upload Image:",
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
+                                                    className: "w-[50%] p-1",
+                                                    type: "file",
+                                                    accept: "image/*"
                                                 })
                                             ]
                                         }),
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
                                             className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
                                             children: [
-                                                "Title Tag :",
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                    className: "px-1 bg-white rounded-lg border-2",
-                                                    children: (data?.tag) ? data.tag[1] : null
+                                                "Industry tag:",
+                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("select", {
+                                                    className: "border-2 border-black w-[50%] p-1 rounded-lg",
+                                                    value: industrytag,
+                                                    onChange: (e)=>{
+                                                        setIndustryTag(e.target.value);
+                                                    },
+                                                    children: [
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("option", {
+                                                            value: "",
+                                                            disabled: true,
+                                                            children: "Select a Tag"
+                                                        }),
+                                                        tagIndustry.map((tagOption)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("option", {
+                                                                value: tagOption,
+                                                                children: tagOption
+                                                            }, tagOption))
+                                                    ]
                                                 })
                                             ]
                                         }),
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
                                             className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
                                             children: [
-                                                "Sex :",
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                    className: "px-1 bg-white rounded-lg border-2",
-                                                    children: (data?.sex) ? data.sex : null
+                                                "Title tag:",
+                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("select", {
+                                                    className: "border-2 border-black w-[50%] p-1 rounded-lg",
+                                                    value: titletag,
+                                                    onChange: (e)=>setTitleTag(e.target.value),
+                                                    children: [
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("option", {
+                                                            value: "",
+                                                            disabled: true,
+                                                            children: "Select a Tag"
+                                                        }),
+                                                        tagTitle.map((tagOption)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("option", {
+                                                                value: tagOption,
+                                                                children: tagOption
+                                                            }, tagOption))
+                                                    ]
                                                 })
                                             ]
                                         }),
+                                        validation ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: "text-red-600 text-xs",
+                                            children: "*Lengkapi data anda!"
+                                        }) : null,
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                            className: "bg-red-600 text-white px-4 py-2 rounded-md hover:text-red-600 border-2 border-red-600 hover:bg-white",
-                                            onClick: ()=>handleOpenDeleteModal(data?._id),
-                                            children: "Delete"
+                                            className: ` ${validation ? "bg-red-600" : "bg-black border-primary hover:text-primary border-2 hover:bg-white"} bg-black text-white text-center py-4 rounded-md my-2 self-end w-[25%] `,
+                                            type: "button",
+                                            onClick: ()=>{
+                                                setDisclaimerOpen(true);
+                                            },
+                                            children: "Submit"
                                         })
                                     ]
                                 })
-                            })
-                        })
-                    ]
-                }),
-                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                    className: `fixed top-0 left-0 w-full h-full flex items-center justify-center ${isModalOpen ? "visible" : "invisible"}`,
-                    style: {
-                        backgroundColor: "rgba(0, 0, 0, 0.5)"
-                    },
-                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        className: "bg-white p-6 rounded-lg shadow-lg",
-                        children: [
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                className: "absolute bg-white text-primary px-2 py-2 rounded-full hover:bg-primary hover:text-white",
-                                onClick: ()=>setIsModalOpen(false),
-                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_9__/* .FaTimes */ .aHS, {
-                                    size: 18
+                            }),
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: "lg:w-[50%] h-max p-5 flex flex-col",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                    className: "max-w-full h-full p-4",
+                                    style: {
+                                        borderRadius: "10px",
+                                        background: "#FAFAFA",
+                                        boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset"
+                                    },
+                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        className: "h-full",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
+                                                className: "font-bold text-[3rem] px-4 self-center",
+                                                children: "Preview Your CV"
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                className: `p-4 border ${data?.approval ? "bg-green-200" : "bg-red-200"}`,
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                    className: "text-center",
+                                                    children: data?.approval ? "This CV is approved!" : "This CV is not yet approved."
+                                                })
+                                            }),
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
+                                                children: [
+                                                    "Name :",
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                        className: "px-1 bg-white rounded-lg border-2",
+                                                        children: (data?.name) ? data.name : null
+                                                    })
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
+                                                children: [
+                                                    "Age :",
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                        className: "px-1 bg-white rounded-lg border-2",
+                                                        children: (data?.age) ? data.age : null
+                                                    })
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
+                                                children: [
+                                                    "Job Title :",
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                        className: "px-1 bg-white rounded-lg border-2",
+                                                        children: (data?.jobTitle) ? data.jobTitle : null
+                                                    })
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
+                                                children: [
+                                                    "Education :",
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                        className: "px-1 bg-white rounded-lg border-2",
+                                                        children: (data?.education) ? data.education : null
+                                                    })
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
+                                                children: [
+                                                    "Skills :",
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                        className: "px-1 bg-white rounded-lg border-2",
+                                                        children: (data?.skills) ? data.skills : null
+                                                    })
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
+                                                children: [
+                                                    "CV :",
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {}),
+                                                    (data?.image) ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                                        onClick: ()=>setIsModalOpen(true),
+                                                        className: "bg-primary text-white px-4 py-2 rounded-md hover:text-primary border-2 border-primary sNover:px-1 hover:bg-white",
+                                                        children: "View"
+                                                    }) : null
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
+                                                children: [
+                                                    "Industrial Tag :",
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                        className: "px-1 bg-white rounded-lg border-2",
+                                                        children: (data?.tag) ? data.tag[0] : null
+                                                    })
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
+                                                children: [
+                                                    "Title Tag :",
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                        className: "px-1 bg-white rounded-lg border-2",
+                                                        children: (data?.tag) ? data.tag[1] : null
+                                                    })
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
+                                                children: [
+                                                    "Sex :",
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                        className: "px-1 bg-white rounded-lg border-2",
+                                                        children: (data?.sex) ? data.sex : null
+                                                    })
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                                className: "bg-red-600 text-white px-4 py-2 rounded-md hover:text-red-600 border-2 border-red-600 hover:bg-white",
+                                                onClick: ()=>handleOpenDeleteModal(data?._id),
+                                                children: "Delete"
+                                            })
+                                        ]
+                                    })
                                 })
-                            }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                src: data?.image,
-                                alt: "CV Preview",
-                                className: "max-h-[80vh] max-w-[80vw]"
                             })
                         ]
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: `fixed top-0 left-0 w-full h-full flex items-center justify-center ${isModalOpen ? "visible" : "invisible"}`,
+                        style: {
+                            backgroundColor: "rgba(0, 0, 0, 0.5)"
+                        },
+                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                            className: "bg-white p-6 rounded-lg shadow-lg",
+                            children: [
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                    className: "absolute bg-white text-primary px-2 py-2 rounded-full hover:bg-primary hover:text-white",
+                                    onClick: ()=>setIsModalOpen(false),
+                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_10__/* .FaTimes */ .aHS, {
+                                        size: 18
+                                    })
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                    src: data?.image,
+                                    alt: "CV Preview",
+                                    className: "max-h-[80vh] max-w-[80vw]"
+                                })
+                            ]
+                        })
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_app_components_modal__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z, {
+                        isOpen: isDeleteModalOpen,
+                        onClose: ()=>setDeleteModalOpen(false),
+                        title: "Confirm Deletion",
+                        content: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                            children: [
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                    children: "Are you sure you want to delete this job seeker?"
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                    className: "mx-2 bg-red-600 text-white px-4 py-2 rounded-md hover:text-red-600 border-2 border-red-600 hover:bg-white",
+                                    onClick: ()=>handleDeleteJobSeeker(data),
+                                    children: "Delete"
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                    className: "mx-2 bg-primary text-white px-4 py-2 rounded-md hover:text-primary border-2 border-primary hover:bg-white",
+                                    onClick: ()=>setDeleteModalOpen(false),
+                                    children: "Cancel"
+                                })
+                            ]
+                        })
                     })
-                }),
-                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_app_components_modal__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z, {
-                    isOpen: isDeleteModalOpen,
-                    onClose: ()=>setDeleteModalOpen(false),
-                    title: "Confirm Deletion",
-                    content: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        children: [
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                children: "Are you sure you want to delete this job seeker?"
-                            }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                className: "mx-2 bg-red-600 text-white px-4 py-2 rounded-md hover:text-red-600 border-2 border-red-600 hover:bg-white",
-                                onClick: ()=>handleDeleteJobSeeker(data),
-                                children: "Delete"
-                            }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                className: "mx-2 bg-primary text-white px-4 py-2 rounded-md hover:text-primary border-2 border-primary hover:bg-white",
-                                onClick: ()=>setDeleteModalOpen(false),
-                                children: "Cancel"
-                            })
-                        ]
-                    })
-                })
-            ]
-        })
+                ]
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_components_DisclaimerModal__WEBPACK_IMPORTED_MODULE_7___default()), {
+                isOpen: disclaimerOpen,
+                setIsOpenClose: setDisclaimerOpen,
+                handlesubmit: handleSubmit
+            })
+        ]
     });
 }
 
@@ -914,7 +909,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(61363);
 
-const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/home/petrusariaa/GitHub/GKIPI-project/frontend-gkipi/src/app/(private_route)/user/jobSeeker/page.js`)
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\kuliah\cuan\frontend-gkpi\src\app\(private_route)\user\jobSeeker\page.js`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -935,7 +930,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,7582,954,5556,5105,3500,3462,9229,9163], () => (__webpack_exec__(79496)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,7582,954,5556,5105,3500,7706,7469,3687,9940], () => (__webpack_exec__(38584)));
 module.exports = __webpack_exports__;
 
 })();
