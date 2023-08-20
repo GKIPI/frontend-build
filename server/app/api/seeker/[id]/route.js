@@ -109,6 +109,9 @@ async function PUT(request, params) {
         if (updatedData.skills) {
             seekerToUpdate.skills = updatedData.skills;
         }
+        if (updatedData.education) {
+            seekerToUpdate.education = updatedData.education;
+        }
         if (updatedData.tag) {
             seekerToUpdate.tag = updatedData.tag;
         }

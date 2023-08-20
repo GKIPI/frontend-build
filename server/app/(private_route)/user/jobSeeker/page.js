@@ -699,7 +699,7 @@ function UserDashboard() {
                                         }),
                                         validation ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                             className: "text-red-600 text-xs",
-                                            children: "*Lengkapi data anda!"
+                                            children: "*Complete your data!"
                                         }) : null,
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                             className: ` ${validation ? "bg-red-600" : "bg-black border-primary hover:text-primary border-2 hover:bg-white"} bg-black text-white text-center py-4 rounded-md my-2 self-end w-[25%] `,

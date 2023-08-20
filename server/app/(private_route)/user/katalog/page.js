@@ -517,7 +517,7 @@ function UserDashboard() {
                                 className: "bg-tertiary lg:w-full h-screen p-5 flex flex-col justify-center",
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
-                                        className: "font-bold text-[3rem] px-4 self-center",
+                                        className: "font-bold text-[3rem] px-4 self-center md:text-3xl mt-2",
                                         children: "Lets make the world better!"
                                     }),
                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
@@ -605,7 +605,7 @@ function UserDashboard() {
                                     }),
                                     validation ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                         className: "text-red-600 text-xs",
-                                        children: "*Lengkapi data anda!"
+                                        children: "*Complete your data!"
                                     }) : null,
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                         className: ` ${validation ? "bg-red-600" : "bg-black border-primary hover:text-primary border-2 hover:bg-white"} bg-black text-white text-center py-4 rounded-md my-2 self-end w-[25%] `,
@@ -618,177 +618,176 @@ function UserDashboard() {
                                 ]
                             })
                         }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                             className: "lg:w-[50%] h-max p-5 flex flex-col",
-                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: "max-w-full h-full p-4",
-                                style: {
-                                    borderRadius: "10px",
-                                    background: "#FAFAFA",
-                                    boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset"
-                                },
-                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: "h-[80vh]  overflow-auto",
-                                    children: [
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
-                                            className: "font-bold text-[3rem] px-4 self-center",
-                                            children: "My Katalogs"
-                                        }),
-                                        data.length > 0 ? data.map((katalog, index)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
-                                                children: [
-                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                        className: "lg:flex flex-row",
-                                                        children: [
-                                                            "Title :",
-                                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                                className: "line-clamp-1 mx-2",
+                            children: [
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
+                                    className: "font-bold text-[3rem] px-4 md:text-4xl self-start mb-4 mt-4",
+                                    children: "My Katalogs"
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                    className: "max-w-full h-full p-4",
+                                    style: {
+                                        borderRadius: "10px",
+                                        background: "#FAFAFA",
+                                        boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset"
+                                    },
+                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        className: "h-[80vh]  overflow-auto",
+                                        children: [
+                                            data.length > 0 ? data.map((katalog, index)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                    className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
+                                                    children: [
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                            className: "lg:flex flex-row",
+                                                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                                className: "line-clamp-1 mx-2 font-semibold",
                                                                 children: [
                                                                     " ",
                                                                     katalog.title
                                                                 ]
                                                             })
-                                                        ]
-                                                    }),
-                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                        className: "flex items-center justify-between",
-                                                        children: [
-                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                                className: `lg:p-3 p-1 rounded-full line-clamp-1 mx-3 border-2 ${katalog?.approval ? "bg-green-200 border-green-600" : "bg-red-200 border-red-600"}`,
-                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                                    className: "text-center",
-                                                                    children: katalog?.approval ? "approved" : "not approved"
-                                                                })
-                                                            }),
-                                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                                className: "flex flex-row",
-                                                                children: [
-                                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_10__/* .BsEye */ .rCC, {
-                                                                        size: 30,
-                                                                        title: "view",
-                                                                        className: "mx-1 p-1 bg-primary text-white rounded-md hover:text-primary border-2 border-primary hover:bg-white",
-                                                                        onClick: ()=>handleViewKatalog(katalog)
-                                                                    }),
-                                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_ai__WEBPACK_IMPORTED_MODULE_11__/* .AiOutlineDelete */ .VPh, {
-                                                                        size: 30,
-                                                                        title: "delete",
-                                                                        className: "mx-1 p-1 border-2 border-red-600 text-white bg-red-600 hover:text-red-400 rounded-md hover:bg-white",
-                                                                        onClick: ()=>handleOpenDeleteModal(katalog)
+                                                        }),
+                                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                            className: "flex items-center justify-between",
+                                                            children: [
+                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                    className: `lg:p-3 p-1 rounded-full line-clamp-1 mx-3 border-2 ${katalog?.approval ? "bg-green-200 border-green-600" : "bg-red-200 border-red-600"}`,
+                                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                                        className: "text-center",
+                                                                        children: katalog?.approval ? "approved" : "not approved"
                                                                     })
-                                                                ]
-                                                            })
-                                                        ]
-                                                    })
-                                                ]
-                                            }, index)) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                            className: "m-5 text-red-600",
-                                            children: "*No katalog added yet."
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_app_components_modal__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
-                                            isOpen: isPreviewModalOpen,
-                                            onClose: ()=>setPreviewModalOpen(false),
-                                            title: previewedKatalog.jobTitle,
-                                            content: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                className: "max-h-[80vh] overflow-y-auto",
-                                                children: [
-                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                        className: `border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2 ${previewedKatalog.approval ? "bg-green-300 border-green-600" : "bg-red-300 border-red-600"}`,
-                                                        children: [
-                                                            "Approval:",
-                                                            previewedKatalog.approval ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                                children: "Your data is approved"
-                                                            }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                                children: "Your data isn't approved yet"
-                                                            })
-                                                        ]
-                                                    }),
-                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                        className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
-                                                        children: [
-                                                            "Product Name :",
-                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                                children: previewedKatalog.title
-                                                            })
-                                                        ]
-                                                    }),
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                        className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
-                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                                            src: previewedKatalog.image,
-                                                            alt: "CV Preview",
-                                                            className: "max-h-[80vh] max-w-[80vw]"
+                                                                }),
+                                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                                    className: "flex flex-row",
+                                                                    children: [
+                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_10__/* .BsEye */ .rCC, {
+                                                                            size: 30,
+                                                                            title: "view",
+                                                                            className: "mx-1 p-1 bg-primary text-white rounded-md hover:text-primary border-2 border-primary hover:bg-white",
+                                                                            onClick: ()=>handleViewKatalog(katalog)
+                                                                        }),
+                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_ai__WEBPACK_IMPORTED_MODULE_11__/* .AiOutlineDelete */ .VPh, {
+                                                                            size: 30,
+                                                                            title: "delete",
+                                                                            className: "mx-1 p-1 border-2 border-red-600 text-white bg-red-600 hover:text-red-400 rounded-md hover:bg-white",
+                                                                            onClick: ()=>handleOpenDeleteModal(katalog)
+                                                                        })
+                                                                    ]
+                                                                })
+                                                            ]
                                                         })
-                                                    }),
-                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                        className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
-                                                        children: [
-                                                            "Price :",
-                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                                children: previewedKatalog.price
+                                                    ]
+                                                }, index)) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                className: "m-5 text-red-600",
+                                                children: "*No katalog added yet."
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_app_components_modal__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
+                                                isOpen: isPreviewModalOpen,
+                                                onClose: ()=>setPreviewModalOpen(false),
+                                                title: previewedKatalog.jobTitle,
+                                                content: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                    className: "max-h-[80vh] overflow-y-auto",
+                                                    children: [
+                                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                            className: `border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2 ${previewedKatalog.approval ? "bg-green-300 border-green-600" : "bg-red-300 border-red-600"}`,
+                                                            children: [
+                                                                "Approval:",
+                                                                previewedKatalog.approval ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                                    children: "Your data is approved"
+                                                                }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                                    children: "Your data isn't approved yet"
+                                                                })
+                                                            ]
+                                                        }),
+                                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                            className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
+                                                            children: [
+                                                                "Product Name :",
+                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                    children: previewedKatalog.title
+                                                                })
+                                                            ]
+                                                        }),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                            className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
+                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                                src: previewedKatalog.image,
+                                                                alt: "CV Preview",
+                                                                className: "max-h-[80vh] max-w-[80vw]"
                                                             })
-                                                        ]
-                                                    }),
-                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                        className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
-                                                        children: [
-                                                            "Details :",
-                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                                className: "whitespace-pre-wrap",
-                                                                children: previewedKatalog.details
-                                                            })
-                                                        ]
-                                                    }),
-                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                        className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
-                                                        children: [
-                                                            "Tag :",
-                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                                children: previewedKatalog.tag
-                                                            })
-                                                        ]
-                                                    }),
-                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                        className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
-                                                        children: [
-                                                            "Contact :",
-                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                                children: previewedKatalog.contact
-                                                            })
-                                                        ]
-                                                    })
-                                                ]
+                                                        }),
+                                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                            className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
+                                                            children: [
+                                                                "Price :",
+                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                    children: previewedKatalog.price
+                                                                })
+                                                            ]
+                                                        }),
+                                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                            className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
+                                                            children: [
+                                                                "Details :",
+                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                    className: "whitespace-pre-wrap",
+                                                                    children: previewedKatalog.details
+                                                                })
+                                                            ]
+                                                        }),
+                                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                            className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
+                                                            children: [
+                                                                "Tag :",
+                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                    children: previewedKatalog.tag
+                                                                })
+                                                            ]
+                                                        }),
+                                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                            className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
+                                                            children: [
+                                                                "Contact :",
+                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                                    children: previewedKatalog.contact
+                                                                })
+                                                            ]
+                                                        })
+                                                    ]
+                                                })
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_app_components_modal__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
+                                                isOpen: isDeleteModalOpen,
+                                                onClose: ()=>setDeleteModalOpen(false),
+                                                title: "Confirm Deletion",
+                                                content: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                    children: [
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                            children: "Are you sure you want to delete this product?"
+                                                        }),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                                            className: "bg-red-600 text-white px-4 py-2 rounded-md hover:text-red-600 border-2 border-red-600 hover:bg-white mx-2",
+                                                            onClick: ()=>handleDeleteKatalog(previewedKatalog),
+                                                            children: "Delete"
+                                                        }),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                                            className: "bg-primary text-white px-4 py-2 rounded-md hover:text-primary border-2 border-primary hover:bg-white mx-2",
+                                                            onClick: ()=>setDeleteModalOpen(false),
+                                                            children: "Cancel"
+                                                        })
+                                                    ]
+                                                })
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_components_DisclaimerModal__WEBPACK_IMPORTED_MODULE_7___default()), {
+                                                isOpen: disclaimerOpen,
+                                                setIsOpenClose: setDisclaimerOpen,
+                                                handlesubmit: handleSubmit
                                             })
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_app_components_modal__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
-                                            isOpen: isDeleteModalOpen,
-                                            onClose: ()=>setDeleteModalOpen(false),
-                                            title: "Confirm Deletion",
-                                            content: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                children: [
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                        children: "Are you sure you want to delete this product?"
-                                                    }),
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                                        className: "bg-red-600 text-white px-4 py-2 rounded-md hover:text-red-600 border-2 border-red-600 hover:bg-white mx-2",
-                                                        onClick: ()=>handleDeleteKatalog(previewedKatalog),
-                                                        children: "Delete"
-                                                    }),
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                                        className: "bg-primary text-white px-4 py-2 rounded-md hover:text-primary border-2 border-primary hover:bg-white mx-2",
-                                                        onClick: ()=>setDeleteModalOpen(false),
-                                                        children: "Cancel"
-                                                    })
-                                                ]
-                                            })
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_components_DisclaimerModal__WEBPACK_IMPORTED_MODULE_7___default()), {
-                                            isOpen: disclaimerOpen,
-                                            setIsOpenClose: setDisclaimerOpen,
-                                            handlesubmit: handleSubmit
-                                        })
-                                    ]
+                                        ]
+                                    })
                                 })
-                            })
+                            ]
                         })
                     ]
                 })
