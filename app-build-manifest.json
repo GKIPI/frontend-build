@@ -25,7 +25,7 @@
       "static/chunks/fd9d1056-c9eb6f688b3961a6.js",
       "static/chunks/596-3a6d73791341a0ca.js",
       "static/chunks/main-app-d22f5459cf5817ba.js",
-      "static/chunks/app/loading-88763a2df8f527ec.js"
+      "static/chunks/app/loading-0dd5045f7d832f2a.js"
     ],
     "/aboutUs/page": [
       "static/chunks/webpack-c197cd3ac6cb63cf.js",
@@ -72,6 +72,26 @@
       "static/chunks/920-d5b8093285d906b7.js",
       "static/chunks/app/(guest_route)/signup/page-1a6d709a7e5d51a7.js"
     ],
+    "/(public_route)/katalog/page": [
+      "static/chunks/webpack-c197cd3ac6cb63cf.js",
+      "static/chunks/fd9d1056-c9eb6f688b3961a6.js",
+      "static/chunks/596-3a6d73791341a0ca.js",
+      "static/chunks/main-app-d22f5459cf5817ba.js",
+      "static/chunks/00cbbcb7-01b78530e1ec5ea0.js",
+      "static/chunks/685-86f306acecfc3230.js",
+      "static/chunks/app/(public_route)/katalog/page-c8490d6abea2a2b9.js"
+    ],
+    "/(public_route)/layout": [
+      "static/chunks/webpack-c197cd3ac6cb63cf.js",
+      "static/chunks/fd9d1056-c9eb6f688b3961a6.js",
+      "static/chunks/596-3a6d73791341a0ca.js",
+      "static/chunks/main-app-d22f5459cf5817ba.js",
+      "static/chunks/5349c568-a6f61851afbcd7fc.js",
+      "static/chunks/685-86f306acecfc3230.js",
+      "static/chunks/749-952f3261248f2fcd.js",
+      "static/chunks/222-022a071afc6dc708.js",
+      "static/chunks/app/(public_route)/layout-9d9028db9d787ef9.js"
+    ],
     "/(private_route)/layout": [
       "static/chunks/webpack-c197cd3ac6cb63cf.js",
       "static/chunks/fd9d1056-c9eb6f688b3961a6.js",
@@ -102,25 +122,19 @@
       "static/css/da7eff67210bd60c.css",
       "static/chunks/app/(public_route)/lowongan/page-b610d401e9ef17e0.js"
     ],
-    "/(public_route)/layout": [
+    "/(private_route)/user/jobVacancies/page": [
       "static/chunks/webpack-c197cd3ac6cb63cf.js",
       "static/chunks/fd9d1056-c9eb6f688b3961a6.js",
       "static/chunks/596-3a6d73791341a0ca.js",
       "static/chunks/main-app-d22f5459cf5817ba.js",
-      "static/chunks/5349c568-a6f61851afbcd7fc.js",
+      "static/chunks/3627521c-d604ce320b1a5df9.js",
+      "static/chunks/00cbbcb7-01b78530e1ec5ea0.js",
+      "static/chunks/9081a741-72e9d0d8958756db.js",
       "static/chunks/685-86f306acecfc3230.js",
       "static/chunks/749-952f3261248f2fcd.js",
-      "static/chunks/222-022a071afc6dc708.js",
-      "static/chunks/app/(public_route)/layout-9d9028db9d787ef9.js"
-    ],
-    "/(public_route)/katalog/page": [
-      "static/chunks/webpack-c197cd3ac6cb63cf.js",
-      "static/chunks/fd9d1056-c9eb6f688b3961a6.js",
-      "static/chunks/596-3a6d73791341a0ca.js",
-      "static/chunks/main-app-d22f5459cf5817ba.js",
-      "static/chunks/00cbbcb7-01b78530e1ec5ea0.js",
-      "static/chunks/685-86f306acecfc3230.js",
-      "static/chunks/app/(public_route)/katalog/page-c8490d6abea2a2b9.js"
+      "static/chunks/920-d5b8093285d906b7.js",
+      "static/chunks/464-49d4014ba6d18a0c.js",
+      "static/chunks/app/(private_route)/user/jobVacancies/page-0a85630568fba5a5.js"
     ],
     "/(private_route)/user/jobSeeker/page": [
       "static/chunks/webpack-c197cd3ac6cb63cf.js",
@@ -148,19 +162,20 @@
       "static/chunks/464-49d4014ba6d18a0c.js",
       "static/chunks/app/(private_route)/user/katalog/page-4e72241885c97087.js"
     ],
-    "/(private_route)/user/jobVacancies/page": [
+    "/(admin_route)/layout": [
       "static/chunks/webpack-c197cd3ac6cb63cf.js",
       "static/chunks/fd9d1056-c9eb6f688b3961a6.js",
       "static/chunks/596-3a6d73791341a0ca.js",
       "static/chunks/main-app-d22f5459cf5817ba.js",
-      "static/chunks/3627521c-d604ce320b1a5df9.js",
-      "static/chunks/00cbbcb7-01b78530e1ec5ea0.js",
-      "static/chunks/9081a741-72e9d0d8958756db.js",
-      "static/chunks/685-86f306acecfc3230.js",
       "static/chunks/749-952f3261248f2fcd.js",
-      "static/chunks/920-d5b8093285d906b7.js",
-      "static/chunks/464-49d4014ba6d18a0c.js",
-      "static/chunks/app/(private_route)/user/jobVacancies/page-0a85630568fba5a5.js"
+      "static/chunks/app/(admin_route)/layout-9d6d7f5f1b1b9bbf.js"
+    ],
+    "/(admin_route)/admin/loading": [
+      "static/chunks/webpack-c197cd3ac6cb63cf.js",
+      "static/chunks/fd9d1056-c9eb6f688b3961a6.js",
+      "static/chunks/596-3a6d73791341a0ca.js",
+      "static/chunks/main-app-d22f5459cf5817ba.js",
+      "static/chunks/app/(admin_route)/admin/loading-56e83cd64a986904.js"
     ],
     "/(admin_route)/admin/dashboard/page": [
       "static/chunks/webpack-c197cd3ac6cb63cf.js",
@@ -179,21 +194,6 @@
       "static/chunks/222-022a071afc6dc708.js",
       "static/chunks/app/(admin_route)/admin/dashboard/layout-363ee81db1482932.js"
     ],
-    "/(admin_route)/admin/loading": [
-      "static/chunks/webpack-c197cd3ac6cb63cf.js",
-      "static/chunks/fd9d1056-c9eb6f688b3961a6.js",
-      "static/chunks/596-3a6d73791341a0ca.js",
-      "static/chunks/main-app-d22f5459cf5817ba.js",
-      "static/chunks/app/(admin_route)/admin/loading-b6732c32ffb3bc7e.js"
-    ],
-    "/(admin_route)/layout": [
-      "static/chunks/webpack-c197cd3ac6cb63cf.js",
-      "static/chunks/fd9d1056-c9eb6f688b3961a6.js",
-      "static/chunks/596-3a6d73791341a0ca.js",
-      "static/chunks/main-app-d22f5459cf5817ba.js",
-      "static/chunks/749-952f3261248f2fcd.js",
-      "static/chunks/app/(admin_route)/layout-9d6d7f5f1b1b9bbf.js"
-    ],
     "/(admin_route)/admin/dashboard/JobSeeker/page": [
       "static/chunks/webpack-c197cd3ac6cb63cf.js",
       "static/chunks/fd9d1056-c9eb6f688b3961a6.js",
@@ -209,7 +209,24 @@
       "static/chunks/fd9d1056-c9eb6f688b3961a6.js",
       "static/chunks/596-3a6d73791341a0ca.js",
       "static/chunks/main-app-d22f5459cf5817ba.js",
-      "static/chunks/app/(admin_route)/admin/dashboard/JobSeeker/loading-0a17b27e0dad91b0.js"
+      "static/chunks/app/(admin_route)/admin/dashboard/JobSeeker/loading-fb2212b4be4d5c4a.js"
+    ],
+    "/(admin_route)/admin/dashboard/Catalogs/page": [
+      "static/chunks/webpack-c197cd3ac6cb63cf.js",
+      "static/chunks/fd9d1056-c9eb6f688b3961a6.js",
+      "static/chunks/596-3a6d73791341a0ca.js",
+      "static/chunks/main-app-d22f5459cf5817ba.js",
+      "static/chunks/3627521c-d604ce320b1a5df9.js",
+      "static/chunks/8dc5345f-2fca8e26265fbff0.js",
+      "static/chunks/920-d5b8093285d906b7.js",
+      "static/chunks/app/(admin_route)/admin/dashboard/Catalogs/page-e3cf518ea5f259b1.js"
+    ],
+    "/(admin_route)/admin/dashboard/Catalogs/loading": [
+      "static/chunks/webpack-c197cd3ac6cb63cf.js",
+      "static/chunks/fd9d1056-c9eb6f688b3961a6.js",
+      "static/chunks/596-3a6d73791341a0ca.js",
+      "static/chunks/main-app-d22f5459cf5817ba.js",
+      "static/chunks/app/(admin_route)/admin/dashboard/Catalogs/loading-33df450e5a450657.js"
     ],
     "/(admin_route)/admin/dashboard/JobVacancies/page": [
       "static/chunks/webpack-c197cd3ac6cb63cf.js",
@@ -229,23 +246,6 @@
       "static/chunks/main-app-d22f5459cf5817ba.js",
       "static/chunks/app/(admin_route)/admin/dashboard/JobVacancies/loading-029e733ccd5fb838.js"
     ],
-    "/(admin_route)/admin/dashboard/Catalogs/page": [
-      "static/chunks/webpack-c197cd3ac6cb63cf.js",
-      "static/chunks/fd9d1056-c9eb6f688b3961a6.js",
-      "static/chunks/596-3a6d73791341a0ca.js",
-      "static/chunks/main-app-d22f5459cf5817ba.js",
-      "static/chunks/3627521c-d604ce320b1a5df9.js",
-      "static/chunks/8dc5345f-2fca8e26265fbff0.js",
-      "static/chunks/920-d5b8093285d906b7.js",
-      "static/chunks/app/(admin_route)/admin/dashboard/Catalogs/page-e3cf518ea5f259b1.js"
-    ],
-    "/(admin_route)/admin/dashboard/Catalogs/loading": [
-      "static/chunks/webpack-c197cd3ac6cb63cf.js",
-      "static/chunks/fd9d1056-c9eb6f688b3961a6.js",
-      "static/chunks/596-3a6d73791341a0ca.js",
-      "static/chunks/main-app-d22f5459cf5817ba.js",
-      "static/chunks/app/(admin_route)/admin/dashboard/Catalogs/loading-33df450e5a450657.js"
-    ],
     "/(admin_route)/admin/dashboard/ManageAdmin/page": [
       "static/chunks/webpack-c197cd3ac6cb63cf.js",
       "static/chunks/fd9d1056-c9eb6f688b3961a6.js",
@@ -260,7 +260,7 @@
       "static/chunks/fd9d1056-c9eb6f688b3961a6.js",
       "static/chunks/596-3a6d73791341a0ca.js",
       "static/chunks/main-app-d22f5459cf5817ba.js",
-      "static/chunks/app/(admin_route)/admin/dashboard/ManageAdmin/loading-3ff08553cd5fea19.js"
+      "static/chunks/app/(admin_route)/admin/dashboard/ManageAdmin/loading-163608a0e8945f3b.js"
     ],
     "/(admin_route)/admin/dashboard/ManageAdmin/Add/page": [
       "static/chunks/webpack-c197cd3ac6cb63cf.js",
