@@ -633,28 +633,20 @@ var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 function Hero() {
     return /*#__PURE__*/ jsx_runtime_.jsx("section", {
         className: "max-w-screen flex justify-center min-w-[50vw] h-[60vh]",
-        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
             className: "text-pimary flex flex-col justify-center items-center w-[80%] mt-[10%]",
-            children: [
-                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: "flex flex-col w-full md:w-1/2 p-5 gap-4",
-                    children: [
-                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: "font-lexend text-2xl leading-[3.5rem] md:text-[40px] font-bold text-center",
-                            children: "Komunitas Profesi Graha Persahabatan"
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: "font-poppins text-center text-xs",
-                            children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                        })
-                    ]
-                }),
-                /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                    href: "/",
-                    className: "lg:text-[30px] text-[20px] text-primary py-1 px-5 m-5 font-montserrat hover:bg-tertiary",
-                    children: "See More"
-                })
-            ]
+            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: "flex flex-col w-full md:w-1/2 p-5 gap-4",
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: "font-lexend text-2xl leading-[3.5rem] md:text-[40px] font-bold text-center",
+                        children: "Komunitas Profesi Graha Persahabatan"
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: "font-poppins text-center text-xs"
+                    })
+                ]
+            })
         })
     });
 }
@@ -739,7 +731,7 @@ __webpack_require__.r(__webpack_exports__);
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,7582,954,5556,3380,2451,1255,8369], () => (__webpack_exec__(33743)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,5364,5556,3380,2451,1255,7706], () => (__webpack_exec__(33743)));
 module.exports = __webpack_exports__;
 
 })();
