@@ -58,6 +58,8 @@ const Aside = ()=>{
             setActiveIndex(3);
         } else if (page === "/admin/dashboard/News") {
             setActiveIndex(4);
+        } else if (page === "/admin/dashboard/Users") {
+            setActiveIndex(5);
         }
     }, []);
     (0, _react.useEffect)(()=>{
@@ -112,12 +114,26 @@ const Aside = ()=>{
                                     })
                                 })
                             }),
+                            /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
+                                children: activeIndex === 5 ? /*#__PURE__*/ (0, _jsxruntime.jsx)("button", {
+                                    className: "text-[#B68D40] font-semibold",
+                                    children: "Users"
+                                }) : /*#__PURE__*/ (0, _jsxruntime.jsx)(_link.default, {
+                                    href: "/admin/dashboard/Users",
+                                    children: /*#__PURE__*/ (0, _jsxruntime.jsx)("button", {
+                                        onClick: ()=>{
+                                            setActiveIndex(5);
+                                        },
+                                        children: "Users"
+                                    })
+                                })
+                            }),
                             /*#__PURE__*/ (0, _jsxruntime.jsxs)("div", {
                                 className: "space-y-2",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxruntime.jsx)("h1", {
                                         className: "font-bold",
-                                        children: "Lowongan Kerja"
+                                        children: "Job Opportunities"
                                     }),
                                     /*#__PURE__*/ (0, _jsxruntime.jsxs)("div", {
                                         className: "flex flex-col pl-4 items-start",
@@ -171,7 +187,7 @@ const Aside = ()=>{
                                 children: [
                                     /*#__PURE__*/ (0, _jsxruntime.jsx)("h1", {
                                         className: "font-bold",
-                                        children: "Katalog Online"
+                                        children: "Online Catalog"
                                     }),
                                     /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
                                         className: "flex justify-start items-center",
@@ -214,16 +230,11 @@ const Aside = ()=>{
                             /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
                                 className: "border-b border-zinc-400"
                             }),
-                            /*#__PURE__*/ (0, _jsxruntime.jsxs)("div", {
+                            /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
                                 className: "font-montserrat text-sm text-zinc-400",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxruntime.jsx)("p", {
-                                        children: "Telp : (021) 7503247"
-                                    }),
-                                    /*#__PURE__*/ (0, _jsxruntime.jsx)("p", {
-                                        children: "e-Mail : emailGKIPI@gmail.com"
-                                    })
-                                ]
+                                children: /*#__PURE__*/ (0, _jsxruntime.jsx)("p", {
+                                    children: "e-Mail : admin@komunitasprofesigkipi.org"
+                                })
                             })
                         ]
                     })
@@ -314,6 +325,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function AdminDashboardLayout({ children }) {
+    const options = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+    };
+    const currentDate = new Date().toLocaleDateString("en-UK", options);
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         className: "min-h-screen w-full flex flex-row",
         children: [
@@ -321,17 +339,23 @@ function AdminDashboardLayout({ children }) {
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("main", {
                 className: "w-[75%] py-4 px-2 md:px-8 flex flex-col",
                 children: [
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "flex justify-end",
-                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("button", {
-                            className: "flex gap-2 items-center font-montserrat italic text-zinc-800",
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_2__/* .BsPersonCircle */ ._Tb, {}),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                    children: "GKI Pondok Indah (Admin)"
-                                })
-                            ]
-                        })
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                        className: "flex justify-end gap-8",
+                        children: [
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
+                                className: "gap-2 items-center font-montserrat text-zinc-800",
+                                children: currentDate
+                            }),
+                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("button", {
+                                className: "flex gap-2 items-center font-montserrat italic text-zinc-800",
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_2__/* .BsPersonCircle */ ._Tb, {}),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                        children: "GKI Pondok Indah (Admin)"
+                                    })
+                                ]
+                            })
+                        ]
                     }),
                     children
                 ]

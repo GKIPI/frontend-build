@@ -708,7 +708,7 @@ function UserDashboard() {
                                                     ]
                                                 }, index)) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                                 className: "m-5 text-red-600",
-                                                children: "*No job vacancies added yet."
+                                                children: "*No vacancies have been added yet."
                                             }),
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_app_components_modal__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
                                                 isOpen: isPreviewModalOpen,
@@ -868,7 +868,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,5105,3500,5816,930,2141,7469,1927,9940], () => (__webpack_exec__(93451)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,5105,3500,5816,930,5285,7469,1927,9940], () => (__webpack_exec__(93451)));
 module.exports = __webpack_exports__;
 
 })();

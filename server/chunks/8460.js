@@ -54,7 +54,7 @@ function Carousell() {
                     className: "spinner"
                 })
             })
-        }) : data.length === 0 ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+        }) : data?.length === 0 ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
             className: "bg-tertiary h-[20vh] flex items-center justify-center text-white",
             children: "No news posted yet."
         }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(swiper_react__WEBPACK_IMPORTED_MODULE_1__/* .Swiper */ .tq, {
@@ -73,7 +73,7 @@ function Carousell() {
                 swiper_modules__WEBPACK_IMPORTED_MODULE_5__/* .Navigation */ .W_
             ],
             className: "mySwiper",
-            children: data.map((item, index)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(swiper_react__WEBPACK_IMPORTED_MODULE_1__/* .SwiperSlide */ .o5, {
+            children: data?.map((item, index)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(swiper_react__WEBPACK_IMPORTED_MODULE_1__/* .SwiperSlide */ .o5, {
                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Card, {
                         data: item
                     })
@@ -82,7 +82,6 @@ function Carousell() {
     });
 }
 function Card(row) {
-    console.log(row);
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_7___default()), {
         href: `/activity/${row?.data?._id}`,
         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {

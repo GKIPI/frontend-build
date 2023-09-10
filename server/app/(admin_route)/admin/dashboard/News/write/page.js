@@ -411,16 +411,10 @@ function Write() {
             body: JSON.stringify(data)
         });
         const _stat = await res.json();
-        console.log(_stat);
+        setImageData("");
+        setTitle("");
+        setDetails("");
     };
-    const getData = async ()=>{
-        const res = await fetch("/api/admin/activity");
-        const data = await res.json();
-        console.log(data);
-    };
-    (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(()=>{
-        getData();
-    }, []);
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
@@ -536,7 +530,7 @@ module.exports = __webpack_require__(50954)
 var __webpack_require__ = require("../../../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,2451,6482,8976,2141,4768], () => (__webpack_exec__(17912)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,2451,6482,8976,5285,4768], () => (__webpack_exec__(17912)));
 module.exports = __webpack_exports__;
 
 })();

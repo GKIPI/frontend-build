@@ -427,7 +427,7 @@ __webpack_require__.r(__webpack_exports__);
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
                 className: "text-4xl font-montserrat font-bold border-b-2 border-spacing-5",
-                children: "Tambah Admin"
+                children: "Add Admin"
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("form", {
                 onSubmit: handleSubmit,
@@ -436,7 +436,7 @@ __webpack_require__.r(__webpack_exports__);
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                         children: [
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                children: "Nama:"
+                                children: "Name:"
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
                                 type: "text",
@@ -511,7 +511,7 @@ __webpack_require__.r(__webpack_exports__);
                     href: "/admin/dashboard/ManageAdmin",
                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                         className: "bg-zinc-800 px-5 py-2 text-slate-200 hover:outline hover:outline-2 hover:outline-zinc-800 hover:bg-transparent hover:text-zinc-800 transition-colors duration-200",
-                        children: "Kembali"
+                        children: "Back"
                     })
                 })
             })
@@ -580,7 +580,7 @@ function BlurredOnLoad() {
 var __webpack_require__ = require("../../../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,2451,6482,5105,8976,2141,4768], () => (__webpack_exec__(72909)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,2451,6482,8976,5105,5285,4768], () => (__webpack_exec__(72909)));
 module.exports = __webpack_exports__;
 
 })();

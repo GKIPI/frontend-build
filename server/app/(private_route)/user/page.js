@@ -361,7 +361,7 @@ function Login() {
                                 className: "w-[20%] my-10 flex mx-4 items-center  relative justify-center bg-primary lg:h-[200px] h-[100px] !p-3 hover:bg-primary/50",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                     className: "text-white text-center lg:text-2xl",
-                                    children: "Katalog"
+                                    children: "Catalog"
                                 })
                             })
                         ]
@@ -382,7 +382,7 @@ function Login() {
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,6482,7339,2141,1927], () => (__webpack_exec__(82942)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,6482,7339,5285,1927], () => (__webpack_exec__(82942)));
 module.exports = __webpack_exports__;
 
 })();

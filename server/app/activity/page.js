@@ -371,7 +371,6 @@ function Activity() {
             console.error("Error fetching data:", error);
         });
     }, []);
-    console.log(data);
     const cardData = generateCardData(10);
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("section", {
         className: "flex items-center flex-col overflow-hidden",
@@ -403,10 +402,10 @@ function Card({ row }) {
             href: `/activity/${row._id}`,
             children: [
                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                    className: "flex flex-row p-3",
+                    className: "flex flex-row p-3 items-center",
                     children: [
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                            className: "w-[100px] h-[50px] overflow-hidden",
+                            className: "min-w-[100px] max-w-[101px] h-[50px] overflow-hidden",
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                 src: row.image,
                                 alt: row.title
@@ -416,9 +415,11 @@ function Card({ row }) {
                             className: "px-3",
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                    className: "font-bold",
                                     children: row.title
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                    className: "line-clamp-3",
                                     children: row.details
                                 })
                             ]
@@ -482,7 +483,7 @@ __webpack_require__.r(__webpack_exports__);
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,2451,4025,3155,2141,63,8460], () => (__webpack_exec__(62656)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,2451,4025,3155,5285,63,8460], () => (__webpack_exec__(62656)));
 module.exports = __webpack_exports__;
 
 })();

@@ -462,8 +462,7 @@ __webpack_require__.r(__webpack_exports__);
         className: "min-h-[75vh] w-full flex flex-col items-center",
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                className: "text-center border-b-2 pb-4 font-montserrat",
-                children: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem repudiandae dignissimos libero nisi. Fuga natus laborum dolore nostrum! Odit iusto vero tenetur repellat voluptatum amet necessitatibus a autem sunt doloribus delectus, officia consequuntur sit, maxime ipsa corrupti quaerat aperiam quibusdam rem. Dolores consequatur molestiae reprehenderit. Saepe nulla eum error officia?"
+                className: "text-center border-b-2 pb-4 font-montserrat"
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                 className: "flex justify-end w-full pt-5 pb-3",
@@ -471,7 +470,7 @@ __webpack_require__.r(__webpack_exports__);
                     href: "/admin/dashboard/ManageAdmin/Add",
                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                         className: "bg-zinc-800 px-5 py-2 text-slate-200 hover:outline hover:outline-2 hover:outline-zinc-800 hover:bg-transparent hover:text-zinc-800 transition-colors duration-200",
-                        children: "Tambah Admin"
+                        children: "Add Admin"
                     })
                 })
             }),
@@ -553,7 +552,7 @@ __webpack_require__.r(__webpack_exports__);
                     href: "/admin/dashboard",
                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                         className: "bg-zinc-800 px-5 py-2 text-slate-200 hover:outline hover:outline-2 hover:outline-zinc-800 hover:bg-transparent hover:text-zinc-800 transition-colors duration-200",
-                        children: "Kembali"
+                        children: "Back"
                     })
                 })
             })
@@ -622,7 +621,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,2451,6482,8976,2695,2141,4768], () => (__webpack_exec__(28849)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,2451,6482,8976,2695,5285,4768], () => (__webpack_exec__(28849)));
 module.exports = __webpack_exports__;
 
 })();

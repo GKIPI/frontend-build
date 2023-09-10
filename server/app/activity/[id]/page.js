@@ -478,7 +478,7 @@ function activityDetails({ params }) {
                         children: data?.title
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "w-[90vw] self-center max-h-[50vh] items-center flex overflow-hidden justify-center",
+                        className: "w-[90vw] self-center  items-center flex overflow-hidden justify-center",
                         children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                             src: data?.image,
                             className: "self-center"
@@ -570,7 +570,7 @@ __webpack_require__.r(__webpack_exports__);
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,2451,4025,3500,2141,63], () => (__webpack_exec__(51610)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,2451,4025,3500,5285,63], () => (__webpack_exec__(51610)));
 module.exports = __webpack_exports__;
 
 })();

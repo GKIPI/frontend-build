@@ -379,7 +379,7 @@ function Home() {
                 href: "/admin/dashboard/ManageAdmin",
                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                     className: "bg-zinc-800 px-5 py-2 text-slate-200 hover:outline hover:outline-2 hover:outline-zinc-800 hover:bg-transparent hover:text-zinc-800 transition-colors duration-200",
-                    children: "Kelola Admin"
+                    children: "Manage Admin"
                 })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
@@ -434,7 +434,7 @@ module.exports = __webpack_require__(50954)
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,2451,6482,8976,2141,4768], () => (__webpack_exec__(58253)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,2451,6482,8976,5285,4768], () => (__webpack_exec__(58253)));
 module.exports = __webpack_exports__;
 
 })();
