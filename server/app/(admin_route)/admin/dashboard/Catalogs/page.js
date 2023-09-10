@@ -236,7 +236,7 @@ module.exports = require("url");
 
 /***/ }),
 
-/***/ 40427:
+/***/ 72573:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -278,30 +278,30 @@ __webpack_require__.r(__webpack_exports__);
         'Catalogs',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 13005)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\admin\\dashboard\\Catalogs\\page.jsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 13005)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\admin\\dashboard\\Catalogs\\page.jsx"],
           
         }]
       },
         {
-          'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 39740)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\admin\\dashboard\\Catalogs\\loading.jsx"],
+          'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 39740)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\admin\\dashboard\\Catalogs\\loading.jsx"],
           
         }
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 55834)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\admin\\dashboard\\layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 55834)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\admin\\dashboard\\layout.js"],
           
         }
       ]
       },
         {
-          'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 95734)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\admin\\loading.jsx"],
+          'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 95734)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\admin\\loading.jsx"],
           
         }
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 62248)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 62248)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\layout.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -313,8 +313,8 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\layout.js"],
-'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\loading.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\layout.js"],
+'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\loading.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -325,7 +325,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       ]
       }.children;
-    const pages = ["D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\admin\\dashboard\\Catalogs\\page.jsx"];
+    const pages = ["D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\admin\\dashboard\\Catalogs\\page.jsx"];
 
     
 
@@ -350,10 +350,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 24781:
+/***/ 61341:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73747))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 76379))
 
 /***/ }),
 
@@ -370,6 +370,27 @@ const toRupiah = (number)=>{
         style: "currency",
         currency: "IDR"
     }).format(number);
+};
+
+
+/***/ }),
+
+/***/ 21659:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   getRequestedData: () => (/* binding */ getRequestedData),
+/* harmony export */   requestCounter: () => (/* binding */ requestCounter)
+/* harmony export */ });
+const requestCounter = (requests)=>{
+    const requestCount = requests.filter((request)=>!request.approval);
+    return requestCount.length;
+};
+const getRequestedData = (requests)=>{
+    const requestCount = requests.filter((request)=>!request.approval);
+    return requestCount;
 };
 
 
@@ -821,7 +842,7 @@ module.exports = CatalogReviewModal;
 
 /***/ }),
 
-/***/ 73747:
+/***/ 76379:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1116,7 +1137,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(61363);
 
-const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\kuliah\cuan\frontend-gkpi\src\app\(admin_route)\admin\dashboard\Catalogs\page.jsx`)
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\GitHub\gkipi-project\frontend-gkipi\src\app\(admin_route)\admin\dashboard\Catalogs\page.jsx`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -1137,7 +1158,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,5364,5556,3380,2451,6482,5105,8976,5816,2695,7706,3064,5634,2327], () => (__webpack_exec__(40427)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,2451,6482,5105,8976,5816,2695,2141,4768,5634,7100], () => (__webpack_exec__(72573)));
 module.exports = __webpack_exports__;
 
 })();

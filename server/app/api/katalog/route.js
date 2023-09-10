@@ -19,7 +19,7 @@ module.exports = require("os");
 
 /***/ }),
 
-/***/ 45417:
+/***/ 4313:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -86,7 +86,6 @@ async function GET(req) {
     }
 }
 // Handler for the POST request
-// Handler for the POST request
 async function POST(request) {
     try {
         // Connect to the database
@@ -127,7 +126,7 @@ async function POST(request) {
     }
 }
 
-;// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?page=%2Fapi%2Fkatalog%2Froute&name=app%2Fapi%2Fkatalog%2Froute&pagePath=private-next-app-dir%2Fapi%2Fkatalog%2Froute.js&appDir=D%3A%5Ckuliah%5Ccuan%5Cfrontend-gkpi%5Csrc%5Capp&appPaths=%2Fapi%2Fkatalog%2Froute&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!
+;// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?page=%2Fapi%2Fkatalog%2Froute&name=app%2Fapi%2Fkatalog%2Froute&pagePath=private-next-app-dir%2Fapi%2Fkatalog%2Froute.js&appDir=D%3A%5CGitHub%5Cgkipi-project%5Cfrontend-gkipi%5Csrc%5Capp&appPaths=%2Fapi%2Fkatalog%2Froute&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!
 
     
 
@@ -135,7 +134,7 @@ async function POST(request) {
 
     
 
-    const options = {"definition":{"kind":"APP_ROUTE","page":"/api/katalog/route","pathname":"/api/katalog","filename":"route","bundlePath":"app/api/katalog/route"},"resolvedPagePath":"D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\api\\katalog\\route.js","nextConfigOutput":""}
+    const options = {"definition":{"kind":"APP_ROUTE","page":"/api/katalog/route","pathname":"/api/katalog","filename":"route","bundlePath":"app/api/katalog/route"},"resolvedPagePath":"D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\api\\katalog\\route.js","nextConfigOutput":""}
     const routeModule = new (module_default())({
       ...options,
       userland: route_namespaceObject,
@@ -251,7 +250,7 @@ const KatalogModel = mongoose__WEBPACK_IMPORTED_MODULE_0__.models.Katalog || (0,
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,5501,9335], () => (__webpack_exec__(45417)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,5501,9335], () => (__webpack_exec__(4313)));
 module.exports = __webpack_exports__;
 
 })();

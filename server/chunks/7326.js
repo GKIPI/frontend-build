@@ -55,6 +55,10 @@ const seekerSchema = new mongoose__WEBPACK_IMPORTED_MODULE_0__.Schema({
         type: Number,
         required: true
     },
+    headshot: {
+        type: String,
+        required: true
+    },
     approval: {
         type: Boolean,
         required: true,

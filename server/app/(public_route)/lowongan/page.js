@@ -236,7 +236,7 @@ module.exports = require("url");
 
 /***/ }),
 
-/***/ 16742:
+/***/ 65262:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -272,7 +272,7 @@ __webpack_require__.r(__webpack_exports__);
         'lowongan',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 79709)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(public_route)\\lowongan\\page.js"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 79709)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(public_route)\\lowongan\\page.js"],
           
         }]
       },
@@ -283,7 +283,7 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 64371)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(public_route)\\layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 48492)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(public_route)\\layout.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -295,8 +295,8 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\layout.js"],
-'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\loading.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\layout.js"],
+'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\loading.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -307,7 +307,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       ]
       }.children;
-    const pages = ["D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(public_route)\\lowongan\\page.js"];
+    const pages = ["D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(public_route)\\lowongan\\page.js"];
 
     
 
@@ -332,7 +332,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 47827:
+/***/ 28801:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 39206))
@@ -613,11 +613,11 @@ var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
 
 
 function Card({ array, type, onClicked }) {
-    if (type === false) return /*#__PURE__*/ jsx_runtime_.jsx("div", {
+    if (type === "vacancy") return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: "grid gap-2 sm:gap-5 grid-cols-2 lg:grid-cols-3 mx-0 p-[5%] xs:p-5 sm:p-8 md:p-12 w-full overflow-x-hidden overflow-y-hidden",
         children: array.map((card, i)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 onClick: ()=>onClicked(card),
-                className: "max-h-[370px] w-full shadow-md p-4",
+                className: "max-h-[370px] w-full shadow-md p-4 flex flex-col justify-between",
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: "bg-slate-300 max-h-[250px] w-full overflow-y-hidden",
@@ -626,40 +626,44 @@ function Card({ array, type, onClicked }) {
                             alt: "Preview"
                         })
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                        className: "text-xl font-bold mb-2 line-clamp-1 ",
-                        children: card.title
-                    }),
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: "flex flex-row justify-between mx-3",
                         children: [
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: "flex flex-row",
-                                children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "flex items-center",
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                                            src: buildings
-                                        })
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "text-sm mx-2 line-clamp-1 ",
-                                        children: card.company
-                                    })
-                                ]
+                            /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                className: "text-xl mb-2 line-clamp-1 font-montserrat font-medium",
+                                children: card.jobTitle
                             }),
                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: "flex flex-row",
+                                className: "flex flex-row justify-between mx-3",
                                 children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "flex items-center",
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                                            src: map
-                                        })
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: "flex flex-row",
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: "flex items-center",
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                                    src: buildings
+                                                })
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: "text-sm mx-2 line-clamp-1 font-montserrat",
+                                                children: card.company
+                                            })
+                                        ]
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "text-sm mx-2 line-clamp-1 ",
-                                        children: card.location
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: "flex flex-row",
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: "flex items-center",
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                                    src: map
+                                                })
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: "text-sm mx-2 line-clamp-1 font-montserrat",
+                                                children: card.location
+                                            })
+                                        ]
                                     })
                                 ]
                             })
@@ -681,22 +685,22 @@ function Card({ array, type, onClicked }) {
                             alt: "Preview"
                         })
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                        className: "text-xl font-bold mb-2",
-                        children: card.title
+                    /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                        className: "text-base p-0 m-0 line-clamp-1 font-playfairDisplay italic text-[#B68D40] mx-3",
+                        children: card.name
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: "flex flex-row justify-between mx-3",
                         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                             className: "flex flex-col",
                             children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                                    className: "text-xs p-0 m-0 line-clamp-1 ",
-                                    children: card.name
+                                /*#__PURE__*/ jsx_runtime_.jsx("h1", {
+                                    className: "p-0 m-0 line-clamp-1 font-montserrat font-medium",
+                                    children: card.jobTitle
                                 }),
                                 /*#__PURE__*/ jsx_runtime_.jsx("h1", {
-                                    className: "font-bold p-0 m-0 line-clamp-1 ",
-                                    children: card.jobTitle
+                                    className: "text-base p-0 m-0 line-clamp-1 font-montserrat font-medium text-[#000000]",
+                                    children: card.skills
                                 })
                             ]
                         })
@@ -741,7 +745,7 @@ var modules = __webpack_require__(11987);
 function Lowongan() {
     const [isLoading, setIsLoading] = (0,react_.useState)(true);
     const [isLoadingData, setIsLoadingData] = (0,react_.useState)(false);
-    const [activePage, setActivePage] = (0,react_.useState)(true);
+    const [activePage, setActivePage] = (0,react_.useState)("seeker");
     const [page, setPage] = (0,react_.useState)(1);
     const [filteredCards, setFilteredCards] = (0,react_.useState)([]);
     const [swiper, setSwiper] = (0,react_.useState)(null);
@@ -758,7 +762,7 @@ function Lowongan() {
     ]);
     (0,react_.useEffect)(()=>{
         setLastPageReached(false);
-        if (activePage) {
+        if (activePage === "seeker") {
             fetch(`/api/seeker?page=1`).then((response)=>{
                 if (!response.ok) {
                     throw new Error("Network response was not ok");
@@ -792,7 +796,11 @@ function Lowongan() {
     ]);
     const onSelect = ()=>{
         setIsLoading(true);
-        setActivePage(!activePage);
+        if (activePage === "seeker") {
+            setActivePage("vacancy");
+        } else {
+            setActivePage("seeker");
+        }
         setCards([]);
         setFilteredCards([]);
     };
@@ -821,14 +829,14 @@ function Lowongan() {
     };
     const fetchMoreData = ()=>{
         const nextPage = page + 1;
-        const apiUrl = activePage ? `/api/seeker?page=${nextPage}` : `/api/vacancy?page=${nextPage}`;
+        const apiUrl = activePage === "seeker" ? `/api/seeker?page=${nextPage}` : `/api/vacancy?page=${nextPage}`;
         fetch(apiUrl).then((response)=>{
             if (!response.ok) {
                 throw new Error("Network response was not ok");
             }
             return response.json();
         }).then((data)=>{
-            if (activePage == false) {
+            if (activePage === "vacancy") {
                 if (data.vacancies && data.vacancies.length === 0) {
                     setLastPageReached(true);
                     setIsLoadingData(false);
@@ -876,12 +884,12 @@ function Lowongan() {
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("div", {
                             onClick: onSelect,
-                            className: "font-montserrat font-[900] m-7 cursor-pointer hover:bg-primary hover:text-white p-2 " + (activePage ? "text-black" : "text-black/25"),
+                            className: "font-montserrat font-[900] m-7 cursor-pointer hover:bg-primary hover:text-white p-2 " + (activePage === "seeker" ? "text-black" : "text-black/25"),
                             children: "Job Seeker"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("div", {
                             onClick: onSelect,
-                            className: "font-montserrat font-[900] m-7 cursor-pointer hover:bg-primary hover:text-white p-2 " + (activePage ? "text-black/25" : "text-black"),
+                            className: "font-montserrat font-[900] m-7 cursor-pointer hover:bg-primary hover:text-white p-2 " + (activePage === "vacancy" ? "text-black" : "text-black/25"),
                             children: "Job Vacancies"
                         })
                     ]
@@ -1022,7 +1030,7 @@ function Lowongan() {
                                                 children: selectedModalContent?.jobTitle
                                             })
                                         }),
-                                        activePage ? /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        activePage === "seeker" ? /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                             className: "border-2 p-2 rounded-md bg-tertiary",
                                             children: [
                                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -1193,7 +1201,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(61363);
 
-const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\kuliah\cuan\frontend-gkpi\src\app\(public_route)\lowongan\page.js`)
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\GitHub\gkipi-project\frontend-gkipi\src\app\(public_route)\lowongan\page.js`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -1214,7 +1222,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,5364,5556,3380,2451,6482,930,3500,1255,4178,2215,1792,7706,5634,7469,2062], () => (__webpack_exec__(16742)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,2451,6482,4025,3500,350,930,3155,2772,2141,5634,2107,7469,6134], () => (__webpack_exec__(65262)));
 module.exports = __webpack_exports__;
 
 })();

@@ -19,7 +19,7 @@ module.exports = require("os");
 
 /***/ }),
 
-/***/ 29418:
+/***/ 9577:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -118,6 +118,9 @@ async function PUT(request, params) {
         if (updatedData.approval) {
             seekerToUpdate.approval = updatedData.approval;
         }
+        if (updatedData.headshot) {
+            seekerToUpdate.headshot = updatedData.headshot;
+        }
         if (updatedData.approval === false) {
             seekerToUpdate.approval = updatedData.approval;
         }
@@ -168,7 +171,7 @@ async function DELETE(request, params) {
     }
 }
 
-;// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?page=%2Fapi%2Fseeker%2F%5Bid%5D%2Froute&name=app%2Fapi%2Fseeker%2F%5Bid%5D%2Froute&pagePath=private-next-app-dir%2Fapi%2Fseeker%2F%5Bid%5D%2Froute.js&appDir=D%3A%5Ckuliah%5Ccuan%5Cfrontend-gkpi%5Csrc%5Capp&appPaths=%2Fapi%2Fseeker%2F%5Bid%5D%2Froute&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!
+;// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?page=%2Fapi%2Fseeker%2F%5Bid%5D%2Froute&name=app%2Fapi%2Fseeker%2F%5Bid%5D%2Froute&pagePath=private-next-app-dir%2Fapi%2Fseeker%2F%5Bid%5D%2Froute.js&appDir=D%3A%5CGitHub%5Cgkipi-project%5Cfrontend-gkipi%5Csrc%5Capp&appPaths=%2Fapi%2Fseeker%2F%5Bid%5D%2Froute&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!
 
     
 
@@ -176,7 +179,7 @@ async function DELETE(request, params) {
 
     
 
-    const options = {"definition":{"kind":"APP_ROUTE","page":"/api/seeker/[id]/route","pathname":"/api/seeker/[id]","filename":"route","bundlePath":"app/api/seeker/[id]/route"},"resolvedPagePath":"D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\api\\seeker\\[id]\\route.js","nextConfigOutput":""}
+    const options = {"definition":{"kind":"APP_ROUTE","page":"/api/seeker/[id]/route","pathname":"/api/seeker/[id]","filename":"route","bundlePath":"app/api/seeker/[id]/route"},"resolvedPagePath":"D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\api\\seeker\\[id]\\route.js","nextConfigOutput":""}
     const routeModule = new (module_default())({
       ...options,
       userland: route_namespaceObject,
@@ -233,7 +236,7 @@ const startDb = async ()=>{
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,5501,9335,7326], () => (__webpack_exec__(29418)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,5501,9335,7326], () => (__webpack_exec__(9577)));
 module.exports = __webpack_exports__;
 
 })();

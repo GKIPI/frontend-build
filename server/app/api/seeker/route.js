@@ -19,7 +19,7 @@ module.exports = require("os");
 
 /***/ }),
 
-/***/ 23866:
+/***/ 7770:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -94,7 +94,7 @@ async function POST(request) {
         await (0,db/* default */.Z)();
         const { user, image, jobTitle, skills, tag, name, sex, education, age } = JSON.parse(await request.text());
         // Simple input data validation
-        if (!user || !image || !jobTitle || !skills || !name || !sex || !education || !age) {
+        if (!user || !image || !jobTitle || !skills || !name || !sex || !education || !age || !headshot) {
             return next_response/* default */.Z.json({
                 error: "Bad request. Missing required fields."
             }, {
@@ -110,7 +110,8 @@ async function POST(request) {
             name,
             sex,
             education,
-            age
+            age,
+            headshot
         };
         if (tag) {
             seekerData.tag = tag;
@@ -133,7 +134,7 @@ async function POST(request) {
     }
 }
 
-;// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?page=%2Fapi%2Fseeker%2Froute&name=app%2Fapi%2Fseeker%2Froute&pagePath=private-next-app-dir%2Fapi%2Fseeker%2Froute.js&appDir=D%3A%5Ckuliah%5Ccuan%5Cfrontend-gkpi%5Csrc%5Capp&appPaths=%2Fapi%2Fseeker%2Froute&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!
+;// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?page=%2Fapi%2Fseeker%2Froute&name=app%2Fapi%2Fseeker%2Froute&pagePath=private-next-app-dir%2Fapi%2Fseeker%2Froute.js&appDir=D%3A%5CGitHub%5Cgkipi-project%5Cfrontend-gkipi%5Csrc%5Capp&appPaths=%2Fapi%2Fseeker%2Froute&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!
 
     
 
@@ -141,7 +142,7 @@ async function POST(request) {
 
     
 
-    const options = {"definition":{"kind":"APP_ROUTE","page":"/api/seeker/route","pathname":"/api/seeker","filename":"route","bundlePath":"app/api/seeker/route"},"resolvedPagePath":"D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\api\\seeker\\route.js","nextConfigOutput":""}
+    const options = {"definition":{"kind":"APP_ROUTE","page":"/api/seeker/route","pathname":"/api/seeker","filename":"route","bundlePath":"app/api/seeker/route"},"resolvedPagePath":"D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\api\\seeker\\route.js","nextConfigOutput":""}
     const routeModule = new (module_default())({
       ...options,
       userland: route_namespaceObject,
@@ -198,7 +199,7 @@ const startDb = async ()=>{
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,5501,9335,7326], () => (__webpack_exec__(23866)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,5501,9335,7326], () => (__webpack_exec__(7770)));
 module.exports = __webpack_exports__;
 
 })();

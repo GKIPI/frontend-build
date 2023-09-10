@@ -96,7 +96,7 @@ module.exports = require("zlib");
 
 /***/ }),
 
-/***/ 63552:
+/***/ 86095:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -113,7 +113,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_dist_server_node_polyfill_headers__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_node_polyfill_headers__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_dist_server_future_route_modules_app_route_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(69692);
 /* harmony import */ var next_dist_server_future_route_modules_app_route_module__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_future_route_modules_app_route_module__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var D_kuliah_cuan_frontend_gkpi_src_app_api_auth_nextauth_route_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(23394);
+/* harmony import */ var D_GitHub_gkipi_project_frontend_gkipi_src_app_api_auth_nextauth_route_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(23394);
 
     
 
@@ -121,10 +121,10 @@ __webpack_require__.r(__webpack_exports__);
 
     
 
-    const options = {"definition":{"kind":"APP_ROUTE","page":"/api/auth/[...nextauth]/route","pathname":"/api/auth/[...nextauth]","filename":"route","bundlePath":"app/api/auth/[...nextauth]/route"},"resolvedPagePath":"D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\api\\auth\\[...nextauth]\\route.js","nextConfigOutput":""}
+    const options = {"definition":{"kind":"APP_ROUTE","page":"/api/auth/[...nextauth]/route","pathname":"/api/auth/[...nextauth]","filename":"route","bundlePath":"app/api/auth/[...nextauth]/route"},"resolvedPagePath":"D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\api\\auth\\[...nextauth]\\route.js","nextConfigOutput":""}
     const routeModule = new (next_dist_server_future_route_modules_app_route_module__WEBPACK_IMPORTED_MODULE_1___default())({
       ...options,
-      userland: D_kuliah_cuan_frontend_gkpi_src_app_api_auth_nextauth_route_js__WEBPACK_IMPORTED_MODULE_2__,
+      userland: D_GitHub_gkipi_project_frontend_gkipi_src_app_api_auth_nextauth_route_js__WEBPACK_IMPORTED_MODULE_2__,
     })
 
     // Pull out the exports that we need to expose from the module. This should
@@ -151,7 +151,7 @@ __webpack_require__.r(__webpack_exports__);
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,5501,6810,2561,3394], () => (__webpack_exec__(63552)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,5501,6810,2561,3394], () => (__webpack_exec__(86095)));
 module.exports = __webpack_exports__;
 
 })();

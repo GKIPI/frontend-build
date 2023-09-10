@@ -236,7 +236,7 @@ module.exports = require("url");
 
 /***/ }),
 
-/***/ 17016:
+/***/ 62656:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -269,7 +269,7 @@ __webpack_require__.r(__webpack_exports__);
         'activity',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 70257)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\activity\\page.js"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 45762)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\activity\\page.js"],
           
         }]
       },
@@ -286,8 +286,8 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\layout.js"],
-'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\loading.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\layout.js"],
+'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\loading.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -298,7 +298,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       ]
       }.children;
-    const pages = ["D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\activity\\page.js"];
+    const pages = ["D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\activity\\page.js"];
 
     
 
@@ -323,162 +323,147 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 23562:
+/***/ 72223:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 50954, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 73380, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 49974))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 88921))
 
 /***/ }),
 
-/***/ 3097:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-/* __next_internal_client_entry_do_not_use__  cjs */ 
-const { createProxy } = __webpack_require__(61363);
-module.exports = createProxy("D:\\kuliah\\cuan\\frontend-gkpi\\node_modules\\next\\dist\\client\\link.js");
- //# sourceMappingURL=link.js.map
-
-
-/***/ }),
-
-/***/ 25124:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-module.exports = __webpack_require__(3097);
-
-
-/***/ }),
-
-/***/ 70257:
+/***/ 88921:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ page_Activity)
-});
-
-// EXTERNAL MODULE: external "next/dist/compiled/react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(56786);
-// EXTERNAL MODULE: ./node_modules/next/link.js
-var next_link = __webpack_require__(25124);
-var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
-;// CONCATENATED MODULE: ./public/Activity.png
-/* harmony default export */ const Activity = ({"src":"/_next/static/media/Activity.36f11568.png","height":4096,"width":2668,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAMAAAAGL8UJAAAAJ1BMVEUGBQIZFA48NjAODQkxJBpXVFIwMDArJyJIOzEnHhZvY1pZRzqajIAi9VpnAAAACXBIWXMAACxLAAAsSwGlPZapAAAAKklEQVR4nAXBhwEAMAzCMANJ9//3ViIRoACcWjs8rxJ9nWKfgZndHiBPfQ4wAKHNgU5RAAAAAElFTkSuQmCC","blurWidth":5,"blurHeight":8});
-// EXTERNAL MODULE: ./node_modules/next/image.js
-var next_image = __webpack_require__(14178);
-var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
-;// CONCATENATED MODULE: ./src/app/activity/page.js
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Card: () => (/* binding */ Card),
+/* harmony export */   "default": () => (/* binding */ Activity)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(56786);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_carousell__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(98460);
+/* harmony import */ var _components_navbar_hero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(70063);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(18038);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(11440);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
+/* __next_internal_client_entry_do_not_use__ default,Card auto */ 
 
 
 
 
-function page_Activity() {
-    const pointObjects = [
-        {
-            icon: "/activity/point1.svg",
-            text: "Buatkan foto produk/jasa Anda (ukuran file maksimum 250 kB)"
-        },
-        {
-            icon: "/activity/point2.svg",
-            text: "Kirim detail produk/jasa ini ke Administrator melalui email ke admin@komprofgp.org atau WA ke 0818-710037"
-        },
-        {
-            icon: "/activity/point3.svg",
-            text: "Untuk makanan, direkomendasikan produk yang tidak mengandung bahan pengawet"
-        },
-        {
-            icon: "/activity/point4.svg",
-            text: "Bukan Produk/Jasa MLM"
-        },
-        {
-            icon: "/activity/point5.svg",
-            text: "Tidak ada transaksi dilakukan di situs ini dan pengguna informasi katalog online ini tidak dipungut biaya"
-        },
-        {
-            icon: "/activity/point6.svg",
-            text: "Transaksi dapat dilakukan dengan menghubungi langsung dengan penjual melalui kontak yang tersedia"
-        },
-        {
-            icon: "/activity/point7.svg",
-            text: "Administrator mempunyai wewenang untuk menentukan apakah produk/jasa dapat dimasukkan di katalog ini"
-        },
-        {
-            icon: "/activity/point8.svg",
-            text: "Administrator tidak bertanggung jawab terhadap kualitas atau penyampaian barang yang disampaikan penjual bila tidak sesuai dengan harapan pembeli"
-        },
-        {
-            icon: "/activity/point9.svg",
-            text: "Bila Administrator mendapatkan masukan dari pembeli mengenai kualitas dan penyampaian barang yang tidak sesuai, dan telah dilakukan verifikasi, Administrator berhak untuk mengeluarkan produk tersebut dari katalog"
-        }
-    ];
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
-        className: "lg:flex flex-row min-h-screen ",
+function generateCardData(numCards) {
+    const cardData = [];
+    for(let i = 1; i <= numCards; i++){
+        cardData.push({
+            title: `Card ${i}`,
+            description: `Lorem ipsumdsja ajasndjas asjndlasdnlas for Card ${i}`
+        });
+    }
+    return cardData;
+}
+function Activity() {
+    const [data, setData] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)([]);
+    (0,react__WEBPACK_IMPORTED_MODULE_3__.useEffect)(()=>{
+        fetch("/api/admin/activity").then((response)=>response.json()).then((data)=>{
+            setData(data.activities);
+        }).catch((error)=>{
+            console.error("Error fetching data:", error);
+        });
+    }, []);
+    console.log(data);
+    const cardData = generateCardData(10);
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("section", {
+        className: "flex items-center flex-col overflow-hidden",
         children: [
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: "lg:w-auto lg:h-screen w-0 max-h-[50vh] lg:max-h-[100vh] lg:max-w-[50%] overflow-y-hidden",
-                children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                    priority: true,
-                    src: Activity,
-                    width: 2668,
-                    height: 4096,
-                    className: "w-full"
-                })
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_navbar_hero__WEBPACK_IMPORTED_MODULE_2__["default"], {}),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                className: "mt-[90px] md:mt-[100px]",
+                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_carousell__WEBPACK_IMPORTED_MODULE_1__["default"], {})
             }),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: "lg:w-full h-max p-5 flex flex-col",
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                className: "w-[90vw] mt-3",
                 children: [
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: "max-w-full h-full p-4",
-                        style: {
-                            borderRadius: "10px",
-                            background: "#FAFAFA",
-                            boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset"
-                        },
-                        children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                children: "Cara Daftar Produk / Jasa"
-                            }),
-                            pointObjects.map((point, index)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                    className: "flex items-center mt-4",
-                                    children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                                            src: point.icon,
-                                            width: 30,
-                                            height: 30,
-                                            alt: `Icon ${index}`
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                            className: "ml-2",
-                                            children: point.text
-                                        })
-                                    ]
-                                }, index))
-                        ]
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
+                        className: "text-3xl font-bold my-[10px]",
+                        children: "Our Activities:"
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                        href: "/",
-                        className: "self-end bg-primary hover:border-2 hover:border-primary mx-7 my-5 text-white px-7 py-2 hover:bg-white hover:text-primary font-[15px] w-max",
-                        children: "Saya Mengerti"
-                    })
+                    data.map((item, index)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Card, {
+                            row: item
+                        }, index))
                 ]
             })
         ]
+    });
+}
+function Card({ row }) {
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+        className: "hover:bg-tertiary",
+        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_link__WEBPACK_IMPORTED_MODULE_4___default()), {
+            href: `/activity/${row._id}`,
+            children: [
+                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: "flex flex-row p-3",
+                    children: [
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "w-[100px] h-[50px] overflow-hidden",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                src: row.image,
+                                alt: row.title
+                            })
+                        }),
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                            className: "px-3",
+                            children: [
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                    children: row.title
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                    children: row.details
+                                })
+                            ]
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("hr", {})
+            ]
+        })
     });
 }
 
 
 /***/ }),
 
-/***/ 49974:
+/***/ 45762:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   $$typeof: () => (/* binding */ $$typeof),
+/* harmony export */   Card: () => (/* binding */ e0),
+/* harmony export */   __esModule: () => (/* binding */ __esModule),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(61363);
+
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\GitHub\gkipi-project\frontend-gkipi\src\app\activity\page.js`)
+
+// Accessing the __esModule property and exporting $$typeof are required here.
+// The __esModule getter forces the proxy target to create the default export
+// and the $$typeof value is for rendering logic to determine if the module
+// is a client boundary.
+const { __esModule, $$typeof } = proxy;
+const __default__ = proxy.default;
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__default__);
+const e0 = proxy["Card"];
+
+
+/***/ }),
+
+/***/ 61930:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -486,7 +471,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/Activity.36f11568.png","height":4096,"width":2668,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAMAAAAGL8UJAAAAJ1BMVEUGBQIZFA48NjAODQkxJBpXVFIwMDArJyJIOzEnHhZvY1pZRzqajIAi9VpnAAAACXBIWXMAACxLAAAsSwGlPZapAAAAKklEQVR4nAXBhwEAMAzCMANJ9//3ViIRoACcWjs8rxJ9nWKfgZndHiBPfQ4wAKHNgU5RAAAAAElFTkSuQmCC","blurWidth":5,"blurHeight":8});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/Logo.4ebef769.png","height":600,"width":600,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAFVBMVEVMaXG0fFm4jnycZVDIs62xd2iulYETGQStAAAAB3RSTlMACzYYgSo/vZW4bwAAAAlwSFlzAAAsSwAALEsBpT2WqQAAAClJREFUeJxjYEACjIwQmpmJiRnMZ2VhYQWJMTKxsDCBJZnZIFIIxRAAAAjnAD8v98OMAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":8});
 
 /***/ })
 
@@ -497,7 +482,7 @@ __webpack_require__.r(__webpack_exports__);
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,5364,3380,4178,7706], () => (__webpack_exec__(17016)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,2451,4025,3155,2141,63,8460], () => (__webpack_exec__(62656)));
 module.exports = __webpack_exports__;
 
 })();

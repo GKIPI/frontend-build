@@ -1,4 +1,4 @@
-// File: D:\kuliah\cuan\frontend-gkpi\src\app\(public_route)\lowongan\page.js
+// File: D:\GitHub\gkipi-project\frontend-gkipi\src\app\(public_route)\lowongan\page.js
 import * as entry from '../../../../../src/app/(public_route)/lowongan/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

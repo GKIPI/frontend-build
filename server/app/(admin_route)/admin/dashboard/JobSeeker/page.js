@@ -236,7 +236,7 @@ module.exports = require("url");
 
 /***/ }),
 
-/***/ 92212:
+/***/ 74046:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -278,30 +278,30 @@ __webpack_require__.r(__webpack_exports__);
         'JobSeeker',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3578)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\admin\\dashboard\\JobSeeker\\page.jsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3578)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\admin\\dashboard\\JobSeeker\\page.jsx"],
           
         }]
       },
         {
-          'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 59714)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\admin\\dashboard\\JobSeeker\\loading.jsx"],
+          'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 59714)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\admin\\dashboard\\JobSeeker\\loading.jsx"],
           
         }
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 55834)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\admin\\dashboard\\layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 55834)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\admin\\dashboard\\layout.js"],
           
         }
       ]
       },
         {
-          'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 95734)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\admin\\loading.jsx"],
+          'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 95734)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\admin\\loading.jsx"],
           
         }
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 62248)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 62248)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\layout.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -313,8 +313,8 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\layout.js"],
-'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\loading.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\layout.js"],
+'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\loading.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -325,7 +325,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       ]
       }.children;
-    const pages = ["D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\admin\\dashboard\\JobSeeker\\page.jsx"];
+    const pages = ["D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\admin\\dashboard\\JobSeeker\\page.jsx"];
 
     
 
@@ -350,10 +350,31 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 99540:
+/***/ 29720:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 64829))
+
+/***/ }),
+
+/***/ 21659:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   getRequestedData: () => (/* binding */ getRequestedData),
+/* harmony export */   requestCounter: () => (/* binding */ requestCounter)
+/* harmony export */ });
+const requestCounter = (requests)=>{
+    const requestCount = requests.filter((request)=>!request.approval);
+    return requestCount.length;
+};
+const getRequestedData = (requests)=>{
+    const requestCount = requests.filter((request)=>!request.approval);
+    return requestCount;
+};
+
 
 /***/ }),
 
@@ -439,6 +460,8 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 const _jsxruntime = __webpack_require__(56786);
 const _react = __webpack_require__(18038);
+const _bi = __webpack_require__(32695);
+const _imageDownloader = __webpack_require__(65634);
 const JobSeekerDetailsModals = ({ isOpen, onClose, seekerId })=>{
     const [currSeeker, setCurrSeeker] = (0, _react.useState)({
         _id: "",
@@ -454,6 +477,10 @@ const JobSeekerDetailsModals = ({ isOpen, onClose, seekerId })=>{
         education: "Loading...",
         age: "Loading..."
     });
+    const viewCV = (img)=>{
+        const url = (0, _imageDownloader.parseBlobToURL)(img);
+        window.open(url, "_blank");
+    };
     const getSeekerData = async ()=>{
         try {
             const res = await fetch(`/api/admin/seeker/${seekerId}`);
@@ -489,6 +516,28 @@ const JobSeekerDetailsModals = ({ isOpen, onClose, seekerId })=>{
                                 /*#__PURE__*/ (0, _jsxruntime.jsx)("p", {
                                     className: "w-[75%] px-3 py-2 bg-slate-200 rounded-lg",
                                     children: currSeeker.name
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ (0, _jsxruntime.jsxs)("div", {
+                            className: "flex items-center",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxruntime.jsx)("p", {
+                                    className: "w-[25%] font-semibold",
+                                    children: "Foto"
+                                }),
+                                /*#__PURE__*/ (0, _jsxruntime.jsxs)("button", {
+                                    onClick: ()=>viewCV(currSeeker.image),
+                                    className: "bg-transparent rounded-lg flex gap-2 items-center",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxruntime.jsx)(_bi.BiSolidFileJpg, {
+                                            size: 15
+                                        }),
+                                        /*#__PURE__*/ (0, _jsxruntime.jsx)("p", {
+                                            className: "italic text-amber-400 hover:underline",
+                                            children: currSeeker.name
+                                        })
+                                    ]
                                 })
                             ]
                         }),
@@ -698,6 +747,10 @@ const JobSeekerReviewModal = ({ isOpen, onClose, requests })=>{
                                         children: "CV"
                                     }),
                                     /*#__PURE__*/ (0, _jsxruntime.jsx)("th", {
+                                        className: "py-2",
+                                        children: "Foto"
+                                    }),
+                                    /*#__PURE__*/ (0, _jsxruntime.jsx)("th", {
                                         className: "py-2"
                                     })
                                 ]
@@ -783,6 +836,25 @@ const JobSeekerReviewModal = ({ isOpen, onClose, requests })=>{
                                                 className: "pr-2",
                                                 children: /*#__PURE__*/ (0, _jsxruntime.jsx)("p", {
                                                     children: request.age
+                                                })
+                                            })
+                                        }),
+                                        /*#__PURE__*/ (0, _jsxruntime.jsx)("td", {
+                                            className: "py-4 border-b border-zinc-800",
+                                            children: /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
+                                                className: "pr-2",
+                                                children: /*#__PURE__*/ (0, _jsxruntime.jsxs)("button", {
+                                                    onClick: ()=>viewCV(request.image),
+                                                    className: "flex gap-1 items-center",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxruntime.jsx)(_bi.BiSolidFileJpg, {
+                                                            size: 20
+                                                        }),
+                                                        /*#__PURE__*/ (0, _jsxruntime.jsx)("p", {
+                                                            className: "line-clamp-1 text-amber-400 hover:underline italic",
+                                                            children: request.name
+                                                        })
+                                                    ]
                                                 })
                                             })
                                         }),
@@ -1153,7 +1225,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(61363);
 
-const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\kuliah\cuan\frontend-gkpi\src\app\(admin_route)\admin\dashboard\JobSeeker\page.jsx`)
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\GitHub\gkipi-project\frontend-gkipi\src\app\(admin_route)\admin\dashboard\JobSeeker\page.jsx`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -1174,7 +1246,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,5364,5556,3380,2451,6482,5105,8976,5816,2695,7706,3064,5634,2327], () => (__webpack_exec__(92212)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,2451,6482,5105,8976,5816,2695,2141,4768,5634,7100], () => (__webpack_exec__(74046)));
 module.exports = __webpack_exports__;
 
 })();
