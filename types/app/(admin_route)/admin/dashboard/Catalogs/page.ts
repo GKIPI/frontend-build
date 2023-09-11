@@ -1,4 +1,4 @@
-// File: D:\GitHub\gkipi-project\frontend-gkipi\src\app\(admin_route)\admin\dashboard\Catalogs\page.jsx
+// File: D:\kuliah\cuan\frontend-gkpi\src\app\(admin_route)\admin\dashboard\Catalogs\page.jsx
 import * as entry from '../../../../../../../src/app/(admin_route)/admin/dashboard/Catalogs/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

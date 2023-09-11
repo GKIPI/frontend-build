@@ -236,7 +236,7 @@ module.exports = require("url");
 
 /***/ }),
 
-/***/ 17912:
+/***/ 47106:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -281,7 +281,7 @@ __webpack_require__.r(__webpack_exports__);
         'write',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 35148)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\admin\\dashboard\\News\\write\\page.jsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 35148)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\admin\\dashboard\\News\\write\\page.jsx"],
           
         }]
       },
@@ -298,19 +298,19 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 55834)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\admin\\dashboard\\layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 55834)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\admin\\dashboard\\layout.js"],
           
         }
       ]
       },
         {
-          'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 95734)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\admin\\loading.jsx"],
+          'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 95734)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\admin\\loading.jsx"],
           
         }
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 62248)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 62248)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\layout.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -322,8 +322,8 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\layout.js"],
-'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\loading.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\layout.js"],
+'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\loading.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -334,7 +334,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       ]
       }.children;
-    const pages = ["D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\admin\\dashboard\\News\\write\\page.jsx"];
+    const pages = ["D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\admin\\dashboard\\News\\write\\page.jsx"];
 
     
 
@@ -359,7 +359,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 86045:
+/***/ 91001:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 80666))
@@ -380,13 +380,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(18038);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_toastify__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(34751);
+/* harmony import */ var next_navigation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(57114);
+/* harmony import */ var next_navigation__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_navigation__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_icons_ai__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(15816);
 /* __next_internal_client_entry_do_not_use__ default auto */ 
+
+
+
 
 
 function Write() {
     const [imageData, setImageData] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)("");
     const [title, setTitle] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)("");
     const [details, setDetails] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)("");
+    const [postLoading, setPostLoading] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);
+    const router = (0,next_navigation__WEBPACK_IMPORTED_MODULE_4__.useRouter)();
     const handleFileChange = (e)=>{
         const file = e.target.files[0];
         if (file) {
@@ -410,10 +419,20 @@ function Write() {
             method: "POST",
             body: JSON.stringify(data)
         });
-        const _stat = await res.json();
-        setImageData("");
-        setTitle("");
-        setDetails("");
+        if (!res.ok) {
+            (0,react_toastify__WEBPACK_IMPORTED_MODULE_3__.toast)(`${res.error}`, {
+                hideProgressBar: true,
+                autoClose: 2000,
+                type: "error"
+            });
+        } else {
+            (0,react_toastify__WEBPACK_IMPORTED_MODULE_3__.toast)("Submited data", {
+                hideProgressBar: true,
+                autoClose: 2000,
+                type: "success"
+            });
+            router.push("/admin/dashboard/News");
+        }
     };
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         children: [
@@ -421,7 +440,7 @@ function Write() {
                 href: "/admin/dashboard/News",
                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                     className: "bg-zinc-800 px-5 py-2 text-slate-200 hover:outline hover:outline-2 hover:outline-zinc-800 hover:bg-transparent hover:text-zinc-800 transition-colors duration-200",
-                    children: "Kembali"
+                    children: "Back"
                 })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
@@ -474,9 +493,12 @@ function Write() {
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                             className: "w-1/2 flex justify-end",
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                onClick: ()=>setPostLoading(true),
                                 type: "submit",
                                 className: "bg-zinc-800 px-5 py-2 text-slate-200 hover:outline hover:outline-2 hover:outline-zinc-800 hover:bg-transparent hover:text-zinc-800 transition-colors duration-200",
-                                children: "Upload"
+                                children: !postLoading ? "Upload" : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_ai__WEBPACK_IMPORTED_MODULE_5__/* .AiOutlineLoading3Quarters */ .Z7b, {
+                                    className: "animate-spin"
+                                })
                             })
                         })
                     ]
@@ -501,7 +523,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(61363);
 
-const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\GitHub\gkipi-project\frontend-gkipi\src\app\(admin_route)\admin\dashboard\News\write\page.jsx`)
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\kuliah\cuan\frontend-gkpi\src\app\(admin_route)\admin\dashboard\News\write\page.jsx`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -513,14 +535,6 @@ const __default__ = proxy.default;
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__default__);
 
-/***/ }),
-
-/***/ 11440:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__(50954)
-
-
 /***/ })
 
 };
@@ -530,7 +544,7 @@ module.exports = __webpack_require__(50954)
 var __webpack_require__ = require("../../../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,2451,6482,8976,5285,4768], () => (__webpack_exec__(17912)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,2451,6482,8976,5816,8369,3064], () => (__webpack_exec__(47106)));
 module.exports = __webpack_exports__;
 
 })();

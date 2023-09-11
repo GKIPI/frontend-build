@@ -236,7 +236,7 @@ module.exports = require("url");
 
 /***/ }),
 
-/***/ 4988:
+/***/ 27081:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -278,7 +278,7 @@ __webpack_require__.r(__webpack_exports__);
         'News',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 45843)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\admin\\dashboard\\News\\page.jsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 45843)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\admin\\dashboard\\News\\page.jsx"],
           
         }]
       },
@@ -289,19 +289,19 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 55834)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\admin\\dashboard\\layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 55834)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\admin\\dashboard\\layout.js"],
           
         }
       ]
       },
         {
-          'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 95734)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\admin\\loading.jsx"],
+          'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 95734)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\admin\\loading.jsx"],
           
         }
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 62248)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 62248)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\layout.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -313,8 +313,8 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\layout.js"],
-'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\loading.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\layout.js"],
+'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\loading.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -325,7 +325,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       ]
       }.children;
-    const pages = ["D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\admin\\dashboard\\News\\page.jsx"];
+    const pages = ["D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\admin\\dashboard\\News\\page.jsx"];
 
     
 
@@ -350,7 +350,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 49553:
+/***/ 58982:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 30985))
@@ -484,6 +484,7 @@ function News() {
     const [isLoaded, setIsLoaded] = (0,react_.useState)(false);
     const [fetchedData, setFetchedData] = (0,react_.useState)([]);
     const [confirmDelete, setConfirmDelete] = (0,react_.useState)(false);
+    const [contentId, setContentId] = (0,react_.useState)("");
     const getActivity = async ()=>{
         try {
             const res = await fetch("/api/admin/activity");
@@ -521,7 +522,7 @@ function News() {
                 className: "py-8",
                 children: isLoaded ? /*#__PURE__*/ jsx_runtime_.jsx("div", {
                     className: "flex flex-col gap-8",
-                    children: fetchedData.map((_data, i)=>{
+                    children: fetchedData.map((_data)=>{
                         return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                             className: "flex gap-4",
                             children: [
@@ -557,24 +558,27 @@ function News() {
                                                     })
                                                 }),
                                                 /*#__PURE__*/ jsx_runtime_.jsx("button", {
-                                                    onClick: ()=>setConfirmDelete(true),
+                                                    onClick: ()=>{
+                                                        setContentId(_data._id);
+                                                        setConfirmDelete(true);
+                                                    },
                                                     className: "px-5 py-2 text-zinc-800 outline outline-2 outline-zinc-800 hover:outline-none hover:bg-red-500 hover:text-white transition-colors duration-200",
                                                     children: "Delete"
                                                 })
                                             ]
                                         })
                                     ]
-                                }),
-                                /*#__PURE__*/ jsx_runtime_.jsx((ConfirmDeleteModal_default()), {
-                                    isOpen: confirmDelete,
-                                    onClose: ()=>setConfirmDelete(false),
-                                    endpoint: "admin/activity",
-                                    index: _data._id
                                 })
                             ]
-                        }, i);
+                        }, _data._id);
                     })
                 }) : /*#__PURE__*/ jsx_runtime_.jsx(OnLoading, {})
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx((ConfirmDeleteModal_default()), {
+                isOpen: confirmDelete,
+                onClose: ()=>setConfirmDelete(false),
+                endpoint: "admin/activity",
+                index: contentId
             })
         ]
     });
@@ -595,7 +599,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(61363);
 
-const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\GitHub\gkipi-project\frontend-gkipi\src\app\(admin_route)\admin\dashboard\News\page.jsx`)
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\kuliah\cuan\frontend-gkpi\src\app\(admin_route)\admin\dashboard\News\page.jsx`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -624,7 +628,7 @@ module.exports = __webpack_require__(50954)
 var __webpack_require__ = require("../../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,2451,6482,8976,5285,4768,7100], () => (__webpack_exec__(4988)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,2451,6482,8976,8369,3064,7100], () => (__webpack_exec__(27081)));
 module.exports = __webpack_exports__;
 
 })();

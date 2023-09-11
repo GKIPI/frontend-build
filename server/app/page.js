@@ -236,7 +236,7 @@ module.exports = require("url");
 
 /***/ }),
 
-/***/ 93225:
+/***/ 33743:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -266,7 +266,7 @@ __webpack_require__.r(__webpack_exports__);
         '',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 34494)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\page.js"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 34494)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\page.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -277,8 +277,8 @@ __webpack_require__.r(__webpack_exports__);
         }]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\layout.js"],
-'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\loading.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\layout.js"],
+'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\loading.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -289,7 +289,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       ]
       }.children;
-    const pages = ["D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\page.js"];
+    const pages = ["D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\page.js"];
 
     
 
@@ -314,7 +314,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 67800:
+/***/ 50823:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 73380, 23));
@@ -348,7 +348,7 @@ var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 var module_proxy = __webpack_require__(61363);
 ;// CONCATENATED MODULE: ./src/app/components/carousell.js
 
-const proxy = (0,module_proxy.createProxy)(String.raw`D:\GitHub\gkipi-project\frontend-gkipi\src\app\components\carousell.js`)
+const proxy = (0,module_proxy.createProxy)(String.raw`D:\kuliah\cuan\frontend-gkpi\src\app\components\carousell.js`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -410,7 +410,7 @@ function Menu() {
                 className: "w-[28%] my-10 flex mx-4 items-center  relative justify-center bg-primary lg:h-[200px] h-[100px] p-3 hover:bg-primary/50",
                 children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                     className: "text-white text-center lg:text-2xl",
-                    children: "Job vacancy"
+                    children: "Job Vacancy"
                 })
             })
         ]
@@ -419,7 +419,7 @@ function Menu() {
 
 ;// CONCATENATED MODULE: ./src/app/components/navbar_hero.js
 
-const navbar_hero_proxy = (0,module_proxy.createProxy)(String.raw`D:\GitHub\gkipi-project\frontend-gkipi\src\app\components\navbar_hero.js`)
+const navbar_hero_proxy = (0,module_proxy.createProxy)(String.raw`D:\kuliah\cuan\frontend-gkpi\src\app\components\navbar_hero.js`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -470,7 +470,7 @@ function Home() {
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,2451,6482,4025,350,3155,5285,2107,63,8460], () => (__webpack_exec__(93225)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,2451,6482,4025,350,3155,8369,2107,63,8460], () => (__webpack_exec__(33743)));
 module.exports = __webpack_exports__;
 
 })();

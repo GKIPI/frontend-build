@@ -1,4 +1,4 @@
-// File: D:\GitHub\gkipi-project\frontend-gkipi\src\app\api\admin\vacancy\route.js
+// File: D:\kuliah\cuan\frontend-gkpi\src\app\api\admin\vacancy\route.js
 import * as entry from '../../../../../../src/app/api/admin/vacancy/route.js'
 import type { NextRequest } from 'next/server.js'
 

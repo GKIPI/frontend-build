@@ -1,0 +1,9 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[8961],{3161:function(e,n,r){Promise.resolve().then(r.bind(r,39))},39:function(e,n,r){"use strict";r.r(n),r.d(n,{default:function(){return i}});var t=r(7437),o=r(1396),s=r.n(o);function i(){return(0,t.jsxs)("section",{children:[(0,t.jsx)("div",{className:" flex flex-col items-center justify-center h-96",children:(0,t.jsx)("div",{className:" w-3/4",children:(0,t.jsx)("h1",{className:"font-montserrat text-4xl font-semibold text-center",children:"Welcome to Admin Dashboard GKI Pondok Indah"})})}),(0,t.jsx)(s(),{href:"/admin/dashboard/ManageAdmin",children:(0,t.jsx)("button",{className:"bg-zinc-800 px-5 py-2 text-slate-200 hover:outline hover:outline-2 hover:outline-zinc-800 hover:bg-transparent hover:text-zinc-800 transition-colors duration-200",children:"Manage Admin"})}),(0,t.jsx)("div",{className:"border-b-2 p-1",children:" "})]})}},622:function(e,n,r){"use strict";/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var t=r(2265),o=Symbol.for("react.element"),s=Symbol.for("react.fragment"),i=Object.prototype.hasOwnProperty,c=t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,a={key:!0,ref:!0,__self:!0,__source:!0};function l(e,n,r){var t,s={},l=null,u=null;for(t in void 0!==r&&(l=""+r),void 0!==n.key&&(l=""+n.key),void 0!==n.ref&&(u=n.ref),n)i.call(n,t)&&!a.hasOwnProperty(t)&&(s[t]=n[t]);if(e&&e.defaultProps)for(t in n=e.defaultProps)void 0===s[t]&&(s[t]=n[t]);return{$$typeof:o,type:e,key:l,ref:u,props:s,_owner:c.current}}n.Fragment=s,n.jsx=l,n.jsxs=l},7437:function(e,n,r){"use strict";e.exports=r(622)},1396:function(e,n,r){e.exports=r(6685)}},function(e){e.O(0,[6685,2971,596,1744],function(){return e(e.s=3161)}),_N_E=e.O()}]);

@@ -236,7 +236,7 @@ module.exports = require("url");
 
 /***/ }),
 
-/***/ 74046:
+/***/ 92212:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -278,30 +278,30 @@ __webpack_require__.r(__webpack_exports__);
         'JobSeeker',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3578)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\admin\\dashboard\\JobSeeker\\page.jsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3578)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\admin\\dashboard\\JobSeeker\\page.jsx"],
           
         }]
       },
         {
-          'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 59714)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\admin\\dashboard\\JobSeeker\\loading.jsx"],
+          'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 59714)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\admin\\dashboard\\JobSeeker\\loading.jsx"],
           
         }
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 55834)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\admin\\dashboard\\layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 55834)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\admin\\dashboard\\layout.js"],
           
         }
       ]
       },
         {
-          'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 95734)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\admin\\loading.jsx"],
+          'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 95734)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\admin\\loading.jsx"],
           
         }
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 62248)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 62248)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\layout.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -313,8 +313,8 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\layout.js"],
-'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\loading.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\layout.js"],
+'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\loading.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -325,7 +325,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       ]
       }.children;
-    const pages = ["D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(admin_route)\\admin\\dashboard\\JobSeeker\\page.jsx"];
+    const pages = ["D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(admin_route)\\admin\\dashboard\\JobSeeker\\page.jsx"];
 
     
 
@@ -350,7 +350,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 29720:
+/***/ 99540:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 64829))
@@ -378,6 +378,21 @@ const getRequestedData = (requests)=>{
 
 /***/ }),
 
+/***/ 65907:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   isImage: () => (/* binding */ isImage)
+/* harmony export */ });
+function isImage(imgDataUrl) {
+    return imgDataUrl && imgDataUrl.startsWith("data:image/");
+}
+
+
+/***/ }),
+
 /***/ 36723:
 /***/ ((module, exports, __webpack_require__) => {
 
@@ -389,10 +404,14 @@ Object.defineProperty(exports, "__esModule", ({
 const _jsxruntime = __webpack_require__(56786);
 const _fi = __webpack_require__(95105);
 const _imageDownloader = __webpack_require__(65634);
+const _typeChecker = __webpack_require__(65907);
 const JobSeekerCVModals = ({ isOpen, onClose, src })=>{
     const { currItem, currCVOpen } = src;
-    const handleDownload = ()=>{
+    const handleDownloadImg = ()=>{
         (0, _imageDownloader.downloadImage)(currCVOpen, currItem);
+    };
+    const handleDownloadPDF = ()=>{
+        (0, _imageDownloader.downloadPDf)(currCVOpen, currItem);
     };
     if (!isOpen) return null;
     return /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
@@ -420,24 +439,36 @@ const JobSeekerCVModals = ({ isOpen, onClose, src })=>{
                     children: [
                         /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
                             className: `w-3/4 ${currCVOpen ? "" : "animate-pulse bg-slate-300"}`,
-                            children: /*#__PURE__*/ (0, _jsxruntime.jsx)("img", {
+                            children: (0, _typeChecker.isImage)(currCVOpen) ? /*#__PURE__*/ (0, _jsxruntime.jsx)("img", {
                                 src: currCVOpen
+                            }) : /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
+                                className: "md:min-h-[200px] flex items-center justify-center bg-slate-400",
+                                children: /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
+                                    className: "text-slate-200",
+                                    children: "PDF"
+                                })
                             })
                         }),
-                        /*#__PURE__*/ (0, _jsxruntime.jsxs)("div", {
+                        /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
                             className: "flex gap-4",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxruntime.jsx)("button", {
-                                    disabled: true,
-                                    className: "cursor-not-allowed px-4 py-1 bg-zinc-800 text-slate-200 font-montserrat text-xl hover:outline hover:outline-2 hover:bg-transparent hover:outline-zinc-800 hover:text-zinc-800 transition-colors",
-                                    children: "View"
-                                }),
-                                /*#__PURE__*/ (0, _jsxruntime.jsx)("button", {
-                                    onClick: handleDownload,
-                                    className: "px-4 py-1 bg-zinc-800 text-slate-200 font-montserrat text-xl hover:outline hover:outline-2 hover:bg-transparent hover:outline-zinc-800 hover:text-zinc-800 transition-colors",
-                                    children: "Download"
-                                })
-                            ]
+                            children: (0, _typeChecker.isImage)(currCVOpen) ? /*#__PURE__*/ (0, _jsxruntime.jsxs)(_jsxruntime.Fragment, {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxruntime.jsx)("button", {
+                                        disabled: true,
+                                        className: "cursor-not-allowed px-4 py-1 bg-zinc-800 text-slate-200 font-montserrat text-xl hover:outline hover:outline-2 hover:bg-transparent hover:outline-zinc-800 hover:text-zinc-800 transition-colors",
+                                        children: "View"
+                                    }),
+                                    /*#__PURE__*/ (0, _jsxruntime.jsx)("button", {
+                                        onClick: handleDownloadImg,
+                                        className: "px-4 py-1 bg-zinc-800 text-slate-200 font-montserrat text-xl hover:outline hover:outline-2 hover:bg-transparent hover:outline-zinc-800 hover:text-zinc-800 transition-colors",
+                                        children: "Download"
+                                    })
+                                ]
+                            }) : /*#__PURE__*/ (0, _jsxruntime.jsx)("button", {
+                                onClick: handleDownloadPDF,
+                                className: "px-4 py-1 bg-zinc-800 text-slate-200 font-montserrat text-xl hover:outline hover:outline-2 hover:bg-transparent hover:outline-zinc-800 hover:text-zinc-800 transition-colors",
+                                children: "Download"
+                            })
                         })
                     ]
                 })
@@ -462,6 +493,7 @@ const _jsxruntime = __webpack_require__(56786);
 const _react = __webpack_require__(18038);
 const _bi = __webpack_require__(32695);
 const _imageDownloader = __webpack_require__(65634);
+const _typeChecker = __webpack_require__(65907);
 const JobSeekerDetailsModals = ({ isOpen, onClose, seekerId })=>{
     const [currSeeker, setCurrSeeker] = (0, _react.useState)({
         _id: "",
@@ -526,8 +558,20 @@ const JobSeekerDetailsModals = ({ isOpen, onClose, seekerId })=>{
                                     className: "w-[25%] font-semibold",
                                     children: "Foto"
                                 }),
-                                /*#__PURE__*/ (0, _jsxruntime.jsxs)("button", {
+                                (0, _typeChecker.isImage)(currSeeker?.image) ? /*#__PURE__*/ (0, _jsxruntime.jsxs)("button", {
                                     onClick: ()=>viewCV(currSeeker.image),
+                                    className: "bg-transparent rounded-lg flex gap-2 items-center",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxruntime.jsx)(_bi.BiSolidFileJpg, {
+                                            size: 15
+                                        }),
+                                        /*#__PURE__*/ (0, _jsxruntime.jsx)("p", {
+                                            className: "italic text-amber-400 hover:underline",
+                                            children: currSeeker.name
+                                        })
+                                    ]
+                                }) : /*#__PURE__*/ (0, _jsxruntime.jsxs)("button", {
+                                    onClick: ()=>(0, _imageDownloader.downloadPDf)(currSeeker.image, currSeeker.name),
                                     className: "bg-transparent rounded-lg flex gap-2 items-center",
                                     children: [
                                         /*#__PURE__*/ (0, _jsxruntime.jsx)(_bi.BiSolidFileJpg, {
@@ -1225,7 +1269,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(61363);
 
-const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\GitHub\gkipi-project\frontend-gkipi\src\app\(admin_route)\admin\dashboard\JobSeeker\page.jsx`)
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\kuliah\cuan\frontend-gkpi\src\app\(admin_route)\admin\dashboard\JobSeeker\page.jsx`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -1246,7 +1290,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,2451,6482,8976,5105,2695,5816,5285,4768,5634,7100], () => (__webpack_exec__(74046)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,2451,6482,8976,5105,5816,2695,8369,3064,5634,7100], () => (__webpack_exec__(92212)));
 module.exports = __webpack_exports__;
 
 })();

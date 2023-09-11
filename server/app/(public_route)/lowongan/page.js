@@ -236,7 +236,7 @@ module.exports = require("url");
 
 /***/ }),
 
-/***/ 65262:
+/***/ 16742:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -272,7 +272,7 @@ __webpack_require__.r(__webpack_exports__);
         'lowongan',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 79709)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(public_route)\\lowongan\\page.js"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 79709)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(public_route)\\lowongan\\page.js"],
           
         }]
       },
@@ -283,7 +283,7 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 48492)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(public_route)\\layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 48492)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(public_route)\\layout.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -295,8 +295,8 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\layout.js"],
-'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\loading.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 85276)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\layout.js"],
+'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 24472)), "D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\loading.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -307,7 +307,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       ]
       }.children;
-    const pages = ["D:\\GitHub\\gkipi-project\\frontend-gkipi\\src\\app\\(public_route)\\lowongan\\page.js"];
+    const pages = ["D:\\kuliah\\cuan\\frontend-gkpi\\src\\app\\(public_route)\\lowongan\\page.js"];
 
     
 
@@ -332,10 +332,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 28801:
+/***/ 47827:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 39206))
+
+/***/ }),
+
+/***/ 65907:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   isImage: () => (/* binding */ isImage)
+/* harmony export */ });
+function isImage(imgDataUrl) {
+    return imgDataUrl && imgDataUrl.startsWith("data:image/");
+}
+
 
 /***/ }),
 
@@ -607,7 +622,10 @@ var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
 /* harmony default export */ const buildings = ({"src":"/_next/static/media/buildings.897f95a8.png","height":20,"width":20,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAMFBMVEVMaXEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACbsZG/AAAAEHRSTlMAnYOL3tm37wx7WsQXz2lCa9kmBQAAAAlwSFlzAAALEwAACxMBAJqcGAAAADpJREFUeJwdxkkSwDAIBLEeMOA1/v9vU4lOAvp8OkAfauvLdmsB3Gn+x4ZZiw3upigNdKqiPMl1Uim9KKkBLFwmtI8AAAAASUVORK5CYII=","blurWidth":8,"blurHeight":8});
 ;// CONCATENATED MODULE: ./public/map.png
 /* harmony default export */ const map = ({"src":"/_next/static/media/map.8647dd3f.png","height":20,"width":20,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAJFBMVEVMaXEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB/eFplAAAAC3RSTlMAtUgCWSLxp24W5QnYVeIAAAAJcEhZcwAACxMAAAsTAQCanBgAAAA0SURBVHicHcnJDQAgDASxyQGBbP/9IvKzZMDNHMDVrS/TvTKgdI5qSpqiNBOsvRfxlUnwACcGAQuTHnfsAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":8});
+// EXTERNAL MODULE: ./helper/typeChecker.js
+var typeChecker = __webpack_require__(65907);
 ;// CONCATENATED MODULE: ./src/app/(public_route)/lowongan/card.js
+
 
 
 
@@ -676,34 +694,44 @@ function Card({ array, type, onClicked }) {
         className: "grid gap-2 sm:gap-5 grid-cols-2 lg:grid-cols-3 mx-0 p-[5%] xs:p-5 sm:p-8 md:p-12 w-full overflow-x-hidden overflow-y-hidden",
         children: array.map((card, i)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 onClick: ()=>onClicked(card),
-                className: "max-h-[370px] w-full shadow-md p-4",
+                className: "max-h-[370px] w-full shadow-md p-4 flex  justify-between flex-col",
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "bg-slate-300 max-h-[250px] w-full overflow-y-hidden",
-                        children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                        className: "bg-slate-300 max-h-[250px] w-full overflow-y-hidden flex items-center justify-center",
+                        children: (0,typeChecker.isImage)(card?.image) ? /*#__PURE__*/ jsx_runtime_.jsx("img", {
                             src: card.image,
                             alt: "Preview"
+                        }) : /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            className: "md:min-h-[200px] flex items-center justify-center",
+                            children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: "text-slate-200",
+                                children: "PDF"
+                            })
                         })
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                        className: "text-base p-0 m-0 line-clamp-1 font-playfairDisplay italic text-[#B68D40] mx-3",
-                        children: card.name
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "flex flex-row justify-between mx-3",
-                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                            className: "flex flex-col",
-                            children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx("h1", {
-                                    className: "p-0 m-0 line-clamp-1 font-montserrat font-medium",
-                                    children: card.jobTitle
-                                }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("h1", {
-                                    className: "text-base p-0 m-0 line-clamp-1 font-montserrat font-medium text-[#000000]",
-                                    children: card.skills
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                                className: "text-base p-0 m-0 line-clamp-1 font-playfairDisplay italic text-[#B68D40] mx-3",
+                                children: card.name
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: "flex flex-row justify-between mx-3",
+                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                    className: "flex flex-col",
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx("h1", {
+                                            className: "p-0 m-0 line-clamp-1 font-montserrat font-medium",
+                                            children: card.jobTitle
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("h1", {
+                                            className: "text-base p-0 m-0 line-clamp-1 font-montserrat font-medium text-[#000000]",
+                                            children: card.skills
+                                        })
+                                    ]
                                 })
-                            ]
-                        })
+                            })
+                        ]
                     })
                 ]
             }, i))
@@ -726,6 +754,7 @@ var pagination = __webpack_require__(23141);
 var modules = __webpack_require__(11987);
 ;// CONCATENATED MODULE: ./src/app/(public_route)/lowongan/page.js
 /* __next_internal_client_entry_do_not_use__ default auto */ 
+
 
 
 
@@ -1011,13 +1040,19 @@ function Lowongan() {
                             className: "w-full lg:flex gap-6",
                             children: [
                                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                    className: "w-3/5",
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                    className: "md:w-3/5",
+                                    children: (0,typeChecker.isImage)(selectedModalContent?.image) ? /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                         href: (0,imageDownloader.parseBlobToURL)(selectedModalContent?.image),
                                         target: "_blank",
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                             src: selectedModalContent?.image
                                         })
+                                    }) : /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                                        onClick: ()=>{
+                                            (0,imageDownloader.downloadPDf)(selectedModalContent.image, selectedModalContent.name);
+                                        },
+                                        className: "text-center bg-primary text-white hover:text-primary hover:bg-tertiary rounded-md p-3",
+                                        children: "Download PDF"
                                     })
                                 }),
                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -1201,7 +1236,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(61363);
 
-const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\GitHub\gkipi-project\frontend-gkipi\src\app\(public_route)\lowongan\page.js`)
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`D:\kuliah\cuan\frontend-gkpi\src\app\(public_route)\lowongan\page.js`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -1222,7 +1257,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,2451,6482,4025,3500,350,930,3155,2772,5285,5634,2107,7469,4437], () => (__webpack_exec__(65262)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,2451,6482,4025,3500,350,930,3155,2772,8369,5634,2107,7469,2812], () => (__webpack_exec__(16742)));
 module.exports = __webpack_exports__;
 
 })();
