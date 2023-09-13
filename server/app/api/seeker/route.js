@@ -119,7 +119,7 @@ async function POST(request) {
             seekerData.skills = skills;
         }
         if (headshot) {
-            seekerData.skills = headshot;
+            seekerData.headshot = headshot;
         }
         const newSeeker = await seekerModels/* default */.Z.create(seekerData);
         const savedSeeker = await newSeeker.save();

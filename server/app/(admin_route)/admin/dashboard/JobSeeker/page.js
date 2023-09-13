@@ -417,7 +417,7 @@ const JobSeekerCVModals = ({ isOpen, onClose, src })=>{
     return /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
         className: "fixed inset-0 flex items-center justify-center z-50 bg-slate-800/25 backdrop-blur-sm",
         children: /*#__PURE__*/ (0, _jsxruntime.jsxs)("div", {
-            className: "bg-slate-50 w-2/5 min-h-[43rem] shadow-lg space-y-8 rounded-lg px-5",
+            className: "bg-slate-50 w-2/5 min-h-[43rem] max-h-96 shadow-lg space-y-8 rounded-lg px-5",
             children: [
                 /*#__PURE__*/ (0, _jsxruntime.jsxs)("div", {
                     className: "flex flex-row justify-between items-center mt-1",
@@ -440,7 +440,8 @@ const JobSeekerCVModals = ({ isOpen, onClose, src })=>{
                         /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
                             className: `w-3/4 ${currCVOpen ? "" : "animate-pulse bg-slate-300"}`,
                             children: (0, _typeChecker.isImage)(currCVOpen) ? /*#__PURE__*/ (0, _jsxruntime.jsx)("img", {
-                                src: currCVOpen
+                                src: currCVOpen,
+                                className: "w-1/2"
                             }) : /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
                                 className: "md:min-h-[200px] flex items-center justify-center bg-slate-400",
                                 children: /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
@@ -557,6 +558,28 @@ const JobSeekerDetailsModals = ({ isOpen, onClose, seekerId })=>{
                                 /*#__PURE__*/ (0, _jsxruntime.jsx)("p", {
                                     className: "w-[25%] font-semibold",
                                     children: "Foto"
+                                }),
+                                /*#__PURE__*/ (0, _jsxruntime.jsxs)("button", {
+                                    onClick: ()=>viewCV(currSeeker.headshot),
+                                    className: "bg-transparent rounded-lg flex gap-2 items-center",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxruntime.jsx)(_bi.BiSolidFileJpg, {
+                                            size: 15
+                                        }),
+                                        /*#__PURE__*/ (0, _jsxruntime.jsx)("p", {
+                                            className: "italic text-amber-400 hover:underline",
+                                            children: currSeeker.name
+                                        })
+                                    ]
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ (0, _jsxruntime.jsxs)("div", {
+                            className: "flex items-center",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxruntime.jsx)("p", {
+                                    className: "w-[25%] font-semibold",
+                                    children: "CV"
                                 }),
                                 (0, _typeChecker.isImage)(currSeeker?.image) ? /*#__PURE__*/ (0, _jsxruntime.jsxs)("button", {
                                     onClick: ()=>viewCV(currSeeker.image),
@@ -707,6 +730,7 @@ const _bi = __webpack_require__(32695);
 const _react = __webpack_require__(18038);
 const _ConfirmDeleteModal = /*#__PURE__*/ _interop_require_default._(__webpack_require__(7100));
 const _imageDownloader = __webpack_require__(65634);
+const _typeChecker = __webpack_require__(65907);
 const JobSeekerReviewModal = ({ isOpen, onClose, requests })=>{
     const [confirmDelete, setConfirmDelete] = (0, _react.useState)(false);
     const [currUserId, setCurrUserId] = (0, _react.useState)("");
@@ -735,6 +759,7 @@ const JobSeekerReviewModal = ({ isOpen, onClose, requests })=>{
         };
         putApproved(data, userId);
     };
+    console.log(requests);
     if (!isOpen) return null;
     return /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
         className: "fixed inset-0 flex items-center justify-center z-50 bg-slate-800/25 backdrop-blur-sm",
@@ -888,10 +913,12 @@ const JobSeekerReviewModal = ({ isOpen, onClose, requests })=>{
                                             children: /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
                                                 className: "pr-2",
                                                 children: /*#__PURE__*/ (0, _jsxruntime.jsxs)("button", {
-                                                    onClick: ()=>viewCV(request.image),
+                                                    onClick: ()=>{
+                                                        (0, _typeChecker.isImage)(request.image) ? viewCV(request.image) : (0, _imageDownloader.downloadPDf)(request.image, `${request.name}_CV`);
+                                                    },
                                                     className: "flex gap-1 items-center",
                                                     children: [
-                                                        /*#__PURE__*/ (0, _jsxruntime.jsx)(_bi.BiSolidFileJpg, {
+                                                        /*#__PURE__*/ (0, _jsxruntime.jsx)(_bi.BiSolidFilePdf, {
                                                             size: 20
                                                         }),
                                                         /*#__PURE__*/ (0, _jsxruntime.jsx)("p", {
@@ -907,7 +934,7 @@ const JobSeekerReviewModal = ({ isOpen, onClose, requests })=>{
                                             children: /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
                                                 className: "pr-2",
                                                 children: /*#__PURE__*/ (0, _jsxruntime.jsxs)("button", {
-                                                    onClick: ()=>viewCV(request.image),
+                                                    onClick: ()=>viewCV(request.headshot),
                                                     className: "flex gap-1 items-center",
                                                     children: [
                                                         /*#__PURE__*/ (0, _jsxruntime.jsx)(_bi.BiSolidFileJpg, {
@@ -1029,6 +1056,7 @@ function JobSeeker() {
             if (data.seekers) {
                 setSeekerList(data.seekers);
                 setRequestsData((0,_helper_requestCounter__WEBPACK_IMPORTED_MODULE_6__.getRequestedData)(data.seekers));
+                console.log(data.seekers);
             }
         } catch (err) {
             console.error(err);
@@ -1087,6 +1115,10 @@ function JobSeeker() {
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("th", {
                                                     className: "py-2",
+                                                    children: "Photo"
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("th", {
+                                                    className: "py-2",
                                                     children: "CV"
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("th", {
@@ -1132,6 +1164,24 @@ function JobSeeker() {
                                                                         children: a
                                                                     })
                                                                 }, i);
+                                                            })
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                        className: "border-b border-zinc-800",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                            className: "flex flex-row items-center gap-3",
+                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                                                onClick: ()=>{
+                                                                    setIsModalCVOpen(true);
+                                                                    setCurrCVOpen(item.headshot);
+                                                                    setCurrItem(item.name);
+                                                                },
+                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_ai__WEBPACK_IMPORTED_MODULE_7__/* .AiOutlineFileSearch */ .Ehc, {
+                                                                    title: "view PDF",
+                                                                    size: 25,
+                                                                    className: "hover:text-blue-400"
+                                                                })
                                                             })
                                                         })
                                                     }),

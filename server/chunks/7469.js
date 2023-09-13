@@ -27,7 +27,7 @@ const Modal = ({ isOpen, onClose, title, content })=>{
         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
             className: "modal",
             children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: "modal-header bg-white p-6 rounded-lg shadow-lg max-w-[90vw] mx-auto",
+                className: "modal-header bg-white p-6 rounded-lg shadow-lg max-w-[90vw] mx-auto overflow-auto max-h-[90vh]",
                 children: [
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                         className: "flex flex-row justify-between",

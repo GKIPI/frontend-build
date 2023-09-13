@@ -1040,7 +1040,7 @@ function Lowongan() {
                             className: "w-full lg:flex gap-6",
                             children: [
                                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                    className: "md:w-3/5",
+                                    className: "md:w-3/5 overflow-hidden border-2",
                                     children: (0,typeChecker.isImage)(selectedModalContent?.image) ? /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                         href: (0,imageDownloader.parseBlobToURL)(selectedModalContent?.image),
                                         target: "_blank",
@@ -1051,13 +1051,30 @@ function Lowongan() {
                                         onClick: ()=>{
                                             (0,imageDownloader.downloadPDf)(selectedModalContent.image, selectedModalContent.name);
                                         },
-                                        className: "text-center bg-primary text-white hover:text-primary hover:bg-tertiary rounded-md p-3",
+                                        className: "text-center bg-primary text-white hover:text-primary hover:bg-tertiary rounded-md p-3 w-full",
                                         children: "Download PDF"
                                     })
                                 }),
                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                     className: "flex flex-col gap-4 w-full",
                                     children: [
+                                        !selectedModalContent?.headshot ? null : /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                            className: "max-w-[100px] max-h-[200px] mt-5 min-w-[45px] min-h-[80px]",
+                                            children: [
+                                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                    className: "text-lg w-full font-montserrat font-medium",
+                                                    children: "Photo: "
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                                    href: (0,imageDownloader.parseBlobToURL)(selectedModalContent?.headshot),
+                                                    target: "_blank",
+                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                        src: selectedModalContent?.headshot,
+                                                        className: "min-h-[50px]"
+                                                    })
+                                                })
+                                            ]
+                                        }),
                                         /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                             className: "flex items-center",
                                             children: /*#__PURE__*/ jsx_runtime_.jsx("p", {

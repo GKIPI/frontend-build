@@ -364,6 +364,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function UserDashboard() {
     const [isLoading, setIsLoading] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(true);
+    const [modalContent, setModalContent] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
     const [disclaimerOpen, setDisclaimerOpen] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);
     const [dataToFetch, setDataToFetch] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
     const [isDeleteModalOpen, setDeleteModalOpen] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);
@@ -475,6 +476,8 @@ function UserDashboard() {
     const [titletag, setTitleTag] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)("");
     const [validation, setValidation] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);
     const [isModalOpen, setIsModalOpen] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);
+    const [PDFData, setPDFData] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)("");
+    const [imageData, setImageData] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)("");
     const handleOpenDeleteModal = ()=>{
         setDeleteModalOpen(true);
     };
@@ -518,28 +521,53 @@ function UserDashboard() {
         });
         window.location.reload();
     };
+    const handlePDFFileChange = (e)=>{
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = (e)=>{
+                const base64PDF = e.target.result;
+                setPDFData(base64PDF);
+            };
+            reader.readAsDataURL(file);
+        }
+    };
+    const handleImageFileChange = (e)=>{
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = (e)=>{
+                const image = e.target.result;
+                setImageData(image);
+            };
+            reader.readAsDataURL(file);
+        }
+    };
     const handleSubmit = ()=>{
-        if (!jobTitle || !name || !sex || !education || !age || !skills || !industrytag || !titletag) {
+        if (!jobTitle || !name || !sex || !education || !PDFData || !age || !skills || !industrytag || !titletag) {
             setValidation(true);
             setDisclaimerOpen(false);
             return;
         }
-        // Convert the uploaded image to base64
+        console.log(imageData);
+        console.log(PDFData);
+        //Convert the uploaded image to base64
         const fileInput = document.querySelector('input[type="file"]');
         (0,_helper_convertImage__WEBPACK_IMPORTED_MODULE_8__/* .convertImageToBase64 */ .k)(fileInput, (base64Image)=>{
             const formData = {
                 user: session.user.email,
-                jobTitle,
-                name,
-                sex,
-                education,
-                age,
-                skills,
+                jobTitle: jobTitle,
+                name: name,
+                sex: sex,
+                education: education,
+                age: age,
+                skills: skills,
                 tag: [
                     industrytag,
                     titletag
                 ],
-                image: base64Image,
+                headshot: imageData,
+                image: PDFData,
                 approval: false
             };
             setDataToFetch(formData);
@@ -664,9 +692,22 @@ function UserDashboard() {
                                             children: [
                                                 "Upload CV(.jpg, .png, .jpeg, .pdf):",
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
+                                                    onChange: handlePDFFileChange,
                                                     className: "w-[50%] p-1",
                                                     type: "file",
                                                     accept: "image/* pdf"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
+                                            className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
+                                            children: [
+                                                "Upload Photo(.jpg, .jpeg, .png):",
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
+                                                    onChange: handleImageFileChange,
+                                                    className: "w-[50%] p-1",
+                                                    type: "file",
+                                                    accept: "image/*"
                                                 })
                                             ]
                                         }),
@@ -810,12 +851,36 @@ function UserDashboard() {
                                                     "CV :",
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {}),
                                                     (data?.image) ? (0,_helper_typeChecker__WEBPACK_IMPORTED_MODULE_10__.isImage)(data.image) ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                                        onClick: ()=>setIsModalOpen(true),
+                                                        onClick: ()=>{
+                                                            setModalContent(data.image);
+                                                            setIsModalOpen(true);
+                                                        },
                                                         className: "bg-primary text-white px-4 py-2 rounded-md hover:text-primary border-2 border-primary sNover:px-1 hover:bg-white",
                                                         children: "View"
                                                     }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                                         onClick: ()=>{
                                                             (0,_helper_imageDownloader__WEBPACK_IMPORTED_MODULE_11__.downloadPDf)(data.image, data.name);
+                                                        },
+                                                        className: "bg-primary text-white px-4 py-2 rounded-md hover:text-primary border-2 border-primary sNover:px-1 hover:bg-white",
+                                                        children: "View"
+                                                    }) : null
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                className: "border-2 p-3 w-full border-black flex flex-row justify-between text-lg items-center rounded-lg my-2",
+                                                children: [
+                                                    "Photo :",
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {}),
+                                                    (data?.headshot) ? (0,_helper_typeChecker__WEBPACK_IMPORTED_MODULE_10__.isImage)(data.headshot) ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                                        onClick: ()=>{
+                                                            setModalContent(data.headshot);
+                                                            setIsModalOpen(true);
+                                                        },
+                                                        className: "bg-primary text-white px-4 py-2 rounded-md hover:text-primary border-2 border-primary sNover:px-1 hover:bg-white",
+                                                        children: "View"
+                                                    }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                                        onClick: ()=>{
+                                                            (0,_helper_imageDownloader__WEBPACK_IMPORTED_MODULE_11__.downloadPDf)(data.headshot, data.name);
                                                         },
                                                         className: "bg-primary text-white px-4 py-2 rounded-md hover:text-primary border-2 border-primary sNover:px-1 hover:bg-white",
                                                         children: "View"
@@ -879,7 +944,7 @@ function UserDashboard() {
                                     })
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                    src: data?.image,
+                                    src: modalContent,
                                     alt: "CV Preview",
                                     className: "max-h-[80vh] max-w-[80vw]"
                                 })
