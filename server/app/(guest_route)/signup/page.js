@@ -520,35 +520,19 @@ function SignUp() {
                                     })
                                 ]
                             }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                 className: "text-center",
-                                children: [
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                                        children: [
-                                            "Have an account? ",
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                href: "/login",
-                                                className: "font-bold",
-                                                children: "Sign In"
-                                            }),
-                                            " "
-                                        ]
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                        children: "or"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+                                    children: [
+                                        "Have an account? ",
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                             href: "/login",
                                             className: "font-bold",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                                className: "text-slate-300 cursor-not-allowed",
-                                                disabled: true,
-                                                children: "Sign in with Google"
-                                            })
-                                        })
-                                    })
-                                ]
+                                            children: "Sign In"
+                                        }),
+                                        " "
+                                    ]
+                                })
                             })
                         ]
                     })
@@ -594,7 +578,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,5105,8369,6204], () => (__webpack_exec__(4743)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,5105,9790,6204], () => (__webpack_exec__(4743)));
 module.exports = __webpack_exports__;
 
 })();

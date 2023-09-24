@@ -921,6 +921,7 @@ function JobVacancies() {
                 "Loading...",
                 "Loading..."
             ],
+            createdAt: "",
             approval: true
         }
     ]);
@@ -989,6 +990,10 @@ function JobVacancies() {
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("th", {
                                                     className: "py-2",
+                                                    children: "Created At"
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("th", {
+                                                    className: "py-2",
                                                     children: "Poster"
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("th", {
@@ -1029,6 +1034,13 @@ function JobVacancies() {
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                                             className: "line-clamp-2",
                                                             children: item.notes
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                        className: "border-b border-zinc-800",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                            className: "line-clamp-2",
+                                                            children: new Date(item.createdAt).toLocaleString("en-UK")
                                                         })
                                                     }),
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
@@ -1186,7 +1198,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,2451,6482,8976,5105,5816,2695,8369,3064,5634,7100], () => (__webpack_exec__(9)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,2451,6482,8976,5105,5816,2695,9790,3064,5634,7100], () => (__webpack_exec__(9)));
 module.exports = __webpack_exports__;
 
 })();

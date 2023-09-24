@@ -549,8 +549,6 @@ function UserDashboard() {
             setDisclaimerOpen(false);
             return;
         }
-        console.log(imageData);
-        console.log(PDFData);
         //Convert the uploaded image to base64
         const fileInput = document.querySelector('input[type="file"]');
         (0,_helper_convertImage__WEBPACK_IMPORTED_MODULE_8__/* .convertImageToBase64 */ .k)(fileInput, (base64Image)=>{
@@ -1020,7 +1018,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,5105,3500,8369,5634,7469,3687,9940], () => (__webpack_exec__(38584)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,5105,3500,9790,5634,7469,3687,9940], () => (__webpack_exec__(38584)));
 module.exports = __webpack_exports__;
 
 })();

@@ -759,7 +759,6 @@ const JobSeekerReviewModal = ({ isOpen, onClose, requests })=>{
         };
         putApproved(data, userId);
     };
-    console.log(requests);
     if (!isOpen) return null;
     return /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
         className: "fixed inset-0 flex items-center justify-center z-50 bg-slate-800/25 backdrop-blur-sm",
@@ -1046,7 +1045,8 @@ function JobSeeker() {
             approval: true,
             tag: [
                 "Loading List..."
-            ]
+            ],
+            createdAt: ""
         }
     ]);
     const getSeekerData = async ()=>{
@@ -1056,7 +1056,6 @@ function JobSeeker() {
             if (data.seekers) {
                 setSeekerList(data.seekers);
                 setRequestsData((0,_helper_requestCounter__WEBPACK_IMPORTED_MODULE_6__.getRequestedData)(data.seekers));
-                console.log(data.seekers);
             }
         } catch (err) {
             console.error(err);
@@ -1115,6 +1114,10 @@ function JobSeeker() {
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("th", {
                                                     className: "py-2",
+                                                    children: "Created At"
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("th", {
+                                                    className: "py-2",
                                                     children: "Photo"
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("th", {
@@ -1165,6 +1168,13 @@ function JobSeeker() {
                                                                     })
                                                                 }, i);
                                                             })
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                        className: "border-b border-zinc-800",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                            className: "line-clamp-2",
+                                                            children: new Date(item.createdAt).toLocaleString("en-UK")
                                                         })
                                                     }),
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
@@ -1340,7 +1350,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,2451,6482,8976,5105,5816,2695,8369,3064,5634,7100], () => (__webpack_exec__(92212)));
+var __webpack_exports__ = __webpack_require__.X(0, [2697,3298,8132,2451,6482,8976,5105,5816,2695,9790,3064,5634,7100], () => (__webpack_exec__(92212)));
 module.exports = __webpack_exports__;
 
 })();
